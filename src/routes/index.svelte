@@ -356,7 +356,7 @@
 					/></svg
 				>
 			</div>
-			<div class="col-span-6 text-center">TODO: Footer?</div>
+			<div class="col-span-6 text-center">TODO: Footer2?</div>
 
 			<div class="col-span-4 flex items-center justify-end space-x-3">
 				<div class="rounded-xl bg-gray-800 p-2 text-gray-50">
