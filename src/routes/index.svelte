@@ -1,6 +1,153 @@
-<script>
+<script lang="ts">
+	import { writable } from 'svelte/store';
+
+	// TODO: Open/Close cards with animation
+
 	import Button from '../comps/Button.svelte';
 	import ButtonGithub from '../comps/ButtonGithub.svelte';
+
+	const DurationMinute = 1000 * 60;
+
+	const events = writable([
+		{
+			isOpened: false,
+			timeISO: '2021-09-03T12:54:01.813Z',
+			durationInMs: DurationMinute * 60,
+
+			name: 'Docker and Appwrite',
+			presenter: 'Brandon Leckemby from Appwrite',
+			imageUrl: 'https://avatars.githubusercontent.com/u/20852629?v=4',
+			description:
+				'Short description of the event, lorem ipsum dolor sit amet  lorem ipsum dolor sit amet lorem ipsum dolor sit amet  lorem ipsum dolor sit amet.'
+		},
+
+		{
+			isOpened: false,
+			timeISO: '2021-09-03T12:54:01.813Z',
+			durationInMs: DurationMinute * 60,
+
+			name: 'Docker and Appwrite',
+			presenter: 'Brandon Leckemby from Appwrite',
+			imageUrl: 'https://avatars.githubusercontent.com/u/20852629?v=4',
+			description:
+				'Short description of the event, lorem ipsum dolor sit amet  lorem ipsum dolor sit amet lorem ipsum dolor sit amet  lorem ipsum dolor sit amet.'
+		},
+
+		{
+			isOpened: false,
+			timeISO: '2021-09-03T12:54:01.813Z',
+			durationInMs: DurationMinute * 60,
+
+			name: 'Docker and Appwrite',
+			presenter: 'Brandon Leckemby from Appwrite',
+			imageUrl: 'https://avatars.githubusercontent.com/u/20852629?v=4',
+			description:
+				'Short description of the event, lorem ipsum dolor sit amet  lorem ipsum dolor sit amet lorem ipsum dolor sit amet  lorem ipsum dolor sit amet.'
+		},
+
+		{
+			isOpened: true,
+			timeISO: '2021-09-03T12:54:01.813Z',
+			durationInMs: DurationMinute * 60,
+
+			name: 'Docker and Appwrite',
+			presenter: 'Brandon Leckemby from Appwrite',
+			imageUrl: 'https://avatars.githubusercontent.com/u/20852629?v=4',
+			description:
+				'Short description of the event, lorem ipsum dolor sit amet  lorem ipsum dolor sit amet lorem ipsum dolor sit amet  lorem ipsum dolor sit amet.'
+		}
+	]);
+
+	const githubIssues = [
+		{
+			githubUrl: 'https://github.com/',
+			title: '[Help wanted] translate welcome e-mail function from NodeJS to PHP',
+			tags: [
+				{
+					label: 'Hacktoberfest',
+					color: 'bg-[#F02E65] text-white'
+				},
+				{
+					label: 'PHP',
+					color: 'bg-[#20007F] text-white'
+				},
+				{
+					label: 'Unassigned',
+					color: 'bg-[#4D08DA] text-white'
+				},
+				{
+					label: 'Node JS',
+					color: 'bg-[#3D71E6] text-white'
+				}
+			]
+		},
+		{
+			githubUrl: 'https://github.com/',
+			title: '[Help wanted] translate welcome e-mail function from NodeJS to PHP',
+			tags: [
+				{
+					label: 'Hacktoberfest',
+					color: 'bg-[#F02E65] text-white'
+				},
+				{
+					label: 'PHP',
+					color: 'bg-[#20007F] text-white'
+				},
+				{
+					label: 'Unassigned',
+					color: 'bg-[#4D08DA] text-white'
+				},
+				{
+					label: 'Node JS',
+					color: 'bg-[#3D71E6] text-white'
+				}
+			]
+		},
+		{
+			githubUrl: 'https://github.com/',
+			title: '[Help wanted] translate welcome e-mail function from NodeJS to PHP',
+			tags: [
+				{
+					label: 'Hacktoberfest',
+					color: 'bg-[#F02E65] text-white'
+				},
+				{
+					label: 'PHP',
+					color: 'bg-[#20007F] text-white'
+				},
+				{
+					label: 'Unassigned',
+					color: 'bg-[#4D08DA] text-white'
+				},
+				{
+					label: 'Node JS',
+					color: 'bg-[#3D71E6] text-white'
+				}
+			]
+		},
+		{
+			githubUrl: 'https://github.com/',
+			title: '[Help wanted] translate welcome e-mail function from NodeJS to PHP',
+			tags: [
+				{
+					label: 'Hacktoberfest',
+					color: 'bg-[#F02E65] text-white'
+				},
+				{
+					label: 'PHP',
+					color: 'bg-[#20007F] text-white'
+				},
+				{
+					label: 'Unassigned',
+					color: 'bg-[#4D08DA] text-white'
+				},
+				{
+					label: 'Node JS',
+					color: 'bg-[#3D71E6] text-white'
+				}
+			]
+		}
+	];
 
 	const teamMembers = [
 		{
@@ -47,6 +194,49 @@
 			githubProfile: 'https://github.com/adityaoberai'
 		}
 	];
+
+	function getLocalDay(timeISO: string): number {
+		const date = new Date(timeISO);
+
+		return date.getDate();
+	}
+
+	function getLocalMonth(timeISO: string): string {
+		const monthNames = [
+			'January',
+			'February',
+			'March',
+			'April',
+			'May',
+			'June',
+			'July',
+			'August',
+			'September',
+			'October',
+			'November',
+			'December'
+		];
+
+		const date = new Date(timeISO);
+		return monthNames[date.getMonth()];
+	}
+
+	function getLocalTimeVerbose(timeISO: string, durationInMs: number): string {
+		const dateFrom = new Date(timeISO);
+		const dateTo = new Date(dateFrom.getTime() + durationInMs);
+
+		return `${dateFrom.getHours()}:${dateFrom.getMinutes()} - ${dateTo.getHours()}:${dateTo.getMinutes()}`;
+	}
+
+	function getClientState(): string {
+		return Intl.DateTimeFormat().resolvedOptions().timeZone;
+	}
+
+	function onToggleEventDetail(eventIndex: number) {
+		return () => {
+			$events[eventIndex].isOpened = !$events[eventIndex].isOpened;
+		};
+	}
 </script>
 
 <!-- HERO START -->
@@ -99,7 +289,9 @@
 						Flutter developers that is packaged as a set of Docker containers for easy deployment.
 					</p>
 
-					<Button type="secondary" icon="none" text="More about Appwrite" />
+					<a href="https://appwrite.io/">
+						<Button type="secondary" icon="none" text="More about Appwrite" /></a
+					>
 				</div>
 			</div>
 
@@ -266,7 +458,10 @@
 <!-- FEATURE WIN SWAG END -->
 
 <!-- FEATURE EVENTS START -->
-<section class="bg-white py-32 border-t-2 border-gray-300">
+<div class="container mx-auto">
+	<hr class="border-t-2 border-gray-300" />
+</div>
+<section class="bg-white py-32 pb-0">
 	<div class="container mx-auto sm:px-6 lg:px-0 px-4">
 		<div class="text-center max-w-4xl mx-auto">
 			<h6 class="text-gray-500 uppercase">events</h6>
@@ -276,7 +471,72 @@
 			</p> -->
 		</div>
 
-		<div class="grid grid-cols-12 gap-12 mt-12">TODO: Implement</div>
+		<div class="mx-auto max-w-4xl flex flex-col space-y-3 mt-20">
+			{#each $events as event, eventIndex}
+				<div
+					class={(event.isOpened ? 'shadow-xl' : '') +
+						' px-8 py-4 border-2 border-gray-50 rounded-xl'}
+				>
+					<div class=" grid gap-3 grid-cols-12">
+						<div class="col-span-6 flex items-center justify-start space-x-4">
+							<span class="text-5xl font-bold title text-[#F02E65]"
+								>{getLocalDay(event.timeISO)}</span
+							>
+							<div class="flex flex-col space-y-0">
+								<span class="title font-semibold text-[#F02E65]"
+									>{getLocalMonth(event.timeISO)}</span
+								>
+								<span class="text-sm text-gray-500"
+									>{getLocalTimeVerbose(event.timeISO, event.durationInMs)}
+									<span class="font-semibold">{getClientState()} time</span></span
+								>
+							</div>
+						</div>
+						<div class="col-span-6 flex items-center justify-between">
+							<div class="flex items-center space-x-3">
+								<img
+									src={event.imageUrl}
+									class="w-14 rounded-full shadow-inner"
+									alt="Presenter photo"
+								/>
+
+								<div class="flex flex-col space-y-0">
+									<h4 class="title">{event.name}</h4>
+									<h6 class="text-sm text-gray-500">{event.presenter}</h6>
+								</div>
+							</div>
+							<button on:click={onToggleEventDetail(eventIndex)} class="text-black">
+								<svg
+									class={(event.isOpened ? 'rotate-180' : 'rotate-0') +
+										' transition-transform duration-300 transform'}
+									width="18"
+									height="10"
+									viewBox="0 0 18 10"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M1 1L9.24242 8.5L17 1"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</button>
+						</div>
+					</div>
+
+					{#if event.isOpened}
+						<div class="my-10">
+							<p class="mb-6">{event.description}</p>
+
+							<Button type="primary" icon="none" text="Add to calendar" />
+						</div>
+					{/if}
+				</div>
+			{/each}
+		</div>
 	</div>
 </section>
 <!-- FEATURE EVENTS END -->
@@ -292,7 +552,33 @@
 			</p> -->
 		</div>
 
-		<div class="grid grid-cols-12 gap-12 mt-12">TODO: Implement</div>
+		<div class="max-w-4xl mx-auto mt-12">
+			<div class="relative flex flex-col space-y-6">
+				{#each githubIssues as githubIssue}
+					<a href={githubIssue.githubUrl} target="_blank">
+						<div class="shadow-md rounded-xl bg-white p-8">
+							<h3 class="title text-xl">{githubIssue.title}</h3>
+
+							<div class="mt-4">
+								{#each githubIssue.tags as tag}
+									<div class={tag.color + ' mb-2 mr-2 inline-flex rounded-full py-1 px-4'}>
+										{tag.label}
+									</div>
+								{/each}
+							</div>
+						</div>
+					</a>
+				{/each}
+
+				<div
+					class="z-20 absolute -bottom-4 -left-4 w-[calc(100%+2rem)] h-[130px] pointer-events-none bg-gradient-to-b from-[rgba(249,250,251,0)] via-[rgba(249,250,251,0.8)] to-[rgba(249,250,251,1)]"
+				/>
+			</div>
+		</div>
+
+		<div class="mt-6 flex items-center justify-center">
+			<ButtonGithub />
+		</div>
 	</div>
 </section>
 <!-- FEATURE ISSUES END -->
@@ -311,8 +597,8 @@
 
 		<div class=" flex flex-col items-center space-y-20 mt-20">
 			<div class="flex items-center justify-center -space-x-12">
-				{#each teamMembers as teamMember, i}
-					<a href={teamMember.githubProfile}>
+				{#each teamMembers as teamMember}
+					<a target="_blank" href={teamMember.githubProfile}>
 						<img
 							class="rounded-full w-36 border-4 border-white"
 							src={teamMember.image}
@@ -322,7 +608,9 @@
 				{/each}
 			</div>
 
-			<Button type="primary" icon="discord" text="Join us on Discord" />
+			<a target="_blank" href="https://appwrite.io/discord"
+				><Button type="primary" icon="discord" text="Join us on Discord" /></a
+			>
 		</div>
 	</div>
 </section>

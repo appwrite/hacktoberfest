@@ -1,10 +1,19 @@
 <script lang="ts">
+	import { createEventDispatcher } from 'svelte';
+
 	export let text: string = 'Empty Button';
 	export let type: 'primary' | 'secondary' = 'primary';
 	export let icon: 'discord' | 'github' | 'none' = 'none';
+
+	const dispatch = createEventDispatcher();
+
+	function submitButton() {
+		dispatch('click');
+	}
 </script>
 
 <button
+	on:click={submitButton}
 	class={type === 'primary'
 		? 'relative focus:ring focus:ring-gray-600 hover:text-gray-300 rounded-md px-6 py-3 border-black border-2 bg-black text-white flex items-center justify-center space-x-4 '
 		: 'relative focus:ring hover:bg-gray-100 focus:ring-gray-600  rounded-md px-6 text-black py-3 border-black border-2 bg-transparent flex items-center justify-center space-x-4'}

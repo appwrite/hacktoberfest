@@ -38,7 +38,9 @@
 		</section>
 
 		<section class="flex items-center justify-end space-x-4">
-			<Button icon="discord" text="Get help on Discord" type="secondary" />
+			<a target="_blank" href="https://appwrite.io/discord"
+				><Button icon="discord" text="Get help on Discord" type="secondary" /></a
+			>
 
 			<ButtonGithub showBadge={true} />
 		</section>
