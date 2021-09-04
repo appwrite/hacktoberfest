@@ -47,7 +47,7 @@
 		},
 
 		{
-			isOpened: true,
+			isOpened: false,
 			timeISO: '2021-09-03T12:54:01.813Z',
 			durationInMs: DurationMinute * 60,
 
@@ -246,42 +246,94 @@
 </script>
 
 <!-- HERO START -->
-<section class="bg-gray-50">
-	<div class="container mx-auto sm:px-6 lg:px-0 px-4">
-		<div class="grid gap-12 grid-cols-12 min-h-screen pt-[100px]">
-			<div class="col-span-6 flex items-center">
-				<div>
-					<h1 class="text-6xl font-semibold leading-snug max-w-lg title tracking-wide">
-						Celebrate Open Source with Hacktoberfest
-					</h1>
-					<p class="my-8 max-w-lg leading-snug text-2xl text-gray-500">
-						Your open source journey begins with a pull request. We've curated a list of beginner
-						friendly issues for you to check out.
-					</p>
+<section class="bg-gray-50 relative">
+	<div class="flex flex-col lg:min-h-screen">
+		<!--HEADER START-->
+		<header class="z-30 sticky left-0 top-0 w-full bg-white shadow-md p-6">
+			<div
+				class="container mx-auto lg:space-y-0 space-y-4 flex-col lg:space-x-6 lg:flex-row sm:px-6 lg:px-0 px-4 flex items-center justify-between"
+			>
+				<section class="flex items-end justify-start space-x-4">
+					<!-- APPWRITE LOGO -->
+					<svg
+						width="181"
+						height="32"
+						viewBox="0 0 181 32"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink"
+					>
+						<rect width="181" height="32" fill="url(#pattern0)" />
+						<defs>
+							<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+								<use
+									xlink:href="#image0"
+									transform="translate(-0.000364849) scale(0.00333577 0.0188679)"
+								/>
+							</pattern>
+							<image
+								id="image0"
+								width="300"
+								height="53"
+								xlink:href="data:image/png;base64,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"
+							/>
+						</defs>
+					</svg>
 
-					<ButtonGithub />
-				</div>
+					<span class="text-gray-400">Hacktoberfest</span>
+				</section>
+
+				<section class="hidden md:flex items-center justify-end space-x-4">
+					<a target="_blank" href="https://appwrite.io/discord"
+						><Button icon="discord" text="Get help on Discord" type="secondary" /></a
+					>
+
+					<ButtonGithub showBadge={true} />
+				</section>
 			</div>
-			<div class="z-20 col-span-6 flex items-center justify-center">
-				<img
-					class="w-[80%] transform transition-transform duration-[4000ms] ease-in-out translate-y-0 hover:translate-y-[-40px]"
-					src="/programmer.svg"
-					alt="Programmer character"
-				/>
+		</header>
+		<!--HEADER END-->
+
+		<div class="h-full flex items-center justify-center">
+			<div class="lg:container h-full lg:mx-auto grid gap-x-0 gap-y-12 lg:gap-12 grid-cols-12">
+				<div class="px-6 col-span-12 lg:col-span-6 flex items-center">
+					<div class="mt-12 flex flex-col lg:items-start items-center text-center lg:text-left">
+						<h1
+							class="text-3xl md:text-4xl lg:text-6xl font-semibold leading-snug lg:max-w-lg title tracking-wide"
+						>
+							Celebrate Open Source with Hacktoberfest
+						</h1>
+						<p class="my-8 lg:max-w-lg leading-snug text-lg md:text-xl lg:text-2xl text-gray-500">
+							Your open source journey begins with a pull request. We've curated a list of beginner
+							friendly issues for you to check out.
+						</p>
+
+						<ButtonGithub />
+					</div>
+				</div>
+				<!-- TODO: Cover right panel -->
+				<div class="bg-[#20007F] z-20 col-span-12 lg:col-span-6 flex items-center justify-center">
+					<img
+						class="w-[80%] max-w-[500px] transform transition-transform duration-[4000ms] ease-in-out translate-y-0 hover:translate-y-[-40px]"
+						src="/programmer.svg"
+						alt="Programmer character"
+					/>
+				</div>
 			</div>
 		</div>
 	</div>
+
+	<div class="absolute right-0 top-0 h-full w-[50%] bg-[#20007F]" />
 </section>
 
-<div class="absolute right-0 top-0 h-screen w-[50%] bg-[#20007F]" />
 <!-- HERO END -->
 
 <!-- FEATURE ABOUT START -->
-<section class="bg-white py-32">
-	<div class="container mx-auto sm:px-6 lg:px-0 px-4">
+<section class="bg-white pt-32">
+	<div class="container mx-auto px-6">
 		<div class="text-center max-w-4xl mx-auto">
 			<h6 class="text-gray-500 uppercase">about the event</h6>
-			<h1 class="title text-5xl font-semibold my-8">About Hacktoberfest</h1>
+			<h1 class="title text-3xl md:text-4xl lg:text-5xl font-semibold my-8">About Hacktoberfest</h1>
 			<p class="text-black">
 				Hacktoberfest is a month-long celebration of open source software run by DigitalOcean.
 				Hacktoberfest is open to everyone, from first-time contributors to seasoned open source
@@ -289,9 +341,9 @@
 			</p>
 		</div>
 
-		<div class="grid grid-cols-12 gap-12 mt-12">
-			<div class="col-span-4 pt-32">
-				<div class="max-w-md">
+		<div class="grid grid-cols-12 gap-x-0 gap-y-12 lg:gap-12">
+			<div class="col-span-12 lg:col-span-4 pt-20 flex items-center justify-center">
+				<div class="lg:max-w-md flex flex-col items-center lg:items-start text-center lg:text-left">
 					<h3 class="title text-4xl font-semibold">About Appwrite</h3>
 					<p class="py-8">
 						Appwrite is an open source, secure end-to-end backend server for Web, Mobile, and
@@ -304,18 +356,24 @@
 				</div>
 			</div>
 
-			<img class="w-full col-span-8" src="/appwrite-console.svg" alt="Appwrite console" />
+			<img
+				class="w-full lg:mt-16 col-span-12 lg:col-span-8"
+				src="/appwrite-console.svg"
+				alt="Appwrite console"
+			/>
 		</div>
 	</div>
 </section>
 <!-- FEATURE ABOUT END -->
 
 <!-- FEATUER HOW TO START -->
-<section class="relative bg-gray-50 py-32 mt-[-320px]">
-	<div class="container mx-auto sm:px-6 lg:px-0 px-4">
-		<div class="grid grid-cols-12 gap-12">
-			<div class="col-span-4">
-				<div class="max-w-sm">
+<section class="relative bg-gray-50 py-32 mt-[-5rem]">
+	<div class="container mx-auto px-6">
+		<div class="grid grid-cols-12 gap-x-0 gap-y-12 lg:gap-12-12">
+			<div class="col-span-12 lg:col-span-4">
+				<div
+					class="lg:max-w-sm flex text-center  flex-col lg:text-left items-center lg:items-start"
+				>
 					<h3 class="title text-4xl font-semibold">How can you contribute?</h3>
 					<p class="py-8">
 						There are different ways you can contribute to Appwrite. All accepted contributions
@@ -325,7 +383,9 @@
 					<ButtonGithub showBadge={false} />
 				</div>
 			</div>
-			<div class="col-span-8 grid grid-cols-12 gap-12 gap-y-20">
+			<div
+				class="col-span-12 lg:col-span-8 grid grid-cols-6 lg:grid-cols-12 gap-x-0 gap-y-12 lg:gap-12 lg:gap-y-20"
+			>
 				<div class="col-span-6">
 					<div
 						class="hover:scale-110 hover:rotate-6 transition-transform duration-500 transform w-[max-content] h-[max-content] rounded-xl bg-white shadow-xl p-6"
@@ -461,17 +521,19 @@
 
 <!-- FEATURE WIN SWAG START -->
 <section class="bg-white py-32">
-	<div class="container mx-auto sm:px-6 lg:px-0 px-4">
+	<div class="container mx-auto px-6">
 		<div class="text-center max-w-4xl mx-auto">
 			<h6 class="text-gray-500 uppercase">swag</h6>
-			<h1 class="title text-5xl font-semibold my-8">Win our Limited Edition swag!</h1>
+			<h1 class="title text-3xl md:text-4xl lg:text-5xl font-semibold my-8">
+				Win our Limited Edition swag!
+			</h1>
 			<!-- <p class="text-black">
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Error doloribus laborum quibusdam, ea facilis laudantium! Quibusdam, dolorum sint? Velit optio ea quae tempore itaque totam ipsum aperiam provident ducimus explicabo!
 			</p> -->
 		</div>
 
-		<div class="grid grid-cols-12 gap-12 mt-12">
-			<div class="col-span-12 grid grid-cols-12">
+		<div class="grid grid-cols-12 gap-x-0 gap-y-12 lg:gap-12 mt-12">
+			<div class="hidden lg:grid col-span-12 grid-cols-12">
 				<div class="col-span-8">
 					<div class="w-full bg-[#20007F] aspect-w-16 aspect-h-9 rounded-xl" />
 				</div>
@@ -498,7 +560,29 @@
 				</div>
 			</div>
 
-			<div class="col-span-4">
+			<div class="block lg:hidden col-span-12 lg:col-span-4">
+				<div class="w-full bg-[#20007F] aspect-w-4 aspect-h-3 rounded-xl" />
+				<div class="relative -mt-10 px-8">
+					<div class="relative w-full bg-white rounded-xl shadow-xl p-8 pb-14 text-center">
+						<h3 class="mt-16 mb-4 title text-xl font-semibold">4 contributions or more</h3>
+
+						<p class="">
+							Limited edition Appwrite Hacktoberfest T-shirt + Hacktoberfest Sticker pack + OG
+							Appwrite Sticker Pack + Mug
+						</p>
+
+						<div class="flex justify-center absolute left-0 -top-10 w-full pointer-events-none">
+							<div
+								class="text-3xl font-semibold text-[#F02E65] rounded-full bg-white shadow-xl p-8"
+							>
+								#1
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-span-12 lg:col-span-4">
 				<div class="w-full bg-[#20007F] aspect-w-4 aspect-h-3 rounded-xl" />
 				<div class="relative -mt-10 px-8">
 					<div class="relative w-full bg-white rounded-xl shadow-xl p-8 pb-14 text-center">
@@ -519,7 +603,7 @@
 				</div>
 			</div>
 
-			<div class="col-span-4">
+			<div class="col-span-12 lg:col-span-4">
 				<div class="w-full bg-[#20007F] aspect-w-4 aspect-h-3 rounded-xl" />
 				<div class="relative -mt-10 px-8">
 					<div class="relative w-full bg-white rounded-xl shadow-xl p-8 pb-14 text-center">
@@ -538,7 +622,7 @@
 				</div>
 			</div>
 
-			<div class="col-span-4">
+			<div class="col-span-12 lg:col-span-4">
 				<div class="w-full bg-[#20007F] aspect-w-4 aspect-h-3 rounded-xl" />
 				<div class="relative -mt-10 px-8">
 					<div class="relative w-full bg-white rounded-xl shadow-xl p-8 pb-14 text-center">
@@ -566,10 +650,12 @@
 	<hr class="border-t-2 border-gray-300" />
 </div>
 <section class="bg-white py-32 pb-0">
-	<div class="container mx-auto sm:px-6 lg:px-0 px-4">
+	<div class="container mx-auto px-6">
 		<div class="text-center max-w-4xl mx-auto">
 			<h6 class="text-gray-500 uppercase">events</h6>
-			<h1 class="title text-5xl font-semibold my-8">Join our Hacktoberfest events</h1>
+			<h1 class="title text-3xl md:text-4xl lg:text-5xl font-semibold my-8">
+				Join our Hacktoberfest events
+			</h1>
 			<!-- <p class="text-black">
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Error doloribus laborum quibusdam, ea facilis laudantium! Quibusdam, dolorum sint? Velit optio ea quae tempore itaque totam ipsum aperiam provident ducimus explicabo!
 			</p> -->
@@ -650,10 +736,10 @@
 
 <!-- FEATURE ISSUES START -->
 <section class="bg-white py-32">
-	<div class="relative container mx-auto bg-gray-50 py-20 rounded-3xl sm:px-6 lg:px-0 px-4">
+	<div class="relative container mx-auto bg-gray-50 py-20 rounded-3xl px-6">
 		<div class="text-center max-w-4xl mx-auto">
 			<h6 class="text-gray-500 uppercase">Hacktoberfest issues</h6>
-			<h1 class="title text-5xl font-semibold my-8">Join the party</h1>
+			<h1 class="title text-3xl md:text-4xl lg:text-5xl font-semibold my-8">Join the party</h1>
 			<!-- <p class="text-black">
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Error doloribus laborum quibusdam, ea facilis laudantium! Quibusdam, dolorum sint? Velit optio ea quae tempore itaque totam ipsum aperiam provident ducimus explicabo!
 			</p> -->
@@ -663,9 +749,7 @@
 			<div class="relative flex flex-col space-y-6">
 				{#each githubIssues as githubIssue}
 					<a class="group" href={githubIssue.githubUrl} target="_blank">
-						<div
-							class="group-hover:scale-110 transition-transform transform duration-500 shadow-md rounded-xl bg-white p-8"
-						>
+						<div class="shadow-md rounded-xl bg-white p-8">
 							<h3 class="group-hover:underline title text-xl">{githubIssue.title}</h3>
 
 							<div class="mt-4">
@@ -680,7 +764,7 @@
 				{/each}
 
 				<div
-					class="z-20 absolute -bottom-4 -left-20 w-[calc(100%+10rem)] h-[130px] pointer-events-none bg-gradient-to-b from-[rgba(249,250,251,0)] via-[rgba(249,250,251,0.8)] to-[rgba(249,250,251,1)]"
+					class="z-20 absolute -bottom-4 left-0 w-full h-[130px] pointer-events-none bg-gradient-to-b from-[rgba(249,250,251,0)] via-[rgba(249,250,251,0.8)] to-[rgba(249,250,251,1)]"
 				/>
 			</div>
 		</div>
@@ -694,22 +778,24 @@
 
 <!-- FEATURE CONTACT START -->
 <section class="bg-white pb-32">
-	<div class="container mx-auto sm:px-6 lg:px-0 px-4">
+	<div class="container mx-auto px-6">
 		<div class="text-center max-w-4xl mx-auto">
 			<!-- <h6 class="text-gray-500 uppercase">events</h6> -->
 
-			<h1 class="title text-5xl font-semibold my-8">Stuck? We’re here to help you</h1>
+			<h1 class="title text-3xl md:text-4xl lg:text-5xl font-semibold my-8">
+				Stuck? We’re here to help you
+			</h1>
 			<!-- <p class="text-black">
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Error doloribus laborum quibusdam, ea facilis laudantium! Quibusdam, dolorum sint? Velit optio ea quae tempore itaque totam ipsum aperiam provident ducimus explicabo!
 			</p> -->
 		</div>
 
-		<div class="flex flex-col items-center space-y-20 mt-20">
+		<div class="lg:flex hidden flex-col items-center space-y-20 mt-20">
 			<div class="flex items-center justify-center -space-x-12">
 				{#each teamMembers as teamMember}
 					<a target="_blank" class="group relative" href={teamMember.githubProfile}>
 						<img
-							class="group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 transform group-hover:filter group-hover:brightness-110 rounded-full w-36 border-4 border-white"
+							class="group-hover:scale-110 bg-white group-hover:rotate-6 transition-all duration-500 transform group-hover:filter group-hover:brightness-110 rounded-full w-36 border-4 border-white"
 							src={teamMember.image}
 							alt="Github profile photo"
 						/>
@@ -735,7 +821,7 @@
 			>
 		</div>
 
-		<!-- <div class="flex flex-col items-center space-y-20 mt-20">
+		<div class="flex lg:hidden flex-col items-center space-y-20 mt-20">
 			<div class="flex items-center flex-wrap justify-center">
 				{#each teamMembers as teamMember}
 					<a target="_blank" class="col-span-3 group relative" href={teamMember.githubProfile}>
@@ -750,11 +836,6 @@
 								class="flex flex-col space-y-0 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 transform absolute pointer-events-none text-2xl font-semibold inset-4 text-gray-900 items-center justify-center"
 							>
 								<span>{teamMember.overlay}</span>
-								<div
-									class="group-hover:max-h-[50px] transition-all overflow-hidden duration-500 max-h-[0px] text-gray-300 uppercase text-sm"
-								>
-									on discord
-								</div>
 							</div>
 						{/if}
 					</a>
@@ -764,19 +845,20 @@
 			<a target="_blank" href="https://appwrite.io/discord"
 				><Button type="primary" icon="discord" text="Join us on Discord" /></a
 			>
-		</div> -->
+		</div>
 	</div>
 </section>
 <!-- FEATURE CONTACT END -->
 
 <!-- FOOTER START -->
 <footer class="bg-gray-50">
-	<div class="container mx-auto sm:px-6 lg:px-0 px-4 py-20">
-		<div class="grid grid-cols-12 gap-12">
-			<div class="col-span-2">
+	<div class="container mx-auto px-6 py-20">
+		<div class="grid grid-cols-12 gap-y-12 lg:gap-y-0 lg:gap-x-12">
+			<div class="col-span-12 lg:col-span-2">
 				<a href="https://appwrite.io/">
 					<!-- APPWRITE LOGO ONE-COLOR -->
 					<svg
+						class="max-w-[200px] mx-auto"
 						viewBox="0 0 956 170"
 						xmlns="http://www.w3.org/2000/svg"
 						xmlns:bx="https://boxy-svg.com"
@@ -799,8 +881,8 @@
 					>
 				</a>
 			</div>
-			<div class="col-span-7 text-center">
-				<div class="flex items-center justify-between">
+			<div class="col-span-12 lg:col-span-7 text-center">
+				<div class="flex flex-wrap lg:flex-nowrap items-center justify-between">
 					<a class="text-gray-500 hover:text-gray-800" href="https://medium.com/appwrite-io">Blog</a
 					>
 					<a class="text-gray-500 hover:text-gray-800" href="https://appwrite.io/policy/security"
@@ -818,7 +900,7 @@
 					>
 				</div>
 
-				<div class="flex items-center justify-between mt-4">
+				<div class="flex flex-wrap lg:flex-nowrap items-center justify-between mt-4">
 					<p class="text-gray-500">Copyright © {currentYear} Appwrite</p>
 					<a class="text-gray-500 hover:text-gray-800" href="https://appwrite.io/policy/terms"
 						>Terms</a
@@ -832,7 +914,9 @@
 				</div>
 			</div>
 
-			<div class="col-span-3 flex items-center justify-end space-x-3">
+			<div
+				class="col-span-12 lg:col-span-3 flex flex-wrap lg:flex-nowrap items-center justify-end space-x-3"
+			>
 				<a
 					href="https://twitter.com/appwrite_io"
 					class="hover:bg-gray-900 rounded-xl bg-gray-800 p-2 text-gray-50"
