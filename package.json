@@ -1,5 +1,5 @@
 {
-	"name": "~TODO~",
+	"name": "landingpage-2021-appwrite",
 	"version": "0.0.1",
 	"scripts": {
 		"check": "svelte-check --tsconfig ./tsconfig.json",
@@ -35,5 +35,8 @@
 		"tslib": "^2.0.0",
 		"typescript": "^4.0.0"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@tailwindcss/aspect-ratio": "^0.2.1"
+	}
 }
