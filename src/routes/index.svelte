@@ -247,7 +247,7 @@
 
 <!-- HERO START -->
 <section class="bg-gray-50 relative">
-	<div class="flex flex-col lg:min-h-screen">
+	<div class="flex flex-col min-h-screen">
 		<!--HEADER START-->
 		<header class="z-30 sticky left-0 top-0 w-full bg-white shadow-md p-6">
 			<div
@@ -294,12 +294,12 @@
 		</header>
 		<!--HEADER END-->
 
-		<div class="h-full flex items-center justify-center">
+		<div class="flex-1 flex items-center justify-center">
 			<div class="lg:container h-full lg:mx-auto grid gap-x-0 gap-y-12 lg:gap-12 grid-cols-12">
 				<div class="px-6 col-span-12 lg:col-span-6 flex items-center">
 					<div class="mt-12 flex flex-col lg:items-start items-center text-center lg:text-left">
 						<h1
-							class="text-3xl md:text-4xl lg:text-6xl font-semibold leading-snug lg:max-w-lg title tracking-wide"
+							class="text-4xl lg:text-6xl font-semibold leading-snug lg:max-w-lg title tracking-wide"
 						>
 							Celebrate Open Source with Hacktoberfest
 						</h1>
@@ -314,7 +314,7 @@
 				<!-- TODO: Cover right panel -->
 				<div class="bg-[#20007F] z-20 col-span-12 lg:col-span-6 flex items-center justify-center">
 					<img
-						class="w-[80%] max-w-[500px] transform transition-transform duration-[4000ms] ease-in-out translate-y-0 hover:translate-y-[-40px]"
+						class="w-full md:w-[80%] md:max-w-[500px] lg:w-full lg:max-w-none transform transition-transform duration-[4000ms] ease-in-out translate-y-0 hover:translate-y-[-40px]"
 						src="/programmer.svg"
 						alt="Programmer character"
 					/>
@@ -323,7 +323,7 @@
 		</div>
 	</div>
 
-	<div class="absolute right-0 top-0 h-full w-[50%] bg-[#20007F]" />
+	<div class="hidden lg:block absolute right-0 top-0 h-full w-[50%] bg-[#20007F]" />
 </section>
 
 <!-- HERO END -->
@@ -333,7 +333,7 @@
 	<div class="container mx-auto px-6">
 		<div class="text-center max-w-4xl mx-auto">
 			<h6 class="text-gray-500 uppercase">about the event</h6>
-			<h1 class="title text-3xl md:text-4xl lg:text-5xl font-semibold my-8">About Hacktoberfest</h1>
+			<h1 class="title text-4xl lg:text-5xl font-semibold my-8">About Hacktoberfest</h1>
 			<p class="text-black">
 				Hacktoberfest is a month-long celebration of open source software run by DigitalOcean.
 				Hacktoberfest is open to everyone, from first-time contributors to seasoned open source
@@ -371,9 +371,7 @@
 	<div class="container mx-auto px-6">
 		<div class="grid grid-cols-12 gap-x-0 gap-y-12 lg:gap-12-12">
 			<div class="col-span-12 lg:col-span-4">
-				<div
-					class="lg:max-w-sm flex text-center  flex-col lg:text-left items-center lg:items-start"
-				>
+				<div class="lg:max-w-sm flex flex-col text-left items-start">
 					<h3 class="title text-4xl font-semibold">How can you contribute?</h3>
 					<p class="py-8">
 						There are different ways you can contribute to Appwrite. All accepted contributions
@@ -524,9 +522,7 @@
 	<div class="container mx-auto px-6">
 		<div class="text-center max-w-4xl mx-auto">
 			<h6 class="text-gray-500 uppercase">swag</h6>
-			<h1 class="title text-3xl md:text-4xl lg:text-5xl font-semibold my-8">
-				Win our Limited Edition swag!
-			</h1>
+			<h1 class="title text-4xl lg:text-5xl font-semibold my-8">Win our Limited Edition swag!</h1>
 			<!-- <p class="text-black">
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Error doloribus laborum quibusdam, ea facilis laudantium! Quibusdam, dolorum sint? Velit optio ea quae tempore itaque totam ipsum aperiam provident ducimus explicabo!
 			</p> -->
@@ -540,7 +536,7 @@
 
 				<div class="col-span-4 flex items-center justify-center">
 					<div
-						class="-ml-40 relative w-[calc(100%+10rem)] bg-white rounded-xl shadow-xl p-8 pb-14 text-center"
+						class="-ml-40 relative w-[calc(100%+10rem)] bg-white rounded-xl shadow-xl p-4 sm:p-8 pb-10 sm:pb-14 text-center"
 					>
 						<h3 class="mt-16 mb-4 title text-xl font-semibold">4 contributions or more</h3>
 
@@ -562,8 +558,10 @@
 
 			<div class="block lg:hidden col-span-12 lg:col-span-4">
 				<div class="w-full bg-[#20007F] aspect-w-4 aspect-h-3 rounded-xl" />
-				<div class="relative -mt-10 px-8">
-					<div class="relative w-full bg-white rounded-xl shadow-xl p-8 pb-14 text-center">
+				<div class="relative -mt-10 px-4 sm:px-8">
+					<div
+						class="relative w-full bg-white rounded-xl shadow-xl p-4 sm:p-8 pb-10 sm:pb-14 text-center"
+					>
 						<h3 class="mt-16 mb-4 title text-xl font-semibold">4 contributions or more</h3>
 
 						<p class="">
@@ -584,8 +582,10 @@
 
 			<div class="col-span-12 lg:col-span-4">
 				<div class="w-full bg-[#20007F] aspect-w-4 aspect-h-3 rounded-xl" />
-				<div class="relative -mt-10 px-8">
-					<div class="relative w-full bg-white rounded-xl shadow-xl p-8 pb-14 text-center">
+				<div class="relative -mt-10 px-4 sm:px-8">
+					<div
+						class="relative w-full bg-white rounded-xl shadow-xl p-4 sm:p-8 pb-10 sm:pb-14 text-center"
+					>
 						<h3 class="mt-16 mb-4 title text-xl font-semibold">3 contributions</h3>
 
 						<p class="">
@@ -605,8 +605,10 @@
 
 			<div class="col-span-12 lg:col-span-4">
 				<div class="w-full bg-[#20007F] aspect-w-4 aspect-h-3 rounded-xl" />
-				<div class="relative -mt-10 px-8">
-					<div class="relative w-full bg-white rounded-xl shadow-xl p-8 pb-14 text-center">
+				<div class="relative -mt-10 px-4 sm:px-8">
+					<div
+						class="relative w-full bg-white rounded-xl shadow-xl p-4 sm:p-8 pb-10 sm:pb-14 text-center"
+					>
 						<h3 class="mt-16 mb-4 title text-xl font-semibold">2 contributions</h3>
 
 						<p class="">OG Appwrite sticker pack + Limited edition Hacktoberfest sticker pack</p>
@@ -624,8 +626,10 @@
 
 			<div class="col-span-12 lg:col-span-4">
 				<div class="w-full bg-[#20007F] aspect-w-4 aspect-h-3 rounded-xl" />
-				<div class="relative -mt-10 px-8">
-					<div class="relative w-full bg-white rounded-xl shadow-xl p-8 pb-14 text-center">
+				<div class="relative -mt-10 px-4 sm:px-8">
+					<div
+						class="relative w-full bg-white rounded-xl shadow-xl p-4 sm:p-8 pb-10 sm:pb-14 text-center"
+					>
 						<h3 class="mt-16 mb-4 title text-xl font-semibold">1 contribution</h3>
 
 						<p class="">OG Appwrite sticker pack</p>
@@ -653,9 +657,7 @@
 	<div class="container mx-auto px-6">
 		<div class="text-center max-w-4xl mx-auto">
 			<h6 class="text-gray-500 uppercase">events</h6>
-			<h1 class="title text-3xl md:text-4xl lg:text-5xl font-semibold my-8">
-				Join our Hacktoberfest events
-			</h1>
+			<h1 class="title text-4xl lg:text-5xl font-semibold my-8">Join our Hacktoberfest events</h1>
 			<!-- <p class="text-black">
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Error doloribus laborum quibusdam, ea facilis laudantium! Quibusdam, dolorum sint? Velit optio ea quae tempore itaque totam ipsum aperiam provident ducimus explicabo!
 			</p> -->
@@ -739,7 +741,7 @@
 	<div class="relative container mx-auto bg-gray-50 py-20 rounded-3xl px-6">
 		<div class="text-center max-w-4xl mx-auto">
 			<h6 class="text-gray-500 uppercase">Hacktoberfest issues</h6>
-			<h1 class="title text-3xl md:text-4xl lg:text-5xl font-semibold my-8">Join the party</h1>
+			<h1 class="title text-4xl lg:text-5xl font-semibold my-8">Join the party</h1>
 			<!-- <p class="text-black">
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Error doloribus laborum quibusdam, ea facilis laudantium! Quibusdam, dolorum sint? Velit optio ea quae tempore itaque totam ipsum aperiam provident ducimus explicabo!
 			</p> -->
@@ -782,9 +784,7 @@
 		<div class="text-center max-w-4xl mx-auto">
 			<!-- <h6 class="text-gray-500 uppercase">events</h6> -->
 
-			<h1 class="title text-3xl md:text-4xl lg:text-5xl font-semibold my-8">
-				Stuck? We’re here to help you
-			</h1>
+			<h1 class="title text-4xl lg:text-5xl font-semibold my-8">Stuck? We’re here to help you</h1>
 			<!-- <p class="text-black">
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Error doloribus laborum quibusdam, ea facilis laudantium! Quibusdam, dolorum sint? Velit optio ea quae tempore itaque totam ipsum aperiam provident ducimus explicabo!
 			</p> -->
