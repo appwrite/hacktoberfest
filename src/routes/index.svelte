@@ -317,13 +317,13 @@
 				</div>
 				<!-- TODO: Cover right panel -->
 				<div class="bg-[#20007F] z-20 col-span-12 lg:col-span-6 flex items-center justify-center">
-					<!-- <img
-						class="w-full md:w-[80%] md:max-w-[500px] lg:w-full lg:max-w-none transform transition-transform duration-[4000ms] ease-in-out translate-y-0 hover:translate-y-[-40px]"
+					<img
+						class="w-[80%] max-w-[500px] lg:w-full lg:max-w-none transform transition-transform duration-[4000ms] ease-in-out translate-y-0 hover:translate-y-[-40px]"
 						width="300"
 						height="300"
 						src="/programmer.svg"
 						alt="Programmer character"
-					/> -->
+					/>
 				</div>
 			</div>
 		</div>
