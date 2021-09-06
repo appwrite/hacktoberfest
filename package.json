@@ -15,7 +15,7 @@
 		"build": "yarn run tailwind:build && yarn run build:only"
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-vercel": "next",
+		"@sveltejs/adapter-static": "next",
 		"@sveltejs/kit": "next",
 		"@typescript-eslint/eslint-plugin": "^4.19.0",
 		"@typescript-eslint/parser": "^4.19.0",
