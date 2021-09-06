@@ -17,7 +17,7 @@
 
 			name: 'Docker and Appwrite',
 			presenter: 'Brandon Leckemby from Appwrite',
-			imageUrl: 'https://avatars.githubusercontent.com/u/20852629?v=4',
+			imageUrl: '/pictures/eldad.webp',
 			description:
 				'Short description of the event, lorem ipsum dolor sit amet  lorem ipsum dolor sit amet lorem ipsum dolor sit amet  lorem ipsum dolor sit amet.'
 		},
@@ -29,7 +29,7 @@
 
 			name: 'Docker and Appwrite',
 			presenter: 'Brandon Leckemby from Appwrite',
-			imageUrl: 'https://avatars.githubusercontent.com/u/20852629?v=4',
+			imageUrl: '/pictures/eldad.webp',
 			description:
 				'Short description of the event, lorem ipsum dolor sit amet  lorem ipsum dolor sit amet lorem ipsum dolor sit amet  lorem ipsum dolor sit amet.'
 		},
@@ -41,7 +41,7 @@
 
 			name: 'Docker and Appwrite',
 			presenter: 'Brandon Leckemby from Appwrite',
-			imageUrl: 'https://avatars.githubusercontent.com/u/20852629?v=4',
+			imageUrl: '/pictures/eldad.webp',
 			description:
 				'Short description of the event, lorem ipsum dolor sit amet  lorem ipsum dolor sit amet lorem ipsum dolor sit amet  lorem ipsum dolor sit amet.'
 		},
@@ -53,7 +53,7 @@
 
 			name: 'Docker and Appwrite',
 			presenter: 'Brandon Leckemby from Appwrite',
-			imageUrl: 'https://avatars.githubusercontent.com/u/20852629?v=4',
+			imageUrl: '/pictures/eldad.webp',
 			description:
 				'Short description of the event, lorem ipsum dolor sit amet  lorem ipsum dolor sit amet lorem ipsum dolor sit amet  lorem ipsum dolor sit amet.'
 		}
@@ -284,7 +284,11 @@
 				</section>
 
 				<section class="hidden md:flex items-center justify-end space-x-4">
-					<a rel="noopener" target="_blank" href="https://appwrite.io/discord"
+					<a
+						rel="noopener"
+						aria-label="Get help on Discord"
+						target="_blank"
+						href="https://appwrite.io/discord"
 						><Button icon="discord" text="Get help on Discord" type="secondary" /></a
 					>
 
@@ -346,13 +350,13 @@
 		<div class="grid grid-cols-12 gap-x-0 gap-y-12 lg:gap-12">
 			<div class="col-span-12 lg:col-span-4 pt-20 flex items-center justify-center">
 				<div class="lg:max-w-md flex flex-col items-center lg:items-start text-center lg:text-left">
-					<h3 class="title text-4xl font-semibold">About Appwrite</h3>
+					<h2 class="title text-4xl font-semibold">About Appwrite</h2>
 					<p class="py-8">
 						Appwrite is an open source, secure end-to-end backend server for Web, Mobile, and
 						Flutter developers that is packaged as a set of Docker containers for easy deployment.
 					</p>
 
-					<a rel="noopener" href="https://appwrite.io/">
+					<a rel="noopener" href="https://appwrite.io/" aria-label="More about Appwrite">
 						<Button type="secondary" icon="none" text="More about Appwrite" /></a
 					>
 				</div>
@@ -376,7 +380,7 @@
 		<div class="grid grid-cols-12 gap-x-0 gap-y-12 lg:gap-12-12">
 			<div class="col-span-12 lg:col-span-4">
 				<div class="lg:max-w-sm flex flex-col text-left items-start">
-					<h3 class="title text-4xl font-semibold">How can you contribute?</h3>
+					<h2 class="title text-4xl font-semibold">How can you contribute?</h2>
 					<p class="py-8">
 						There are different ways you can contribute to Appwrite. All accepted contributions
 						qualify for receiving Appwrite Swag!
@@ -411,7 +415,7 @@
 					</div>
 
 					<div class="max-w-sm">
-						<h4 class="mt-6 mb-3 title text-2xl font-semibold">Contributions to open issues</h4>
+						<h3 class="mt-6 mb-3 title text-2xl font-semibold">Contributions to open issues</h3>
 
 						<p>We have a curated list of Hacktoberfest issues that are ready for you to pick up</p>
 					</div>
@@ -440,7 +444,7 @@
 					</div>
 
 					<div class="max-w-sm">
-						<h4 class="mt-6 mb-3 title text-2xl font-semibold">Build a demo app</h4>
+						<h3 class="mt-6 mb-3 title text-2xl font-semibold">Build a demo app</h3>
 
 						<p>Build a demo app using your favourite technologies using an Appwrite Backend.</p>
 					</div>
@@ -470,7 +474,7 @@
 					</div>
 
 					<div class="max-w-sm">
-						<h4 class="mt-6 mb-3 title text-2xl font-semibold">Write a blog post</h4>
+						<h3 class="mt-6 mb-3 title text-2xl font-semibold">Write a blog post</h3>
 
 						<p>
 							Used Appwrite in a recent project ? Built something cool with Appwrite ? Tell the
@@ -507,7 +511,7 @@
 					</div>
 
 					<div class="max-w-sm">
-						<h4 class="mt-6 mb-3 title text-2xl font-semibold">Make a tutorial</h4>
+						<h3 class="mt-6 mb-3 title text-2xl font-semibold">Make a tutorial</h3>
 
 						<p>
 							From video tutorials to written tutorials, help new community members get started with
@@ -542,7 +546,7 @@
 					<div
 						class="-ml-40 relative w-[calc(100%+10rem)] bg-white rounded-xl shadow-xl p-4 sm:p-8 pb-10 sm:pb-14 text-center"
 					>
-						<h3 class="mt-16 mb-4 title text-xl font-semibold">4 contributions or more</h3>
+						<h2 class="mt-16 mb-4 title text-xl font-semibold">4 contributions or more</h2>
 
 						<p class="max-w-lg mx-auto">
 							Limited edition Appwrite Hacktoberfest T-shirt + Hacktoberfest Sticker pack + OG
@@ -566,7 +570,7 @@
 					<div
 						class="relative w-full bg-white rounded-xl shadow-xl p-4 sm:p-8 pb-10 sm:pb-14 text-center"
 					>
-						<h3 class="mt-16 mb-4 title text-xl font-semibold">4 contributions or more</h3>
+						<h2 class="mt-16 mb-4 title text-xl font-semibold">4 contributions or more</h2>
 
 						<p class="">
 							Limited edition Appwrite Hacktoberfest T-shirt + Hacktoberfest Sticker pack + OG
@@ -590,7 +594,7 @@
 					<div
 						class="relative w-full bg-white rounded-xl shadow-xl p-4 sm:p-8 pb-10 sm:pb-14 text-center"
 					>
-						<h3 class="mt-16 mb-4 title text-xl font-semibold">3 contributions</h3>
+						<h2 class="mt-16 mb-4 title text-xl font-semibold">3 contributions</h2>
 
 						<p class="">
 							OG Appwrite sticker pack + Limited edition Hacktoberfest sticker pack + Mug
@@ -613,7 +617,7 @@
 					<div
 						class="relative w-full bg-white rounded-xl shadow-xl p-4 sm:p-8 pb-10 sm:pb-14 text-center"
 					>
-						<h3 class="mt-16 mb-4 title text-xl font-semibold">2 contributions</h3>
+						<h2 class="mt-16 mb-4 title text-xl font-semibold">2 contributions</h2>
 
 						<p class="">OG Appwrite sticker pack + Limited edition Hacktoberfest sticker pack</p>
 
@@ -634,7 +638,7 @@
 					<div
 						class="relative w-full bg-white rounded-xl shadow-xl p-4 sm:p-8 pb-10 sm:pb-14 text-center"
 					>
-						<h3 class="mt-16 mb-4 title text-xl font-semibold">1 contribution</h3>
+						<h2 class="mt-16 mb-4 title text-xl font-semibold">1 contribution</h2>
 
 						<p class="">OG Appwrite sticker pack</p>
 
@@ -681,7 +685,7 @@
 								>{getLocalDay(event.timeISO)}</span
 							>
 							<div class="flex flex-col space-y-0">
-								<span class="title font-semibold text-[#F02E65]"
+								<span class="title text-xl font-semibold text-[#F02E65]"
 									>{getLocalMonth(event.timeISO)}</span
 								>
 								<span class="text-sm text-gray-500"
@@ -705,8 +709,8 @@
 								/>
 
 								<div class="flex flex-col space-y-2 md:space-y-0">
-									<h4 class="title">{event.name}</h4>
-									<h6 class="text-sm text-gray-500">{event.presenter}</h6>
+									<p class="title">{event.name}</p>
+									<p class="text-sm text-gray-500">{event.presenter}</p>
 								</div>
 							</div>
 							<button
@@ -791,9 +795,15 @@
 		<div class="max-w-4xl mx-auto mt-12">
 			<div class="relative flex flex-col space-y-6">
 				{#each githubIssues as githubIssue}
-					<a rel="noopener" class="group" href={githubIssue.githubUrl} target="_blank">
+					<a
+						rel="noopener"
+						class="group"
+						aria-label="Appwrite Issue"
+						href={githubIssue.githubUrl}
+						target="_blank"
+					>
 						<div class="shadow-md rounded-xl bg-white p-8">
-							<h3 class="group-hover:underline title text-xl">{githubIssue.title}</h3>
+							<h2 class="group-hover:underline title text-xl">{githubIssue.title}</h2>
 
 							<div class="mt-4">
 								{#each githubIssue.tags as tag}
@@ -834,7 +844,13 @@
 		<div class="md:flex hidden flex-col items-center space-y-20 mt-20">
 			<div class="flex items-center justify-center -space-x-12">
 				{#each teamMembers as teamMember}
-					<a rel="noopener" target="_blank" class="group relative" href={teamMember.githubProfile}>
+					<a
+						rel="noopener"
+						aria-label="Github Profile"
+						target="_blank"
+						class="group relative"
+						href={teamMember.githubProfile}
+					>
 						<img
 							class="group-hover:scale-110 bg-white group-hover:rotate-6 transition-all duration-500 transform group-hover:filter group-hover:brightness-110 rounded-full w-36 border-4 border-white"
 							src={teamMember.image}
@@ -859,7 +875,11 @@
 				{/each}
 			</div>
 
-			<a target="_blank" rel="noopener" href="https://appwrite.io/discord"
+			<a
+				target="_blank"
+				rel="noopener"
+				href="https://appwrite.io/discord"
+				aria-label="Join us on Discord"
 				><Button type="primary" icon="discord" text="Join us on Discord" /></a
 			>
 		</div>
@@ -892,7 +912,11 @@
 				{/each}
 			</div>
 
-			<a target="_blank" rel="noopener" href="https://appwrite.io/discord"
+			<a
+				target="_blank"
+				rel="noopener"
+				href="https://appwrite.io/discord"
+				aria-label="Join us on Discord"
 				><Button type="primary" icon="discord" text="Join us on Discord" /></a
 			>
 		</div>
@@ -905,7 +929,7 @@
 	<div class="container mx-auto px-6 py-20">
 		<div class="grid grid-cols-12 gap-y-12 lg:gap-y-0 lg:gap-x-12">
 			<div class="col-span-12 lg:col-span-2">
-				<a rel="noopener" href="https://appwrite.io/">
+				<a rel="noopener" href="https://appwrite.io/" aria-label="Appwrite Website">
 					<!-- APPWRITE LOGO ONE-COLOR -->
 					<svg
 						class="max-w-[200px] mx-auto"
