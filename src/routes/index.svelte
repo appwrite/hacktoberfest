@@ -144,7 +144,7 @@
 				},
 				{
 					label: 'Node JS',
-					color: 'bg-[#3D71E6] text-white'
+					color: 'bg-[#3765cf] text-white'
 				}
 			]
 		}
@@ -681,11 +681,11 @@
 						<div
 							class="col-span-12 md:col-span-5 flex items-center justify-center md:justify-start space-x-4"
 						>
-							<span class="text-5xl font-bold title text-[#F02E65]"
+							<span class="text-5xl font-bold title text-[#DE2459]"
 								>{getLocalDay(event.timeISO)}</span
 							>
 							<div class="flex flex-col space-y-0">
-								<span class="title text-xl font-semibold text-[#F02E65]"
+								<span class="title text-xl font-semibold text-[#DE2459]"
 									>{getLocalMonth(event.timeISO)}</span
 								>
 								<span class="text-sm text-gray-500"
