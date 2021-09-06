@@ -669,8 +669,10 @@
 					class={(event.isOpened ? 'shadow-md' : '') +
 						' px-8 py-4 border-2 border-gray-50 rounded-xl'}
 				>
-					<div class=" grid gap-3 grid-cols-12">
-						<div class="col-span-6 flex items-center justify-start space-x-4">
+					<div class="grid gap-3 grid-cols-12">
+						<div
+							class="col-span-12 md:col-span-5 flex items-center justify-center md:justify-start space-x-4"
+						>
 							<span class="text-5xl font-bold title text-[#F02E65]"
 								>{getLocalDay(event.timeISO)}</span
 							>
@@ -684,22 +686,26 @@
 								>
 							</div>
 						</div>
-						<div class="col-span-6 flex items-center justify-between">
-							<div class="flex items-center space-x-3">
+						<div
+							class="order-first md:order-last col-span-12 md:col-span-7 flex items-center justify-center text-center md:text-left md:justify-between"
+						>
+							<div
+								class="flex flex-col space-y-3 md:flex-row md:space-y- items-center md:space-x-3"
+							>
 								<img
 									src={event.imageUrl}
 									class="w-14 rounded-full shadow-inner"
 									alt="Presenter photo"
 								/>
 
-								<div class="flex flex-col space-y-0">
+								<div class="flex flex-col space-y-2 md:space-y-0">
 									<h4 class="title">{event.name}</h4>
 									<h6 class="text-sm text-gray-500">{event.presenter}</h6>
 								</div>
 							</div>
 							<button
 								on:click={onToggleEventDetail(eventIndex)}
-								class="rounded-full hover:bg-gray-50 p-4 text-black"
+								class="hidden md:block rounded-full hover:bg-gray-50 p-4 text-black"
 							>
 								<svg
 									class={(event.isOpened ? 'rotate-180' : 'rotate-0') +
@@ -729,6 +735,35 @@
 							<Button type="primary" icon="none" text="Add to calendar" />
 						</div>
 					{/if}
+
+					<div class="block md:hidden w-full mt-4 border-t-2 border-gray-50">
+						<button
+							on:click={onToggleEventDetail(eventIndex)}
+							class="px-4 pt-4 flex w-full justify-center space-x-2 items-center"
+						>
+							<span>
+								{event.isOpened ? 'Less' : 'More'} information
+							</span>
+
+							<svg
+								class={(event.isOpened ? 'rotate-180' : 'rotate-0') +
+									' transition-transform duration-300 transform w-4'}
+								width="18"
+								height="18"
+								viewBox="0 0 18 10"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M1 1L9.24242 8.5L17 1"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</button>
+					</div>
 				</div>
 			{/each}
 		</div>
@@ -790,7 +825,7 @@
 			</p> -->
 		</div>
 
-		<div class="lg:flex hidden flex-col items-center space-y-20 mt-20">
+		<div class="md:flex hidden flex-col items-center space-y-20 mt-20">
 			<div class="flex items-center justify-center -space-x-12">
 				{#each teamMembers as teamMember}
 					<a target="_blank" class="group relative" href={teamMember.githubProfile}>

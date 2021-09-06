@@ -729,6 +729,9 @@ video {
 .z-20 {
 	z-index: 20;
 }
+.order-first {
+	order: -9999;
+}
 .col-span-12 {
 	grid-column: span 12 / span 12;
 }
@@ -859,6 +862,9 @@ video {
 .w-4 {
 	width: 1rem;
 }
+.w-8 {
+	width: 2rem;
+}
 .max-w-\[500px\] {
 	max-width: 500px;
 }
@@ -982,6 +988,16 @@ video {
 	--tw-space-x-reverse: 0;
 	margin-right: calc(-3rem * var(--tw-space-x-reverse));
 	margin-left: calc(-3rem * calc(1 - var(--tw-space-x-reverse)));
+}
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+	--tw-space-y-reverse: 0;
+	margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+	margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+	--tw-space-x-reverse: 0;
+	margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+	margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 .overflow-hidden {
 	overflow: hidden;
@@ -1146,6 +1162,9 @@ video {
 }
 .pb-10 {
 	padding-bottom: 2.5rem;
+}
+.pt-4 {
+	padding-top: 1rem;
 }
 .text-left {
 	text-align: left;
@@ -1379,8 +1398,36 @@ body {
 
 @media (min-width: 768px) {
 
+	.md\:order-last {
+		order: 9999;
+	}
+
+	.md\:col-span-6 {
+		grid-column: span 6 / span 6;
+	}
+
+	.md\:col-span-5 {
+		grid-column: span 5 / span 5;
+	}
+
+	.md\:col-span-7 {
+		grid-column: span 7 / span 7;
+	}
+
+	.md\:col-span-2 {
+		grid-column: span 2 / span 2;
+	}
+
+	.md\:block {
+		display: block;
+	}
+
 	.md\:flex {
 		display: flex;
+	}
+
+	.md\:hidden {
+		display: none;
 	}
 
 	.md\:w-\[80\%\] {
@@ -1389,6 +1436,43 @@ body {
 
 	.md\:max-w-\[500px\] {
 		max-width: 500px;
+	}
+
+	.md\:flex-row {
+		flex-direction: row;
+	}
+
+	.md\:justify-start {
+		justify-content: flex-start;
+	}
+
+	.md\:justify-between {
+		justify-content: space-between;
+	}
+
+	.md\:gap-y-0 {
+		row-gap: 0px;
+	}
+
+	.md\:gap-x-12 {
+		-moz-column-gap: 3rem;
+		     column-gap: 3rem;
+	}
+
+	.md\:space-x-3 > :not([hidden]) ~ :not([hidden]) {
+		--tw-space-x-reverse: 0;
+		margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+		margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+	}
+
+	.md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+		--tw-space-y-reverse: 0;
+		margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+		margin-bottom: calc(0px * var(--tw-space-y-reverse));
+	}
+
+	.md\:text-left {
+		text-align: left;
 	}
 
 	.md\:text-4xl {
