@@ -152,50 +152,50 @@
 
 	const teamMembers = [
 		{
-			image: 'https://avatars.githubusercontent.com/u/1297371?v=4',
+			image: '/pictures/eldad.webp',
 			githubProfile: 'https://github.com/eldadfux'
 		},
 		{
-			image: 'https://avatars.githubusercontent.com/u/20852629?v=4',
+			image: '/pictures/christy.webp',
 			githubProfile: 'https://github.com/christyjacob4'
 		},
 		{
-			image: 'https://avatars.githubusercontent.com/u/1759475?v=4',
+			image: '/pictures/torsten.webp',
 			githubProfile: 'https://github.com/TorstenDittmann'
 		},
 		{
-			image: 'https://avatars.githubusercontent.com/u/6360216?v=4',
+			image: '/pictures/damodar.webp',
 			githubProfile: 'https://github.com/lohanidamodar'
 		},
 		{
-			image: 'https://avatars.githubusercontent.com/u/9708641?v=4',
+			image: '/pictures/kodumbeats.webp',
 			githubProfile: 'https://github.com/kodumbeats'
 		},
 		{
-			image: 'https://avatars.githubusercontent.com/u/5857008?v=4',
+			image: '/pictures/jake.webp',
 			githubProfile: 'https://github.com/abnegate'
 		},
 		{
-			image: 'https://avatars.githubusercontent.com/u/26739219?v=4',
+			image: '/pictures/ionic.webp',
 			githubProfile: 'https://github.com/PineappleIOnic'
 		},
 
 		{
-			image: 'https://avatars.githubusercontent.com/u/14176838?v=4',
+			image: '/pictures/sara.webp',
 			githubProfile: 'https://github.com/sarakaandorp'
 		},
 
 		{
-			image: 'https://avatars.githubusercontent.com/u/19310830?v=4',
+			image: '/pictures/meldiron.webp',
 			githubProfile: 'https://github.com/Meldiron'
 		},
 
 		{
-			image: 'https://avatars.githubusercontent.com/u/31401437?v=4',
+			image: '/pictures/aditya.webp',
 			githubProfile: 'https://github.com/adityaoberai'
 		},
 		{
-			image: '/empty.png',
+			image: '/pictures/empty.webp',
 			githubProfile: 'https://appwrite.io/discord',
 			overlay: '+200'
 		}
@@ -280,11 +280,11 @@
 						</defs>
 					</svg>
 
-					<span class="text-gray-400">Hacktoberfest</span>
+					<span class="text-gray-500">Hacktoberfest</span>
 				</section>
 
 				<section class="hidden md:flex items-center justify-end space-x-4">
-					<a target="_blank" href="https://appwrite.io/discord"
+					<a rel="noopener" target="_blank" href="https://appwrite.io/discord"
 						><Button icon="discord" text="Get help on Discord" type="secondary" /></a
 					>
 
@@ -315,6 +315,8 @@
 				<div class="bg-[#20007F] z-20 col-span-12 lg:col-span-6 flex items-center justify-center">
 					<img
 						class="w-full md:w-[80%] md:max-w-[500px] lg:w-full lg:max-w-none transform transition-transform duration-[4000ms] ease-in-out translate-y-0 hover:translate-y-[-40px]"
+						width="300"
+						height="300"
 						src="/programmer.svg"
 						alt="Programmer character"
 					/>
@@ -332,7 +334,7 @@
 <section class="bg-white pt-32">
 	<div class="container mx-auto px-6">
 		<div class="text-center max-w-4xl mx-auto">
-			<h6 class="text-gray-500 uppercase">about the event</h6>
+			<p class="text-gray-500 uppercase">about the event</p>
 			<h1 class="title text-4xl lg:text-5xl font-semibold my-8">About Hacktoberfest</h1>
 			<p class="text-black">
 				Hacktoberfest is a month-long celebration of open source software run by DigitalOcean.
@@ -350,7 +352,7 @@
 						Flutter developers that is packaged as a set of Docker containers for easy deployment.
 					</p>
 
-					<a href="https://appwrite.io/">
+					<a rel="noopener" href="https://appwrite.io/">
 						<Button type="secondary" icon="none" text="More about Appwrite" /></a
 					>
 				</div>
@@ -360,6 +362,8 @@
 				class="w-full lg:mt-16 col-span-12 lg:col-span-8"
 				src="/appwrite-console.svg"
 				alt="Appwrite console"
+				width="300"
+				height="300"
 			/>
 		</div>
 	</div>
@@ -521,7 +525,7 @@
 <section class="bg-white py-32">
 	<div class="container mx-auto px-6">
 		<div class="text-center max-w-4xl mx-auto">
-			<h6 class="text-gray-500 uppercase">swag</h6>
+			<p class="text-gray-500 uppercase">swag</p>
 			<h1 class="title text-4xl lg:text-5xl font-semibold my-8">Win our Limited Edition swag!</h1>
 			<!-- <p class="text-black">
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Error doloribus laborum quibusdam, ea facilis laudantium! Quibusdam, dolorum sint? Velit optio ea quae tempore itaque totam ipsum aperiam provident ducimus explicabo!
@@ -656,7 +660,7 @@
 <section class="bg-white py-32 pb-0">
 	<div class="container mx-auto px-6">
 		<div class="text-center max-w-4xl mx-auto">
-			<h6 class="text-gray-500 uppercase">events</h6>
+			<p class="text-gray-500 uppercase">events</p>
 			<h1 class="title text-4xl lg:text-5xl font-semibold my-8">Join our Hacktoberfest events</h1>
 			<!-- <p class="text-black">
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Error doloribus laborum quibusdam, ea facilis laudantium! Quibusdam, dolorum sint? Velit optio ea quae tempore itaque totam ipsum aperiam provident ducimus explicabo!
@@ -695,7 +699,9 @@
 								<img
 									src={event.imageUrl}
 									class="w-14 rounded-full shadow-inner"
-									alt="Presenter photo"
+									alt="Presenter"
+									width="56"
+									height="56"
 								/>
 
 								<div class="flex flex-col space-y-2 md:space-y-0">
@@ -775,7 +781,7 @@
 <section class="bg-white py-32">
 	<div class="relative container mx-auto bg-gray-50 py-20 rounded-3xl px-6">
 		<div class="text-center max-w-4xl mx-auto">
-			<h6 class="text-gray-500 uppercase">Hacktoberfest issues</h6>
+			<p class="text-gray-500 uppercase">Hacktoberfest issues</p>
 			<h1 class="title text-4xl lg:text-5xl font-semibold my-8">Join the party</h1>
 			<!-- <p class="text-black">
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Error doloribus laborum quibusdam, ea facilis laudantium! Quibusdam, dolorum sint? Velit optio ea quae tempore itaque totam ipsum aperiam provident ducimus explicabo!
@@ -785,7 +791,7 @@
 		<div class="max-w-4xl mx-auto mt-12">
 			<div class="relative flex flex-col space-y-6">
 				{#each githubIssues as githubIssue}
-					<a class="group" href={githubIssue.githubUrl} target="_blank">
+					<a rel="noopener" class="group" href={githubIssue.githubUrl} target="_blank">
 						<div class="shadow-md rounded-xl bg-white p-8">
 							<h3 class="group-hover:underline title text-xl">{githubIssue.title}</h3>
 
@@ -817,7 +823,7 @@
 <section class="bg-white pb-32">
 	<div class="container mx-auto px-6">
 		<div class="text-center max-w-4xl mx-auto">
-			<!-- <h6 class="text-gray-500 uppercase">events</h6> -->
+			<!-- <p class="text-gray-500 uppercase">events</p> -->
 
 			<h1 class="title text-4xl lg:text-5xl font-semibold my-8">Stuck? We’re here to help you</h1>
 			<!-- <p class="text-black">
@@ -828,11 +834,13 @@
 		<div class="md:flex hidden flex-col items-center space-y-20 mt-20">
 			<div class="flex items-center justify-center -space-x-12">
 				{#each teamMembers as teamMember}
-					<a target="_blank" class="group relative" href={teamMember.githubProfile}>
+					<a rel="noopener" target="_blank" class="group relative" href={teamMember.githubProfile}>
 						<img
 							class="group-hover:scale-110 bg-white group-hover:rotate-6 transition-all duration-500 transform group-hover:filter group-hover:brightness-110 rounded-full w-36 border-4 border-white"
 							src={teamMember.image}
-							alt="Github profile photo"
+							alt="Github profile"
+							width="144"
+							height="144"
 						/>
 
 						{#if teamMember.overlay}
@@ -851,7 +859,7 @@
 				{/each}
 			</div>
 
-			<a target="_blank" href="https://appwrite.io/discord"
+			<a target="_blank" rel="noopener" href="https://appwrite.io/discord"
 				><Button type="primary" icon="discord" text="Join us on Discord" /></a
 			>
 		</div>
@@ -859,11 +867,18 @@
 		<div class="flex lg:hidden flex-col items-center space-y-20 mt-20">
 			<div class="flex items-center flex-wrap justify-center">
 				{#each teamMembers as teamMember}
-					<a target="_blank" class="col-span-3 group relative" href={teamMember.githubProfile}>
+					<a
+						target="_blank"
+						rel="noopener"
+						class="col-span-3 group relative"
+						href={teamMember.githubProfile}
+					>
 						<img
-							class="w-20 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 transform group-hover:filter group-hover:brightness-110 rounded-xl w-36 border-4 border-white"
+							class="w-20 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 transform group-hover:filter group-hover:brightness-110 rounded-xl border-4 border-white"
 							src={teamMember.image}
-							alt="Github profile photo"
+							alt="Github profile"
+							width="80"
+							height="80"
 						/>
 
 						{#if teamMember.overlay}
@@ -877,7 +892,7 @@
 				{/each}
 			</div>
 
-			<a target="_blank" href="https://appwrite.io/discord"
+			<a target="_blank" rel="noopener" href="https://appwrite.io/discord"
 				><Button type="primary" icon="discord" text="Join us on Discord" /></a
 			>
 		</div>
@@ -890,7 +905,7 @@
 	<div class="container mx-auto px-6 py-20">
 		<div class="grid grid-cols-12 gap-y-12 lg:gap-y-0 lg:gap-x-12">
 			<div class="col-span-12 lg:col-span-2">
-				<a href="https://appwrite.io/">
+				<a rel="noopener" href="https://appwrite.io/">
 					<!-- APPWRITE LOGO ONE-COLOR -->
 					<svg
 						class="max-w-[200px] mx-auto"
@@ -918,33 +933,54 @@
 			</div>
 			<div class="col-span-12 lg:col-span-7 text-center">
 				<div class="flex flex-wrap lg:flex-nowrap items-center justify-between">
-					<a class="text-gray-500 hover:text-gray-800" href="https://medium.com/appwrite-io">Blog</a
+					<a
+						rel="noopener"
+						class="text-gray-500 hover:text-gray-800"
+						href="https://medium.com/appwrite-io">Blog</a
 					>
-					<a class="text-gray-500 hover:text-gray-800" href="https://appwrite.io/policy/security"
-						>Security</a
+					<a
+						rel="noopener"
+						class="text-gray-500 hover:text-gray-800"
+						href="https://appwrite.io/policy/security">Security</a
 					>
-					<a class="text-gray-500 hover:text-gray-800" href="https://appwrite.io/support">Support</a
+					<a
+						rel="noopener"
+						class="text-gray-500 hover:text-gray-800"
+						href="https://appwrite.io/support">Support</a
 					>
-					<a class="text-gray-500 hover:text-gray-800" href="https://appwrite.io/contact">Contact</a
+					<a
+						rel="noopener"
+						class="text-gray-500 hover:text-gray-800"
+						href="https://appwrite.io/contact">Contact</a
 					>
-					<a class="text-gray-500 hover:text-gray-800" href="https://appwrite.io/assets"
-						>Logos & Assets</a
+					<a
+						rel="noopener"
+						class="text-gray-500 hover:text-gray-800"
+						href="https://appwrite.io/assets">Logos & Assets</a
 					>
-					<a class="text-gray-500 hover:text-gray-800" href="https://appwrite.io/company/careers"
-						>Careers</a
+					<a
+						rel="noopener"
+						class="text-gray-500 hover:text-gray-800"
+						href="https://appwrite.io/company/careers">Careers</a
 					>
 				</div>
 
 				<div class="flex flex-wrap lg:flex-nowrap items-center justify-between mt-4">
 					<p class="text-gray-500">Copyright © {currentYear} Appwrite</p>
-					<a class="text-gray-500 hover:text-gray-800" href="https://appwrite.io/policy/terms"
-						>Terms</a
+					<a
+						rel="noopener"
+						class="text-gray-500 hover:text-gray-800"
+						href="https://appwrite.io/policy/terms">Terms</a
 					>
-					<a class="text-gray-500 hover:text-gray-800" href="https://appwrite.io/policy/privacy"
-						>Privacy</a
+					<a
+						rel="noopener"
+						class="text-gray-500 hover:text-gray-800"
+						href="https://appwrite.io/policy/privacy">Privacy</a
 					>
-					<a class="text-gray-500 hover:text-gray-800" href="https://appwrite.io/policy/cookies"
-						>Cookies</a
+					<a
+						rel="noopener"
+						class="text-gray-500 hover:text-gray-800"
+						href="https://appwrite.io/policy/cookies">Cookies</a
 					>
 				</div>
 			</div>

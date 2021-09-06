@@ -4,7 +4,7 @@
 	export let showBadge = false;
 </script>
 
-<a target="_blank" href="https://github.com/appwrite/appwrite/issues">
+<a target="_blank" rel="noopener" href="https://github.com/appwrite/appwrite/issues">
 	<Button type="primary" icon="github" text="View all Hacktoberfest issues">
 		{#if showBadge}
 			<div
