@@ -66,7 +66,7 @@
 			tags: [
 				{
 					label: 'Hacktoberfest',
-					color: 'bg-[#F02E65] text-white'
+					color: 'bg-[#DE2459] text-white'
 				},
 				{
 					label: 'PHP',
@@ -78,7 +78,7 @@
 				},
 				{
 					label: 'Node JS',
-					color: 'bg-[#3D71E6] text-white'
+					color: 'bg-[#3765cf] text-white'
 				}
 			]
 		},
@@ -88,7 +88,7 @@
 			tags: [
 				{
 					label: 'Hacktoberfest',
-					color: 'bg-[#F02E65] text-white'
+					color: 'bg-[#DE2459] text-white'
 				},
 				{
 					label: 'PHP',
@@ -100,7 +100,7 @@
 				},
 				{
 					label: 'Node JS',
-					color: 'bg-[#3D71E6] text-white'
+					color: 'bg-[#3765cf] text-white'
 				}
 			]
 		},
@@ -110,7 +110,7 @@
 			tags: [
 				{
 					label: 'Hacktoberfest',
-					color: 'bg-[#F02E65] text-white'
+					color: 'bg-[#DE2459] text-white'
 				},
 				{
 					label: 'PHP',
@@ -122,7 +122,7 @@
 				},
 				{
 					label: 'Node JS',
-					color: 'bg-[#3D71E6] text-white'
+					color: 'bg-[#3765cf] text-white'
 				}
 			]
 		},
@@ -132,7 +132,7 @@
 			tags: [
 				{
 					label: 'Hacktoberfest',
-					color: 'bg-[#F02E65] text-white'
+					color: 'bg-[#DE2459] text-white'
 				},
 				{
 					label: 'PHP',
