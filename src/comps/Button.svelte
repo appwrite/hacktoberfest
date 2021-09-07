@@ -15,11 +15,9 @@
 <button
 	on:click={submitButton}
 	class={type === 'primary'
-		? 'relative focus:ring focus:ring-gray-600 hover:text-gray-300 rounded-md px-6 py-3 border-black border-2 bg-black text-white flex items-center justify-center space-x-4 '
-		: 'relative focus:ring hover:bg-gray-100 focus:ring-gray-600  rounded-md px-6 text-black py-3 border-black border-2 bg-transparent flex items-center justify-center space-x-4'}
+		? 'relative focus:ring focus:ring-gray-600 hover:text-gray-300 rounded-md px-[24px] py-[12px] border-black border-2 bg-black text-white flex items-center justify-center space-x-[12px]'
+		: 'relative focus:ring hover:bg-gray-100 focus:ring-gray-600  rounded-md px-[24px] py-[12px] text-black border-black border-2 bg-transparent flex items-center justify-center space-x-[12px]'}
 >
-	<!-- DISCORD LOGO -->
-
 	{#if icon === 'discord'}
 		<svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<path
@@ -38,7 +36,7 @@
 		</svg>
 	{/if}
 
-	<span class="title">{text}</span>
+	<span class="title text-[16px]">{text}</span>
 
 	<slot />
 </button>
