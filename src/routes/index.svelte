@@ -1,15 +1,16 @@
 <script context="module">
-	import { loadStore } from '../stores';
+	import { githubIssues, loadStore } from '../stores';
 
 	export async function load({ fetch }) {
 		// console.log("Loading data ...");
 
 		const issuesUrl = `/github.json`;
 		const issuesQuery = await fetch(issuesUrl);
+		const issuesJson = await issuesQuery.json();
 
 		return {
 			props: {
-				issuesQuery
+				issuesJson
 			}
 		};
 	}
@@ -27,10 +28,10 @@
 	import Team from './index/_team.svelte';
 	import { onMount } from 'svelte';
 
-	export let issuesQuery;
+	export let issuesJson;
 
 	onMount(() => {
-		loadStore(issuesQuery);
+		loadStore(issuesJson);
 	});
 </script>
 
