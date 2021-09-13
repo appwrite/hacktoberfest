@@ -2,6 +2,10 @@ import { writable } from 'svelte/store';
 
 export const DurationMinute = 1000 * 60;
 
+export const totalIssuesAmount = writable(null);
+
+export const githubIssues = writable(null);
+
 export const events = writable([
 	{
 		isOpened: false,
@@ -49,97 +53,6 @@ export const events = writable([
 		imageUrl: '/pictures/eldad.webp',
 		description:
 			'Short description of the event, lorem ipsum dolor sit amet  lorem ipsum dolor sit amet lorem ipsum dolor sit amet  lorem ipsum dolor sit amet.'
-	}
-]);
-
-export const githubIssues = writable([
-	{
-		githubUrl: 'https://github.com/',
-		title: '[Help wanted] translate welcome e-mail function from NodeJS to PHP',
-		tags: [
-			{
-				label: 'Hacktoberfest',
-				color: 'bg-[#DE2459] text-white'
-			},
-			{
-				label: 'PHP',
-				color: 'bg-[#20007F] text-white'
-			},
-			{
-				label: 'Unassigned',
-				color: 'bg-[#4D08DA] text-white'
-			},
-			{
-				label: 'Node JS',
-				color: 'bg-[#3765cf] text-white'
-			}
-		]
-	},
-	{
-		githubUrl: 'https://github.com/',
-		title: '[Help wanted] translate welcome e-mail function from NodeJS to PHP',
-		tags: [
-			{
-				label: 'Hacktoberfest',
-				color: 'bg-[#DE2459] text-white'
-			},
-			{
-				label: 'PHP',
-				color: 'bg-[#20007F] text-white'
-			},
-			{
-				label: 'Unassigned',
-				color: 'bg-[#4D08DA] text-white'
-			},
-			{
-				label: 'Node JS',
-				color: 'bg-[#3765cf] text-white'
-			}
-		]
-	},
-	{
-		githubUrl: 'https://github.com/',
-		title: '[Help wanted] translate welcome e-mail function from NodeJS to PHP',
-		tags: [
-			{
-				label: 'Hacktoberfest',
-				color: 'bg-[#DE2459] text-white'
-			},
-			{
-				label: 'PHP',
-				color: 'bg-[#20007F] text-white'
-			},
-			{
-				label: 'Unassigned',
-				color: 'bg-[#4D08DA] text-white'
-			},
-			{
-				label: 'Node JS',
-				color: 'bg-[#3765cf] text-white'
-			}
-		]
-	},
-	{
-		githubUrl: 'https://github.com/',
-		title: '[Help wanted] translate welcome e-mail function from NodeJS to PHP',
-		tags: [
-			{
-				label: 'Hacktoberfest',
-				color: 'bg-[#DE2459] text-white'
-			},
-			{
-				label: 'PHP',
-				color: 'bg-[#20007F] text-white'
-			},
-			{
-				label: 'Unassigned',
-				color: 'bg-[#4D08DA] text-white'
-			},
-			{
-				label: 'Node JS',
-				color: 'bg-[#3765cf] text-white'
-			}
-		]
 	}
 ]);
 
@@ -193,3 +106,46 @@ export const teamMembers = writable([
 		overlay: '+3000'
 	}
 ]);
+
+(async () => {
+	const issuesQuery = await fetch(
+		'https://api.github.com/search/issues?q=org%3Aappwrite+org%3Autopia-php+is%3Aissue+label%3Ahacktoberfest+created%3A%3E2020-01-01&type=issues'
+	);
+
+	const issuesJson = await issuesQuery.json();
+	// console.log(issuesJson);
+
+	// Round to 20, 30, 50, 1520, 1970, ...
+	const roundedIssuesAmount = Math.floor(issuesJson.total_count / 10) * 10;
+
+	totalIssuesAmount.set(roundedIssuesAmount);
+
+	githubIssues.set(
+		issuesJson.items
+			.filter((_issue, index) => {
+				return index < 5;
+			})
+			.map((issue) => {
+				return {
+					githubUrl: issue.html_url,
+					title: issue.title,
+					tags: issue.labels.map((label) => {
+						console.log(label);
+						return {
+							label: label.description,
+							backgroundColor: label.color,
+							style:
+								label.color === 'a0ccf7' || label.color === 'a2eeef' ? 'text-black' : 'text-white'
+						};
+					})
+				};
+			})
+	);
+})()
+	.then(() => {
+		// console.log("Data loaded");
+	})
+	.catch((err) => {
+		console.error('Could not load external data.');
+		console.error(err);
+	});

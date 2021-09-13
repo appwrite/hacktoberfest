@@ -9,7 +9,7 @@
 	<div
 		class="container mx-auto lg:space-y-0 space-y-4 flex-col lg:space-x-6 lg:flex-row sm:px-6 lg:px-0 px-4 flex items-center justify-between"
 	>
-		<section class="flex items-end justify-start space-x-[20px]">
+		<a href="https://appwrite.io/" class="flex items-end justify-start space-x-[20px]">
 			<!-- APPWRITE LOGO -->
 			<svg
 				width="181"
@@ -37,7 +37,7 @@
 			</svg>
 
 			<span class="text-[#A3A3A3] text-[16px]">Hacktoberfest</span>
-		</section>
+		</a>
 
 		<section class="hidden md:flex items-center justify-end space-x-[12px]">
 			<a
