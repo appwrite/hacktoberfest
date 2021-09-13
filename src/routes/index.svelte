@@ -1,24 +1,13 @@
 <script context="module">
-	import { loadStore, fetchGithubIssues } from '../stores';
+	import { loadStore } from '../stores';
 
-	export async function load({ error, status }) {
+	export async function load({ fetch }) {
 		// console.log("Loading data ...");
 
-		let issuesQuery;
-
-		try {
-			issuesQuery = await fetchGithubIssues();
-
-			// console.log("Data loaded");
-		} catch (err) {
-			console.error('Could not lcoad external data.');
-			console.error(err);
-
-			issuesQuery = null;
-		}
+		const issuesUrl = `/github.json`;
+		const issuesQuery = await fetch(issuesUrl);
 
 		return {
-			maxage: 3600, // 1 hour
 			props: {
 				issuesQuery
 			}

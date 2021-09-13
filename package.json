@@ -36,7 +36,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@sveltejs/adapter-vercel": "next",
+		"@sveltejs/adapter-static": "next",
 		"@tailwindcss/aspect-ratio": "^0.2.1"
 	}
 }
