@@ -1,3 +1,31 @@
+<script context="module">
+	import { loadStore, fetchGithubIssues } from '../stores';
+
+	export async function load({ error, status }) {
+		// console.log("Loading data ...");
+
+		let issuesQuery;
+
+		try {
+			issuesQuery = await fetchGithubIssues();
+
+			// console.log("Data loaded");
+		} catch (err) {
+			console.error('Could not lcoad external data.');
+			console.error(err);
+
+			issuesQuery = null;
+		}
+
+		return {
+			maxage: 3600, // 1 hour
+			props: {
+				issuesQuery
+			}
+		};
+	}
+</script>
+
 <script lang="ts">
 	import ButtonGithub from '../comps/ButtonGithub.svelte';
 	import About from './index/_about.svelte';
@@ -8,6 +36,9 @@
 	import Issues from './index/_issues.svelte';
 	import Rewards from './index/_rewards.svelte';
 	import Team from './index/_team.svelte';
+
+	export let issuesQuery;
+	loadStore(issuesQuery);
 </script>
 
 <Header isReal={true} />
