@@ -25,9 +25,13 @@
 	import Issues from './index/_issues.svelte';
 	import Rewards from './index/_rewards.svelte';
 	import Team from './index/_team.svelte';
+	import { onMount } from 'svelte';
 
 	export let issuesQuery;
-	loadStore(issuesQuery);
+
+	onMount(() => {
+		loadStore(issuesQuery);
+	});
 </script>
 
 <Header isReal={true} />

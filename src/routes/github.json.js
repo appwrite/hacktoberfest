@@ -24,7 +24,13 @@ export const get = async (request) => {
 			};
 		});
 
+	// Round to 20, 30, 50, 1520, 1970, ...
+	issuesJson.total_count = Math.floor(issuesJson.total_count / 10) * 10;
+
 	return {
-		body: issuesJson
+		body: {
+			total_count: issuesJson.total_count,
+			items: issuesJson.items
+		}
 	};
 };

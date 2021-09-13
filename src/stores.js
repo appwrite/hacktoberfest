@@ -108,18 +108,6 @@ export const teamMembers = writable([
 ]);
 
 export const loadStore = (issuesJson) => {
-	// TODO: Get data
-	// console.log(issuesJson);
-
-	// Ifs makes sure client is not limited
-	if (issuesJson.total_count) {
-		// Round to 20, 30, 50, 1520, 1970, ...
-		const roundedIssuesAmount = Math.floor(issuesJson.total_count / 10) * 10;
-
-		totalIssuesAmount.set(roundedIssuesAmount);
-	}
-
-	if (issuesJson.items) {
-		githubIssues.set(issuesJson.items);
-	}
+	totalIssuesAmount.set(issuesJson.total_count);
+	githubIssues.set(issuesJson.items);
 };
