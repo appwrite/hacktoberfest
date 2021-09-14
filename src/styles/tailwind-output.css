@@ -723,9 +723,6 @@ video {
 .-top-10 {
 	top: -2.5rem;
 }
-.-top-full {
-	top: -100%;
-}
 .z-20 {
 	z-index: 20;
 }
@@ -788,6 +785,9 @@ video {
 .mt-4 {
 	margin-top: 1rem;
 }
+.-mt-4 {
+	margin-top: -1rem;
+}
 .mt-\[-5rem\] {
 	margin-top: -5rem;
 }
@@ -832,15 +832,6 @@ video {
 }
 .mb-\[45px\] {
 	margin-bottom: 45px;
-}
-.mt-10 {
-	margin-top: 2.5rem;
-}
-.mt-6 {
-	margin-top: 1.5rem;
-}
-.-mt-4 {
-	margin-top: -1rem;
 }
 .block {
 	display: block;
@@ -903,11 +894,6 @@ video {
 .w-\[99px\] {
 	width: 99px;
 }
-.min-w-\[max-content\] {
-	min-width: -webkit-max-content;
-	min-width: -moz-max-content;
-	min-width: max-content;
-}
 .max-w-\[500px\] {
 	max-width: 500px;
 }
@@ -922,9 +908,6 @@ video {
 }
 .max-w-sm {
 	max-width: 24rem;
-}
-.max-w-full {
-	max-width: 100%;
 }
 .flex-1 {
 	flex: 1 1 0%;
@@ -1002,6 +985,10 @@ video {
 .gap-y-\[40px\] {
 	row-gap: 40px;
 }
+.gap-x-6 {
+	-moz-column-gap: 1.5rem;
+	     column-gap: 1.5rem;
+}
 .space-x-\[12px\] > :not([hidden]) ~ :not([hidden]) {
 	--tw-space-x-reverse: 0;
 	margin-right: calc(12px * var(--tw-space-x-reverse));
@@ -1037,6 +1024,16 @@ video {
 	margin-right: calc(0.5rem * var(--tw-space-x-reverse));
 	margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
+.space-y-12 > :not([hidden]) ~ :not([hidden]) {
+	--tw-space-y-reverse: 0;
+	margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
+	margin-bottom: calc(3rem * var(--tw-space-y-reverse));
+}
+.space-x-6 > :not([hidden]) ~ :not([hidden]) {
+	--tw-space-x-reverse: 0;
+	margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+	margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
 .space-x-3 > :not([hidden]) ~ :not([hidden]) {
 	--tw-space-x-reverse: 0;
 	margin-right: calc(0.75rem * var(--tw-space-x-reverse));
@@ -1066,26 +1063,6 @@ video {
 	--tw-space-x-reverse: 0;
 	margin-right: calc(-32px * var(--tw-space-x-reverse));
 	margin-left: calc(-32px * calc(1 - var(--tw-space-x-reverse)));
-}
-.space-y-12 > :not([hidden]) ~ :not([hidden]) {
-	--tw-space-y-reverse: 0;
-	margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
-	margin-bottom: calc(3rem * var(--tw-space-y-reverse));
-}
-.space-x-4 > :not([hidden]) ~ :not([hidden]) {
-	--tw-space-x-reverse: 0;
-	margin-right: calc(1rem * var(--tw-space-x-reverse));
-	margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
-}
-.space-x-6 > :not([hidden]) ~ :not([hidden]) {
-	--tw-space-x-reverse: 0;
-	margin-right: calc(1.5rem * var(--tw-space-x-reverse));
-	margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-.space-y-10 > :not([hidden]) ~ :not([hidden]) {
-	--tw-space-y-reverse: 0;
-	margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
-	margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
 }
 .overflow-hidden {
 	overflow: hidden;
@@ -1615,18 +1592,6 @@ body {
 		grid-column: span 8 / span 8;
 	}
 
-	.lg\:col-span-2 {
-		grid-column: span 2 / span 2;
-	}
-
-	.lg\:col-span-7 {
-		grid-column: span 7 / span 7;
-	}
-
-	.lg\:col-span-3 {
-		grid-column: span 3 / span 3;
-	}
-
 	.lg\:mx-auto {
 		margin-left: auto;
 		margin-right: auto;
@@ -1700,15 +1665,6 @@ body {
 		gap: 40px;
 	}
 
-	.lg\:gap-y-0 {
-		row-gap: 0px;
-	}
-
-	.lg\:gap-x-12 {
-		-moz-column-gap: 3rem;
-		     column-gap: 3rem;
-	}
-
 	.lg\:gap-x-\[40px\] {
 		-moz-column-gap: 40px;
 		     column-gap: 40px;
@@ -1724,16 +1680,16 @@ body {
 		margin-bottom: calc(0px * var(--tw-space-y-reverse));
 	}
 
-	.lg\:space-x-6 > :not([hidden]) ~ :not([hidden]) {
-		--tw-space-x-reverse: 0;
-		margin-right: calc(1.5rem * var(--tw-space-x-reverse));
-		margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
-	}
-
 	.lg\:space-x-12 > :not([hidden]) ~ :not([hidden]) {
 		--tw-space-x-reverse: 0;
 		margin-right: calc(3rem * var(--tw-space-x-reverse));
 		margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
+	}
+
+	.lg\:space-x-6 > :not([hidden]) ~ :not([hidden]) {
+		--tw-space-x-reverse: 0;
+		margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+		margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 	}
 
 	.lg\:px-0 {

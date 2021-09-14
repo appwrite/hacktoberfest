@@ -36,7 +36,7 @@
 			</div>
 			<div class="text-center md:min-w-[max-content] flex flex-col space-y-2">
 				<div
-					class="-mt-4 flex flex-wrap space-x-6 lg:flex-nowrap items-center justify-start md:justify-between"
+					class="-mt-4 flex flex-wrap gap-x-6 lg:flex-nowrap items-center justify-start md:justify-between"
 				>
 					<a
 						rel="noopener"
@@ -71,7 +71,7 @@
 				</div>
 
 				<div
-					class="-mt-4 flex flex-wrap space-x-6 lg:flex-nowrap items-center justify-start md:justify-between"
+					class="-mt-4 flex flex-wrap gap-x-6 lg:flex-nowrap items-center justify-start md:justify-between"
 				>
 					<p class="text-gray-500 mt-4">Copyright © {currentYear} Appwrite</p>
 					<a
