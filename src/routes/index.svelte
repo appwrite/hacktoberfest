@@ -35,19 +35,17 @@
 	});
 </script>
 
-<Header isReal={true} />
+<Header />
 
 <!-- HERO START -->
-<section class="bg-gray-50 relative">
+<section class="bg-white relative">
 	<div class="flex flex-col min-h-screen">
-		<Header isReal={false} />
-
 		<div class="flex-1 flex items-center justify-center">
 			<div class="lg:container h-full lg:mx-auto grid gap-x-0 gap-y-12 lg:gap-12 grid-cols-12">
 				<div class="px-6 col-span-12 lg:col-span-6 flex items-center">
 					<div class="mt-12 flex flex-col lg:items-start items-center text-center lg:text-left">
 						<h1
-							class="text-[32px] lg:text-[48px] font-semibold !leading-[48px] lg:!leading-[72px] lg:max-w-lg title tracking-wide"
+							class="text-[32px] lg:text-[54px] font-semibold !leading-[54px] lg:!leading-[72px] lg:max-w-lg title tracking-wide"
 						>
 							Celebrate Open Source with Hacktoberfest
 						</h1>
@@ -63,7 +61,7 @@
 					class="py-[64px] bg-[#20007F] z-20 col-span-12 lg:col-span-6 flex items-center justify-center"
 				>
 					<img
-						class="w-[80%] max-w-[500px] lg:w-full lg:max-w-none"
+						class="w-[80%] max-w-[500px] lg:w-[90%] lg:max-w-none"
 						width="300"
 						height="300"
 						src="/programmer.webp"
@@ -76,6 +74,8 @@
 
 	<div class="hidden lg:block absolute right-0 top-0 h-full w-[50%] bg-[#20007F]" />
 </section>
+<div class="mx-auto container"><div class="bg-[#C4C4C4] w-full h-[1px]" /></div>
+
 <!-- HERO END -->
 
 <About />
@@ -83,7 +83,7 @@
 <Rewards />
 
 <div class="container mx-auto mt-[100px] max-w-[80vw]">
-	<hr class="border-t-2 border-gray-300" />
+	<hr class="border-t-[1px] border-gray-300" />
 </div>
 
 <Events />

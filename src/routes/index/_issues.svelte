@@ -4,13 +4,17 @@
 	import { githubIssues } from '../../stores';
 </script>
 
-<section class="bg-white py-[100px]">
+<section class="bg-white py-[100px]" id="section-issues">
 	<div class="relative container mx-auto bg-gray-50 py-[80px] rounded-3xl px-6">
 		<div class="text-center max-w-4xl mx-auto">
-			<p class="text-black uppercase text-[14px] title">Hacktoberfest issues</p>
+			<p class="text-black uppercase text-[14px] title tracking-[2px]">Hacktoberfest issues</p>
 			<h1 class="title text-[32px] lg:text-[48px] font-semibold mt-[25px] mb-[38px]">
 				Join the party
 			</h1>
+
+			<div class="flex justify-center mb-[32px]">
+				<img class="h-[120px]" src="/icons/confetti.webp" alt="Confetti" />
+			</div>
 			<!-- <p class="text-black">
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Error doloribus laborum quibusdam, ea facilis laudantium! Quibusdam, dolorum sint? Velit optio ea quae tempore itaque totam ipsum aperiam provident ducimus explicabo!
 			</p> -->
@@ -22,7 +26,7 @@
 					{#each $githubIssues as githubIssue}
 						<a
 							rel="noopener"
-							class="hover:scale-110 transform sacle-100 transition duration-500"
+							class="hover:scale-[102%] transform sacle-100 transition duration-500"
 							aria-label="Appwrite Issue"
 							href={githubIssue.githubUrl}
 							target="_blank"

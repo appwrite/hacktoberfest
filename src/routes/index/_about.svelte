@@ -2,13 +2,18 @@
 	import Button from '../../comps/Button.svelte';
 </script>
 
-<section class="bg-white pt-[80px]">
+<section class="bg-white pt-[80px]" id="section-about">
 	<div class="container mx-auto px-6">
 		<div class="text-center max-w-4xl mx-auto">
-			<p class="text-black uppercase text-[14px] title">about the event</p>
+			<p class="text-black uppercase text-[14px] title tracking-[2px]">about the event</p>
 			<h1 class="title text-[32px] lg:text-[48px] font-semibold mt-[25px] mb-[32px]">
 				About Hacktoberfest
 			</h1>
+
+			<div class="flex justify-center mb-[32px]">
+				<img class="h-[140px]" src="/icons/bottles.webp" alt="Bottles" />
+			</div>
+
 			<p class="text-black text-[16px]">
 				Hacktoberfest is a month-long celebration of open source software run by DigitalOcean.
 				Hacktoberfest is open to everyone, from first-time contributors to seasoned open source
@@ -32,8 +37,8 @@
 			</div>
 
 			<img
-				class="w-full lg:mt-16 col-span-12 lg:col-span-8"
-				src="/appwrite-console.svg"
+				class="w-full lg:mt-16 col-span-12 lg:col-span-8 custom-shadow rounded-t-lg"
+				src="/console.webp"
 				alt="Appwrite console"
 				width="300"
 				height="300"
@@ -41,3 +46,9 @@
 		</div>
 	</div>
 </section>
+
+<style>
+	.custom-shadow {
+		box-shadow: -6px -4px 20px 0px rgb(0 0 0 / 5%);
+	}
+</style>

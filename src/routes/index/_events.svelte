@@ -40,7 +40,7 @@
 		const endHours = dateTo.getHours();
 		const endMins = dateTo.getMinutes();
 
-		return `${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? '0' + minutes : minutes} • ${
+		return `${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? '0' + minutes : minutes} - ${
 			endHours < 10 ? '0' + endHours : endHours
 		}:${endMins < 10 ? '0' + endMins : endMins}`;
 	}
@@ -69,13 +69,18 @@
 	}
 </script>
 
-<section class="bg-white pt-[80px] pb[100px] pb-0">
+<section class="bg-white pt-[80px] pb[100px] pb-0" id="section-events">
 	<div class="container mx-auto px-6">
 		<div class="text-center max-w-4xl mx-auto px-8 lg:px-0">
-			<p class="text-black uppercase text-[14px] title">events</p>
-			<h1 class="title text-[32px] lg:text-[48px] font-semibold mt-[24px] mb-[54px]">
+			<p class="text-black uppercase text-[14px] title tracking-[2px]">events</p>
+			<h1 class="title text-[32px] lg:text-[48px] font-semibold mt-[24px] mb-[40px]">
 				Join our Hacktoberfest events
 			</h1>
+
+			<div class="flex justify-center mb-[80px]">
+				<img class="h-[120px]" src="/icons/calendar.webp" alt="Caneldar" />
+			</div>
+
 			<!-- <p class="text-black">
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Error doloribus laborum quibusdam, ea facilis laudantium! Quibusdam, dolorum sint? Velit optio ea quae tempore itaque totam ipsum aperiam provident ducimus explicabo!
 			</p> -->
@@ -83,15 +88,13 @@
 
 		<div class="mx-auto max-w-4xl flex flex-col space-y-3 mt-20">
 			{#each $events as event, eventIndex}
-				<div
-					class={(event.isOpened ? 'custom-shadow' : '') +
-						' py-[24px] border-2 border-gray-300 rounded-xl'}
-				>
+				<div class="custom-shadow py-[24px] border-[1px] border-gray-[#F3F3F3] rounded-xl">
 					<div class="px-[32px] grid gap-y-[24px] md:gap-3 grid-cols-12">
 						<div
 							class="col-span-12 md:col-span-6 flex items-center justify-center md:justify-start space-x-[18px]"
 						>
-							<span class="text-[40px] font-bold title text-[#DE2459]"
+							<span
+								class="w-[50px] flex items-center justify-center text-[40px] font-semibold title text-[#DE2459]"
 								>{getLocalDay(event.timeISO)}</span
 							>
 							<div class="flex flex-col space-y-0">
@@ -100,7 +103,7 @@
 								>
 								<span class="text-[14px] text-[#808080]"
 									>{getLocalTimeVerbose(event.timeISO, event.durationInMs)}
-									<span class="">({getClientState()} time)</span></span
+									<span class=""> • {getClientState()} time</span></span
 								>
 							</div>
 						</div>
@@ -125,7 +128,7 @@
 							</div>
 							<button
 								on:click={onToggleEventDetail(eventIndex)}
-								class="hidden md:block rounded-full hover:bg-gray-300 p-4 text-black"
+								class="hidden md:block rounded-full hover:bg-[#F3F3F3] p-4 text-black"
 							>
 								<svg
 									class={(event.isOpened ? 'rotate-180' : 'rotate-0') +
@@ -156,18 +159,20 @@
 						</div>
 					{/if}
 
-					<div class="px-[32px] block md:hidden w-full mt-4 border-t-2 pt-[6px] border-gray-300">
+					<div
+						class="px-[32px] block md:hidden w-full mt-4 border-t-[1px] pt-[6px] border-gray-300"
+					>
 						<button
 							on:click={onToggleEventDetail(eventIndex)}
 							class="px-4 pt-4 flex w-full justify-center space-x-2 items-center"
 						>
-							<span>
+							<span class="text-[14px]">
 								{event.isOpened ? 'Show less' : 'More information'}
 							</span>
 
 							<svg
 								class={(event.isOpened ? 'rotate-180' : 'rotate-0') +
-									' transition-transform duration-300 transform w-4'}
+									' transition-transform duration-300 transform w-[14px]'}
 								width="18"
 								height="18"
 								viewBox="0 0 18 10"

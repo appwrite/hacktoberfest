@@ -6,6 +6,12 @@ export const totalIssuesAmount = writable(null);
 
 export const githubIssues = writable(null);
 
+export const currentSection = writable({
+	id: 'about',
+	scroll: false
+});
+// about, swag, events, issues
+
 export const events = writable([
 	{
 		isOpened: false,

@@ -2,7 +2,7 @@
 	import ButtonGithub from '../../comps/ButtonGithub.svelte';
 </script>
 
-<section class="relative bg-gray-50 py-[100px] mt-[-5rem]">
+<section class="relative bg-gray-50 py-[100px]">
 	<div class="container mx-auto px-6">
 		<div class="grid grid-cols-12 gap-x-0 gap-y-12 lg:gap-x-[40px]">
 			<div class="col-span-12 lg:col-span-4">
