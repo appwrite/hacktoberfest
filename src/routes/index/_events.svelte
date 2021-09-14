@@ -34,7 +34,15 @@
 		const dateFrom = new Date(timeISO);
 		const dateTo = new Date(dateFrom.getTime() + durationInMs);
 
-		return `${dateFrom.getHours()}:${dateFrom.getMinutes()} • ${dateTo.getHours()}:${dateTo.getMinutes()}`;
+		const hours = dateFrom.getHours();
+		const minutes = dateFrom.getMinutes();
+
+		const endHours = dateTo.getHours();
+		const endMins = dateTo.getMinutes();
+
+		return `${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? '0' + minutes : minutes} • ${
+			endHours < 10 ? '0' + endHours : endHours
+		}:${endMins < 10 ? '0' + endMins : endMins}`;
 	}
 
 	function getClientState(): string {
@@ -144,7 +152,7 @@
 						<div transition:slide class="px-[32px] my-[28px]">
 							<p class="mb-6 text-[16px]">{event.description}</p>
 
-							<Button type="primary" icon="none" text="Add to calendar" />
+							<Button type="primary" icon="none" text="RSVP for event" />
 						</div>
 					{/if}
 

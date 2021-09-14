@@ -4,12 +4,14 @@
 
 <footer class="bg-gray-50">
 	<div class="container mx-auto px-6 py-20">
-		<div class="grid grid-cols-12 gap-y-12 lg:gap-y-0 lg:gap-x-12">
-			<div class="col-span-12 lg:col-span-2">
+		<div
+			class="flex flex-col lg:flex-row justify-center items-start space-y-12 lg:space-y-0 lg:space-x-12"
+		>
+			<div class="">
 				<a rel="noopener" href="https://appwrite.io/" aria-label="Appwrite Website">
 					<!-- APPWRITE LOGO ONE-COLOR -->
 					<svg
-						class="max-w-[200px] mx-auto"
+						class="w-full max-w-[200px]"
 						viewBox="0 0 956 170"
 						xmlns="http://www.w3.org/2000/svg"
 						xmlns:bx="https://boxy-svg.com"
@@ -32,8 +34,8 @@
 					>
 				</a>
 			</div>
-			<div class="col-span-12 lg:col-span-7 text-center">
-				<div class="flex flex-wrap lg:flex-nowrap items-center justify-between">
+			<div class="text-center min-w-[max-content]">
+				<div class="flex flex-wrap space-x-6 lg:flex-nowrap items-center justify-between">
 					<a
 						rel="noopener"
 						class="text-gray-500 hover:text-gray-800"
@@ -66,7 +68,7 @@
 					>
 				</div>
 
-				<div class="flex flex-wrap lg:flex-nowrap items-center justify-between mt-4">
+				<div class="flex flex-wrap space-x-6 lg:flex-nowrap items-center justify-between mt-4">
 					<p class="text-gray-500">Copyright © {currentYear} Appwrite</p>
 					<a
 						rel="noopener"
@@ -86,9 +88,7 @@
 				</div>
 			</div>
 
-			<div
-				class="col-span-12 lg:col-span-3 flex flex-wrap lg:flex-nowrap items-center justify-end space-x-3"
-			>
+			<div class="flex flex-wrap lg:flex-nowrap items-center justify-end space-x-3">
 				<a
 					href="https://twitter.com/appwrite_io"
 					class="hover:bg-gray-900 rounded-xl bg-gray-800 p-2 text-gray-50"

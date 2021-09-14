@@ -9,50 +9,68 @@ export const githubIssues = writable(null);
 export const events = writable([
 	{
 		isOpened: false,
-		timeISO: '2021-09-03T12:54:01.813Z',
-		durationInMs: DurationMinute * 60,
+		timeISO: '2021-09-21T16:00:00.000Z',
+		durationInMs: DurationMinute * 105,
 
-		name: 'Docker and Appwrite',
-		presenter: 'Brandon Leckemby from Appwrite',
-		imageUrl: '/pictures/eldad.webp',
-		description:
-			'Short description of the event, lorem ipsum dolor sit amet  lorem ipsum dolor sit amet lorem ipsum dolor sit amet  lorem ipsum dolor sit amet.'
+		name: 'No data',
+		presenter: 'No data',
+		imageUrl: 'https://picsum.photos/seed/appwrite1/300/300',
+		description: 'No data'
 	},
 
 	{
 		isOpened: false,
-		timeISO: '2021-09-03T12:54:01.813Z',
-		durationInMs: DurationMinute * 60,
+		timeISO: '2021-09-25T16:00:00.000Z',
+		durationInMs: DurationMinute * 90,
 
-		name: 'Docker and Appwrite',
-		presenter: 'Brandon Leckemby from Appwrite',
-		imageUrl: '/pictures/eldad.webp',
-		description:
-			'Short description of the event, lorem ipsum dolor sit amet  lorem ipsum dolor sit amet lorem ipsum dolor sit amet  lorem ipsum dolor sit amet.'
+		name: 'No data',
+		presenter: 'No data',
+		imageUrl: 'https://picsum.photos/seed/appwrite1/300/300',
+		description: 'No data'
 	},
 
 	{
 		isOpened: false,
-		timeISO: '2021-09-03T12:54:01.813Z',
-		durationInMs: DurationMinute * 60,
+		timeISO: '2021-09-29T15:00:00.000Z',
+		durationInMs: DurationMinute * 105,
 
-		name: 'Docker and Appwrite',
-		presenter: 'Brandon Leckemby from Appwrite',
-		imageUrl: '/pictures/eldad.webp',
-		description:
-			'Short description of the event, lorem ipsum dolor sit amet  lorem ipsum dolor sit amet lorem ipsum dolor sit amet  lorem ipsum dolor sit amet.'
+		name: 'No data',
+		presenter: 'No data',
+		imageUrl: 'https://picsum.photos/seed/appwrite1/300/300',
+		description: 'No data'
 	},
 
 	{
 		isOpened: false,
-		timeISO: '2021-09-03T12:54:01.813Z',
+		timeISO: '2021-10-06T16:00:00.000Z',
 		durationInMs: DurationMinute * 60,
 
-		name: 'Docker and Appwrite',
-		presenter: 'Brandon Leckemby from Appwrite',
-		imageUrl: '/pictures/eldad.webp',
-		description:
-			'Short description of the event, lorem ipsum dolor sit amet  lorem ipsum dolor sit amet lorem ipsum dolor sit amet  lorem ipsum dolor sit amet.'
+		name: 'No data',
+		presenter: 'No data',
+		imageUrl: 'https://picsum.photos/seed/appwrite1/300/300',
+		description: 'No data'
+	},
+
+	{
+		isOpened: false,
+		timeISO: '2021-10-13T16:00:00.000Z',
+		durationInMs: DurationMinute * 90,
+
+		name: 'No data',
+		presenter: 'No data',
+		imageUrl: 'https://picsum.photos/seed/appwrite1/300/300',
+		description: 'No data'
+	},
+
+	{
+		isOpened: false,
+		timeISO: '2021-10-20T16:00:00.000Z',
+		durationInMs: DurationMinute * 90,
+
+		name: 'No data',
+		presenter: 'No data',
+		imageUrl: 'https://picsum.photos/seed/appwrite1/300/300',
+		description: 'No data'
 	}
 ]);
 
