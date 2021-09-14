@@ -34,55 +34,59 @@
 					>
 				</a>
 			</div>
-			<div class="text-center min-w-[max-content]">
-				<div class="flex flex-wrap space-x-6 lg:flex-nowrap items-center justify-between">
+			<div class="text-center md:min-w-[max-content] flex flex-col space-y-2">
+				<div
+					class="-mt-4 flex flex-wrap space-x-6 lg:flex-nowrap items-center justify-start md:justify-between"
+				>
 					<a
 						rel="noopener"
-						class="text-gray-500 hover:text-gray-800"
+						class="text-gray-500 hover:text-gray-800 mt-4"
 						href="https://medium.com/appwrite-io">Blog</a
 					>
 					<a
 						rel="noopener"
-						class="text-gray-500 hover:text-gray-800"
+						class="text-gray-500 hover:text-gray-800  mt-4"
 						href="https://appwrite.io/policy/security">Security</a
 					>
 					<a
 						rel="noopener"
-						class="text-gray-500 hover:text-gray-800"
+						class="text-gray-500 hover:text-gray-800  mt-4"
 						href="https://appwrite.io/support">Support</a
 					>
 					<a
 						rel="noopener"
-						class="text-gray-500 hover:text-gray-800"
+						class="text-gray-500 hover:text-gray-800  mt-4"
 						href="https://appwrite.io/contact">Contact</a
 					>
 					<a
 						rel="noopener"
-						class="text-gray-500 hover:text-gray-800"
+						class="text-gray-500 hover:text-gray-800  mt-4"
 						href="https://appwrite.io/assets">Logos & Assets</a
 					>
 					<a
 						rel="noopener"
-						class="text-gray-500 hover:text-gray-800"
+						class="text-gray-500 hover:text-gray-800  mt-4"
 						href="https://appwrite.io/company/careers">Careers</a
 					>
 				</div>
 
-				<div class="flex flex-wrap space-x-6 lg:flex-nowrap items-center justify-between mt-4">
-					<p class="text-gray-500">Copyright © {currentYear} Appwrite</p>
+				<div
+					class="-mt-4 flex flex-wrap space-x-6 lg:flex-nowrap items-center justify-start md:justify-between"
+				>
+					<p class="text-gray-500 mt-4">Copyright © {currentYear} Appwrite</p>
 					<a
 						rel="noopener"
-						class="text-gray-500 hover:text-gray-800"
+						class="text-gray-500 hover:text-gray-800 mt-4"
 						href="https://appwrite.io/policy/terms">Terms</a
 					>
 					<a
 						rel="noopener"
-						class="text-gray-500 hover:text-gray-800"
+						class="text-gray-500 hover:text-gray-800 mt-4"
 						href="https://appwrite.io/policy/privacy">Privacy</a
 					>
 					<a
 						rel="noopener"
-						class="text-gray-500 hover:text-gray-800"
+						class="text-gray-500 hover:text-gray-800 mt-4"
 						href="https://appwrite.io/policy/cookies">Cookies</a
 					>
 				</div>
