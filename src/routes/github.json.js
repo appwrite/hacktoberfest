@@ -10,12 +10,13 @@ export const get = async (request) => {
 			return index < 5;
 		})
 		.map((issue) => {
+			console.log(issue);
 			return {
 				githubUrl: issue.html_url,
 				title: issue.title,
 				tags: issue.labels.map((label) => {
 					return {
-						label: label.description,
+						label: label.name,
 						backgroundColor: label.color,
 						style:
 							label.color === 'a0ccf7' || label.color === 'a2eeef' ? 'text-black' : 'text-white'

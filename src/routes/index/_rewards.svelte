@@ -3,7 +3,7 @@
 		<div class="text-center max-w-4xl mx-auto">
 			<p class="text-black uppercase text-[14px] title tracking-[2px]">swag</p>
 			<h1 class="title text-[32px] lg:text-[48px] font-semibold mt-[29px] mb-[40px]">
-				Win our Limited Edition swag!
+				Win our limited edition swag!
 			</h1>
 
 			<div class="flex justify-center mb-[80px]">

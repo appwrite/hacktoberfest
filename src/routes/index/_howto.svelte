@@ -43,7 +43,7 @@
 						<h3 class="mt-[40px] mb-[16px] text-[18px] font-bold">Contributions to open issues</h3>
 
 						<p class="text-[16px]">
-							We have a curated list of Hacktoberfest issues that are ready for you to pick up
+							We have a curated list of Hacktoberfest issues that are ready for you to pick up.
 						</p>
 					</div>
 				</div>
@@ -72,7 +72,7 @@
 						<h3 class="mt-[40px] mb-[16px] text-[18px] font-bold">Build a demo app</h3>
 
 						<p class="text-[16px]">
-							Build a demo app using your favourite technologies using an Appwrite Backend.
+							Build a demo app with your favourite technologies using an Appwrite Backend.
 						</p>
 					</div>
 				</div>
@@ -102,7 +102,7 @@
 						<h3 class="mt-[40px] mb-[16px] text-[18px] font-bold">Write a blog post</h3>
 
 						<p class="text-[16px]">
-							Used Appwrite in a recent project ? Built something cool with Appwrite ? Tell the
+							Used Appwrite in a recent project? Built something cool with Appwrite? Tell the
 							community about it in an awesome blog post.
 						</p>
 					</div>

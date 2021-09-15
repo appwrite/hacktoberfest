@@ -16,7 +16,7 @@ export const events = writable([
 	{
 		isOpened: false,
 		timeISO: '2021-09-21T16:00:00.000Z',
-		durationInMs: DurationMinute * 105,
+		durationInMs: DurationMinute * 90,
 
 		name: 'Hacktoberfest Kickoff #1',
 		presenter: "Let's celebrate Open Source",
@@ -49,12 +49,12 @@ export const events = writable([
 	{
 		isOpened: false,
 		timeISO: '2021-10-06T16:00:00.000Z',
-		durationInMs: DurationMinute * 60,
+		durationInMs: DurationMinute * 90,
 
 		name: 'DevOps Day',
 		presenter: "Let's talk cloud",
 		imageUrl: 'https://picsum.photos/seed/appwrite1/300/300',
-		description: 'Coming soon ...'
+		description: 'Downloading speakers 🤖 ...'
 	},
 
 	{
@@ -63,9 +63,9 @@ export const events = writable([
 		durationInMs: DurationMinute * 90,
 
 		name: 'Flutter Day',
-		presenter: 'No data',
+		presenter: 'Cross-platofrm done right',
 		imageUrl: 'https://picsum.photos/seed/appwrite1/300/300',
-		description: 'Coming soon ...'
+		description: 'Downloading speakers 🤖 ...'
 	},
 
 	{
@@ -74,9 +74,9 @@ export const events = writable([
 		durationInMs: DurationMinute * 90,
 
 		name: 'Web Day',
-		presenter: 'No data',
+		presenter: 'All things JavaScript',
 		imageUrl: 'https://picsum.photos/seed/appwrite1/300/300',
-		description: 'Coming soon ...'
+		description: 'Downloading speakers 🤖 ...'
 	}
 ]);
 
@@ -127,7 +127,7 @@ export const teamMembers = writable([
 	{
 		image: '/pictures/empty.webp',
 		githubProfile: 'https://appwrite.io/discord',
-		overlay: '+3000'
+		overlay: '+2800'
 	}
 ]);
 

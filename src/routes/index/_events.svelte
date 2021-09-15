@@ -78,7 +78,7 @@
 			</h1>
 
 			<div class="flex justify-center mb-[80px]">
-				<img class="h-[120px]" src="/icons/calendar.webp" width="280" height="120" alt="Caneldar" />
+				<img class="h-[120px]" src="/icons/calendar.webp" width="280" height="120" alt="Calendar" />
 			</div>
 
 			<!-- <p class="text-black">
@@ -131,6 +131,7 @@
 								</div>
 							</div>
 							<button
+								aria-label="Toggle description"
 								on:click={onToggleEventDetail(eventIndex)}
 								class="hidden md:block rounded-full hover:bg-[#F3F3F3] p-4 text-black"
 							>
@@ -167,6 +168,7 @@
 						class="px-[32px] block md:hidden w-full mt-4 border-t-[1px] pt-[6px] border-gray-300"
 					>
 						<button
+							aria-label="Toggle description"
 							on:click={onToggleEventDetail(eventIndex)}
 							class="px-4 pt-4 flex w-full justify-center space-x-2 items-center"
 						>

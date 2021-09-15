@@ -34,6 +34,10 @@
 							<div class="custom-shadow rounded-xl bg-white p-[32px]">
 								<h2 class="title font-semibold text-[16px]">{githubIssue.title}</h2>
 
+								<!-- <p class="text-[#808080] py-[18px]">
+
+								</p> -->
+
 								<div class="mt-4">
 									{#each githubIssue.tags as tag}
 										<div
