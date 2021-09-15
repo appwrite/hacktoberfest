@@ -63,7 +63,7 @@ export const events = writable([
 		durationInMs: DurationMinute * 90,
 
 		name: 'Flutter Day',
-		presenter: 'Cross-platofrm done right',
+		presenter: 'Cross-platform done right',
 		imageUrl: 'https://picsum.photos/seed/appwrite1/300/300',
 		description: 'Downloading speakers 🤖 ...'
 	},

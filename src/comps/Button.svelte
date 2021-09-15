@@ -13,6 +13,7 @@
 </script>
 
 <button
+	aria-label={text}
 	on:click={submitButton}
 	class={type === 'primary'
 		? 'relative focus:ring focus:ring-gray-600 transform hover:scale-[102%] scale-[100%] transition-transform duration-500 rounded-md px-[24px] py-[12px] border-black border-[1px] bg-black text-white flex items-center justify-center space-x-[12px]'
