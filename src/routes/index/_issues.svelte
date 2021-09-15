@@ -13,7 +13,7 @@
 			</h1>
 
 			<div class="flex justify-center mb-[32px]">
-				<img class="h-[120px]" src="/icons/confetti.webp" alt="Confetti" />
+				<img class="h-[120px]" src="/icons/confetti.webp" width="232" height="120" alt="Confetti" />
 			</div>
 			<!-- <p class="text-black">
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Error doloribus laborum quibusdam, ea facilis laudantium! Quibusdam, dolorum sint? Velit optio ea quae tempore itaque totam ipsum aperiam provident ducimus explicabo!

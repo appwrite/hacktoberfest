@@ -11,7 +11,7 @@
 			</h1>
 
 			<div class="flex justify-center mb-[32px]">
-				<img class="h-[140px]" src="/icons/bottles.webp" alt="Bottles" />
+				<img class="h-[140px]" src="/icons/bottles.webp" width="266" height="140" alt="Bottles" />
 			</div>
 
 			<p class="text-black text-[16px]">
@@ -49,6 +49,6 @@
 
 <style>
 	.custom-shadow {
-		box-shadow: -6px -4px 20px 0px rgb(0 0 0 / 5%);
+		box-shadow: -20px -9px 20px 0px rgb(0 0 0 / 5%);
 	}
 </style>

@@ -7,7 +7,7 @@
 			</h1>
 
 			<div class="flex justify-center mb-[80px]">
-				<img class="h-[120px]" src="/icons/trophy.webp" alt="Trophy" />
+				<img class="h-[120px]" src="/icons/trophy.webp" width="245" height="120" alt="Trophy" />
 			</div>
 
 			<!-- <p class="text-black">

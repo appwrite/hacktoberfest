@@ -156,7 +156,12 @@
 		<div
 			class="container mx-auto lg:space-y-0 space-y-4 flex-col lg:space-x-6 lg:flex-row sm:px-6 lg:px-0 px-4 flex items-center justify-between"
 		>
-			<a href="https://appwrite.io/" class="flex items-end justify-start space-x-[32px]">
+			<a
+				rel="noopener"
+				aria-label="Appwrite"
+				href="https://appwrite.io/"
+				class="flex items-end justify-start space-x-[32px]"
+			>
 				<!-- APPWRITE LOGO -->
 				<svg
 					width="181"

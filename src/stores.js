@@ -18,8 +18,8 @@ export const events = writable([
 		timeISO: '2021-09-21T16:00:00.000Z',
 		durationInMs: DurationMinute * 105,
 
-		name: 'No data',
-		presenter: 'No data',
+		name: 'Hacktoberfest Kickoff #1',
+		presenter: "Let's celebrate Open Source",
 		imageUrl: 'https://picsum.photos/seed/appwrite1/300/300',
 		description: 'No data'
 	},
@@ -29,8 +29,8 @@ export const events = writable([
 		timeISO: '2021-09-25T16:00:00.000Z',
 		durationInMs: DurationMinute * 90,
 
-		name: 'No data',
-		presenter: 'No data',
+		name: 'Intro to Open Source',
+		presenter: 'Learn to make your first contribution',
 		imageUrl: 'https://picsum.photos/seed/appwrite1/300/300',
 		description: 'No data'
 	},
@@ -40,8 +40,8 @@ export const events = writable([
 		timeISO: '2021-09-29T15:00:00.000Z',
 		durationInMs: DurationMinute * 105,
 
-		name: 'No data',
-		presenter: 'No data',
+		name: 'Hacktoberfest Kickoff #2',
+		presenter: "Let's celebrate Open Source <u>AGAIN</u>",
 		imageUrl: 'https://picsum.photos/seed/appwrite1/300/300',
 		description: 'No data'
 	},
@@ -51,10 +51,10 @@ export const events = writable([
 		timeISO: '2021-10-06T16:00:00.000Z',
 		durationInMs: DurationMinute * 60,
 
-		name: 'No data',
-		presenter: 'No data',
+		name: 'DevOps Day',
+		presenter: "Let's talk cloud",
 		imageUrl: 'https://picsum.photos/seed/appwrite1/300/300',
-		description: 'No data'
+		description: 'Coming soon ...'
 	},
 
 	{
@@ -62,10 +62,10 @@ export const events = writable([
 		timeISO: '2021-10-13T16:00:00.000Z',
 		durationInMs: DurationMinute * 90,
 
-		name: 'No data',
+		name: 'Flutter Day',
 		presenter: 'No data',
 		imageUrl: 'https://picsum.photos/seed/appwrite1/300/300',
-		description: 'No data'
+		description: 'Coming soon ...'
 	},
 
 	{
@@ -73,10 +73,10 @@ export const events = writable([
 		timeISO: '2021-10-20T16:00:00.000Z',
 		durationInMs: DurationMinute * 90,
 
-		name: 'No data',
+		name: 'Web Day',
 		presenter: 'No data',
 		imageUrl: 'https://picsum.photos/seed/appwrite1/300/300',
-		description: 'No data'
+		description: 'Coming soon ...'
 	}
 ]);
 

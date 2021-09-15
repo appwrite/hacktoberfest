@@ -39,7 +39,7 @@
 
 <!-- HERO START -->
 <section class="bg-white relative">
-	<div class="flex flex-col min-h-screen">
+	<div class="flex flex-col min-h-[calc(100vh-176px)]">
 		<div class="flex-1 flex items-center justify-center">
 			<div class="lg:container h-full lg:mx-auto grid gap-x-0 gap-y-12 lg:gap-12 grid-cols-12">
 				<div class="px-6 col-span-12 lg:col-span-6 flex items-center">
@@ -58,10 +58,10 @@
 					</div>
 				</div>
 				<div
-					class="py-[64px] bg-[#20007F] z-20 col-span-12 lg:col-span-6 flex items-center justify-center"
+					class="py-[64px] lg:py-0 bg-[#20007F] z-20 col-span-12 lg:col-span-6 flex items-center justify-center"
 				>
 					<img
-						class="w-[80%] max-w-[500px] lg:w-[90%] lg:max-w-none"
+						class="w-[80%] max-w-[500px] lg:max-w-[600px] lg:w-[90%]"
 						width="300"
 						height="300"
 						src="/programmer.webp"

@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 body {
-	font-family: 'Inter', sans-serif;
+	font-family: 'Inter', sans-serif, -apple-system, system-ui, BlinkMacSystemFont;
 }
 
 .title {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Poppins', sans-serif, -apple-system, system-ui, BlinkMacSystemFont;
 }
