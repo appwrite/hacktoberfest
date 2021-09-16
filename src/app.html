@@ -22,6 +22,48 @@
 			content="Celebrate Hacktoberfest with Appwrite! Your open source journey begins with a pull request and we've curated a list of beginner friendly issues for you."
 		/>
 
+		<meta
+			http-equiv="Content-Security-Policy"
+			content="
+  default-src
+    'self'
+  img-src
+    'self'
+    data:
+    http:
+    https:;
+  script-src
+    'self'
+    'unsafe-inline'
+    'unsafe-eval';
+  style-src
+    'self'
+    fonts.gstatic.com
+    fonts.googleapis.com
+    fonts.googleapis.com/css
+    fonts.googleapis.com/css2
+    'unsafe-inline';
+  font-src
+    'self'
+    fonts.gstatic.com
+    fonts.gstatic.com/s/;
+  frame-src
+    'self';
+  base-uri
+    'self';
+  connect-src
+    'self'
+    http://localhost:3000;
+  object-src
+    'self';
+  form-action
+    'self';
+  manifest-src 'self';
+  media-src 'self';
+  worker-src 'none';
+"
+		/>
+
 		<!-- Facebook Meta Tags -->
 		<meta property="og:url" content="https://hacktoberfest.appwrite.io/" />
 		<meta property="og:type" content="website" />

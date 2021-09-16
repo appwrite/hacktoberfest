@@ -19,9 +19,22 @@ export const events = writable([
 		durationInMs: DurationMinute * 90,
 
 		name: 'Hacktoberfest Kickoff #1',
-		presenter: "Let's celebrate Open Source",
+		presenter: 'Lazy Git, Forem, Testing 123, HashiCorp, Symfoni, Daco, Daco ine, reee',
 		imageUrl: 'https://picsum.photos/seed/appwrite1/300/300',
-		description: 'No data'
+		description: `
+		Join us for our 1st Hacktoberfest Kickoff, where we will be sharing more about Hacktoberfest as well as featuring folks from some amazing organizations such as Jina AI, n8n, Mattermost and Grafana that are enabling developers in the open-source community 💝<br /><br />
+
+		<b>Know Your Speakers:</b><br />
+	
+		<ul>
+			<li>Aditya Oberai (Appwrite)</li>
+			<li>Cristian Mitroi (Jina AI)</li>
+			<li>Harshil Agrawal (n8n)</li>
+			<li>PJ Hagerty (Mattermost)</li>
+			<li>Richard Hartmann (Grafana Labs)</li>
+		</ul>
+
+	`
 	},
 
 	{

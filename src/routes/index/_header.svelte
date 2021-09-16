@@ -360,10 +360,10 @@
 			<button
 				on:click={activateSection(section.id)}
 				id="menu-section-{section.id}"
-				class="relative transition duration-200 uppercase hover:text-[#F02E65] {currentSectionId ===
+				class="relative transition duration-200 uppercase title text-[14px] tracking-[2px] hover:text-[#F02E65] {currentSectionId ===
 				section.id
 					? 'text-[#F02E65]'
-					: 'text-black'} font-light text-[16px]">{section.name}</button
+					: 'text-black'}">{section.name}</button
 			>
 		{/each}
 
@@ -375,9 +375,3 @@
 		</div>
 	</div>
 </div>
-
-<style>
-	.custom-shadow {
-		box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.08);
-	}
-</style>

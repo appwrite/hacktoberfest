@@ -10,7 +10,6 @@ export const get = async (request) => {
 			return index < 5;
 		})
 		.map((issue) => {
-			console.log(issue);
 			return {
 				githubUrl: issue.html_url,
 				title: issue.title,

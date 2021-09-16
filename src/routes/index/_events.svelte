@@ -124,8 +124,8 @@
 								<div class="flex flex-col space-y-2 md:space-y-0">
 									<p class="title font-semibold text-[16px]">{event.name}</p>
 									<p
-										class="text-[14px] text-[#808080]"
-										contenteditable="true"
+										class="text-[14px] text-[#808080] line-clamp-1"
+										contenteditable="false"
 										bind:innerHTML={event.presenter}
 									/>
 								</div>
@@ -158,7 +158,11 @@
 
 					{#if event.isOpened}
 						<div transition:slide class="px-[32px] my-[28px]">
-							<p class="mb-6 text-[16px]">{event.description}</p>
+							<div
+								class="mb-6 text-[16px] prose"
+								contenteditable="false"
+								bind:innerHTML={event.description}
+							/>
 
 							<!-- <Button type="primary" icon="none" text="RSVP for event" /> -->
 						</div>
