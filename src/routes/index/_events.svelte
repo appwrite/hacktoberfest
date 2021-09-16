@@ -170,11 +170,11 @@
 													class="h-14 w-14"
 													height="56"
 													width="56"
-													alt=""
+													alt={presenter.name}
 												/>
 												<div class="flex flex-1 flex-col md:flex-row items-center justify-between ml-3">
 													<p class="title font-semibold text-[16px]">{presenter.name}</p>
-													<img src={presenter.companyImage} class="h-8" height="32" alt="" />
+													<img src={presenter.companyImage} class="h-8" height="32" alt="Company Image" />
 												</div>
 											</div>
 										{/each}
