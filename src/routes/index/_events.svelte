@@ -88,8 +88,8 @@
 
 		<div class="mx-auto max-w-4xl flex flex-col space-y-3 mt-20">
 			{#each $events as event, eventIndex}
-				<div class="custom-shadow py-[24px] border-[1px] border-gray-[#F3F3F3] rounded-xl">
-					<div class="px-[32px] grid gap-y-[24px] md:gap-3 grid-cols-12">
+				<div class="custom-shadow py-4 border-[1px] border-gray-[#F3F3F3] rounded-xl">
+					<div class="px-8 grid gap-y-[24px] md:gap-3 grid-cols-12">
 						<div
 							class="col-span-12 md:col-span-6 flex items-center justify-center md:justify-start space-x-[18px]"
 						>
@@ -113,14 +113,6 @@
 							<div
 								class="flex flex-col space-y-[24px] md:flex-row md:space-y-0 items-center md:space-x-[24px]"
 							>
-								<img
-									src={event.imageUrl}
-									class="w-[56px] rounded-full shadow-inner"
-									alt="Presenter"
-									width="56"
-									height="56"
-								/>
-
 								<div class="flex flex-col space-y-2 md:space-y-0">
 									<p class="title font-semibold text-[16px]">{event.name}</p>
 									<p
@@ -157,12 +149,38 @@
 					</div>
 
 					{#if event.isOpened}
-						<div transition:slide class="px-[32px] my-[28px]">
-							<div
-								class="mb-6 text-[16px] prose"
-								contenteditable="false"
-								bind:innerHTML={event.description}
-							/>
+						<div transition:slide class="px-10 my-8 space-y-10">
+							{#each event.sessions as session, sessionIndex}
+								<div class="flex md:items-start items-center justify-center flex-col md:flex-row">
+									<!-- Session name and time -->
+									<div class="flex-1 flex flex-col items-center md:items-start">
+										<p class="title font-semibold text-[16px]">{session.name}</p>
+										<div>
+											<span>{getLocalTimeVerbose(session.timeISO, session.durationInMs)}</span>
+											<span class=""> • {getClientState()} time</span>
+										</div>
+									</div>
+
+									<!-- Presenter Information -->
+									<div class="flex-1 items-center flex-col space-y-10 mt-4 md:mt-0">
+										{#each session.presenters as presenter, presenterIndex}
+											<div class="flex-1 items-center flex">
+												<img
+													src={presenter.image}
+													class="h-14 w-14"
+													height="56"
+													width="56"
+													alt=""
+												/>
+												<div class="flex flex-1 flex-col md:flex-row items-center justify-between ml-3">
+													<p class="title font-semibold text-[16px]">{presenter.name}</p>
+													<img src={presenter.companyImage} class="h-8" height="32" alt="" />
+												</div>
+											</div>
+										{/each}
+									</div>
+								</div>
+							{/each}
 
 							<!-- <Button type="primary" icon="none" text="RSVP for event" /> -->
 						</div>
