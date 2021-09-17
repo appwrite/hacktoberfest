@@ -88,7 +88,7 @@
 
 		<div class="mx-auto max-w-4xl flex flex-col space-y-3 mt-20">
 			{#each $events as event, eventIndex}
-				<div class="custom-shadow py-4 border-[1px] border-gray-[#F3F3F3] rounded-xl">
+				<div class="custom-shadow pt-10 pb-4 md:py-4 border-[1px] border-[#F3F3F3] rounded-xl">
 					<div class="px-8 grid gap-y-[24px] md:gap-3 grid-cols-12">
 						<div
 							class="col-span-12 md:col-span-6 flex items-center justify-center md:justify-start space-x-[18px]"
@@ -114,7 +114,7 @@
 								class="flex flex-col space-y-[24px] md:flex-row md:space-y-0 items-center md:space-x-[24px]"
 							>
 								<div class="flex flex-col space-y-2 md:space-y-0">
-									<p class="title font-semibold text-base">{event.name}</p>
+									<p class="title font-semibold text-xl md:text-base">{event.name}</p>
 									<p
 										class="text-[14px] text-[#808080] line-clamp-1"
 										contenteditable="false"
@@ -149,7 +149,7 @@
 					</div>
 
 					{#if event.isOpened}
-						<div transition:slide class="px-10 my-8 space-y-10">
+						<div transition:slide class="px-10 pt-8 my-8 space-y-10 border-t-[1px] border-[#F3F3F3] md:pt-0 md:border-0">
 							{#each event.sessions as session, sessionIndex}
 								<div class="flex flex-col items-center justify-center md:flex-row md:items-start">
 									<!-- Session name and time -->
@@ -193,7 +193,7 @@
 						</div>
 					{/if}
 
-					<div class="px-[32px] block md:hidden w-full mt-4 border-t-[1px] border-gray-300">
+					<div class="px-[32px] block md:hidden w-full border-t-[1px] border-[#F3F3F3]">
 						<button
 							aria-label="Toggle description"
 							on:click={onToggleEventDetail(eventIndex)}
