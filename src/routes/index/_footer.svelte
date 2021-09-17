@@ -3,7 +3,7 @@
 </script>
 
 <footer
-	class="mx-auto flex flex-col items-center justify-center p-8 bg-gray-50 space-y-6 xl:space-y-0 xl:flex-row xl:space-x-10"
+	class="mx-auto flex flex-col items-center justify-center p-8 bg-gray-100 space-y-6 xl:space-y-0 xl:flex-row xl:space-x-10"
 >
 	<div>
 		<a href="https://appwrite.io">
