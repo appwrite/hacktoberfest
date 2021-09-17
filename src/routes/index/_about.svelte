@@ -11,7 +11,7 @@
 			</h1>
 
 			<div class="flex justify-center mb-[32px]">
-				<img class="h-[140px]" src="/icons/bottles.webp" width="266" height="140" alt="Bottles" />
+				<img class="h-[140px]" src="/icons/bottles.svg" width="266" height="140" alt="Bottles" />
 			</div>
 
 			<p class="text-black text-[16px]">
