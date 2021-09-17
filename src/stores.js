@@ -19,6 +19,7 @@ export const events = writable([
 		durationInMs: DurationMinute * 90,
 		name: 'Hacktoberfest Kickoff #1',
 		presenter: 'Jina AI, n8n.io, Mattermost',
+		link: "https://www.linkedin.com/events/6844640536146546688/",
 		sessions: [
 			{
 				name: 'What is Hacktoberfest?',

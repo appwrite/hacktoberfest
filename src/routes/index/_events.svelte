@@ -149,15 +149,14 @@
 					</div>
 
 					{#if event.isOpened}
-						<div
-							transition:slide
-							class="px-10 py-8 space-y-10 border-t-[1px] border-[#F3F3F3]"
-						>
+						<div transition:slide class="px-10 py-8 space-y-10 border-t-[1px] border-[#F3F3F3]">
 							{#each event.sessions as session, sessionIndex}
 								<div class="flex flex-col items-center justify-center md:flex-row md:items-start">
 									<!-- Session name and time -->
 									<div class="flex-1 flex flex-col items-center md:items-start">
-										<p class="title font-semibold text-base text-center md:text-left">{session.name}</p>
+										<p class="title font-semibold text-base text-center md:text-left">
+											{session.name}
+										</p>
 										<div class="text-[#808080] text-sm">
 											<span>{getLocalTimeVerbose(session.timeISO, session.durationInMs)}</span>
 											<span> • {getClientState()} time</span>
@@ -185,7 +184,7 @@
 														src={presenter.companyImage}
 														class="max-h-9 max-w-[110px]"
 														height="36"
-														alt="Company Image"
+														alt="Company"
 													/>
 												</div>
 											</div>
@@ -194,7 +193,17 @@
 								</div>
 							{/each}
 
-							<!-- <Button type="primary" icon="none" text="RSVP for event" /> -->
+							{#if event.link}
+								<div class="flex items-center justify-center md:justify-start">
+									<a
+										rel="noopener"
+										aria-label="RSVP for event"
+										target="_blank"
+										class="block"
+										href={event.link}><Button type="primary" icon="none" text="RSVP for event" /></a
+									>
+								</div>
+							{/if}
 						</div>
 					{/if}
 
