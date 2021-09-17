@@ -756,10 +756,6 @@ video {
 	margin-left: auto;
 	margin-right: auto;
 }
-.my-8{
-	margin-top: 2rem;
-	margin-bottom: 2rem;
-}
 .mt-12{
 	margin-top: 3rem;
 }
@@ -786,6 +782,12 @@ video {
 }
 .mt-20{
 	margin-top: 5rem;
+}
+.mt-10{
+	margin-top: 2.5rem;
+}
+.mb-8{
+	margin-bottom: 2rem;
 }
 .mt-4{
 	margin-top: 1rem;
@@ -834,15 +836,6 @@ video {
 }
 .mb-\[45px\]{
 	margin-bottom: 45px;
-}
-.mb-4{
-	margin-bottom: 1rem;
-}
-.mb-8{
-	margin-bottom: 2rem;
-}
-.mt-10{
-	margin-top: 2.5rem;
 }
 .block{
 	display: block;
@@ -1274,6 +1267,10 @@ video {
 	padding-left: 1rem;
 	padding-right: 1rem;
 }
+.py-4{
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
 .py-\[26px\]{
 	padding-top: 26px;
 	padding-bottom: 26px;
@@ -1298,10 +1295,6 @@ video {
 	padding-left: 12px;
 	padding-right: 12px;
 }
-.py-4{
-	padding-top: 1rem;
-	padding-bottom: 1rem;
-}
 .pt-\[80px\]{
 	padding-top: 80px;
 }
@@ -1310,18 +1303,6 @@ video {
 }
 .pb-0{
 	padding-bottom: 0px;
-}
-.pt-10{
-	padding-top: 2.5rem;
-}
-.pb-4{
-	padding-bottom: 1rem;
-}
-.pt-8{
-	padding-top: 2rem;
-}
-.pt-4{
-	padding-top: 1rem;
 }
 .pb-\[100px\]{
 	padding-bottom: 100px;
@@ -1461,14 +1442,14 @@ video {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 150ms;
 }
+.duration-200{
+	transition-duration: 200ms;
+}
 .duration-500{
 	transition-duration: 500ms;
 }
 .duration-300{
 	transition-duration: 300ms;
-}
-.duration-200{
-	transition-duration: 200ms;
 }
 .line-clamp-1{
 	overflow: hidden;
@@ -1485,15 +1466,16 @@ body {
 	font-family: 'Poppins', sans-serif, -apple-system, system-ui, BlinkMacSystemFont;
 }
 
+.hover\:scale-105:hover{
+	--tw-scale-x: 1.05;
+	--tw-scale-y: 1.05;
+	transform: var(--tw-transform);
+}
+
 .hover\:scale-\[102\%\]:hover{
 	--tw-scale-x: 102%;
 	--tw-scale-y: 102%;
 	transform: var(--tw-transform);
-}
-
-.hover\:bg-gray-100:hover{
-	--tw-bg-opacity: 1;
-	background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
 }
 
 .hover\:bg-\[\#F3F3F3\]:hover{
@@ -1649,23 +1631,6 @@ body {
 		--tw-space-x-reverse: 0;
 		margin-right: calc(24px * var(--tw-space-x-reverse));
 		margin-left: calc(24px * calc(1 - var(--tw-space-x-reverse)));
-	}
-
-	.md\:border-0{
-		border-width: 0px;
-	}
-
-	.md\:py-4{
-		padding-top: 1rem;
-		padding-bottom: 1rem;
-	}
-
-	.md\:pt-0{
-		padding-top: 0px;
-	}
-
-	.md\:pt-4{
-		padding-top: 1rem;
 	}
 
 	.md\:text-left{
