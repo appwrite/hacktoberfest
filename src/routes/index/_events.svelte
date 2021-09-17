@@ -88,8 +88,8 @@
 
 		<div class="mx-auto max-w-4xl flex flex-col space-y-3 mt-20">
 			{#each $events as event, eventIndex}
-				<div class="custom-shadow py-[24px] border-[1px] border-gray-[#F3F3F3] rounded-xl">
-					<div class="px-[32px] grid gap-y-[24px] md:gap-3 grid-cols-12">
+				<div class="custom-shadow border-[1px] border-[#F3F3F3] rounded-xl">
+					<div class="px-8 mt-10 mb-8 md:my-4 grid gap-y-[24px] md:gap-3 grid-cols-12">
 						<div
 							class="col-span-12 md:col-span-6 flex items-center justify-center md:justify-start space-x-[18px]"
 						>
@@ -98,7 +98,7 @@
 								>{getLocalDay(event.timeISO)}</span
 							>
 							<div class="flex flex-col space-y-0">
-								<span class="title text-[16px] font-semibold text-[#DE2459]"
+								<span class="title text-base font-semibold text-[#DE2459]"
 									>{getLocalMonth(event.timeISO)}</span
 								>
 								<span class="text-[14px] text-[#808080]"
@@ -113,19 +113,11 @@
 							<div
 								class="flex flex-col space-y-[24px] md:flex-row md:space-y-0 items-center md:space-x-[24px]"
 							>
-								<img
-									src={event.imageUrl}
-									class="w-[56px] rounded-full shadow-inner"
-									alt="Presenter"
-									width="56"
-									height="56"
-								/>
-
 								<div class="flex flex-col space-y-2 md:space-y-0">
-									<p class="title font-semibold text-[16px]">{event.name}</p>
+									<p class="title font-semibold text-xl md:text-base">{event.name}</p>
 									<p
-										class="text-[14px] text-[#808080]"
-										contenteditable="true"
+										class="text-[14px] text-[#808080] line-clamp-1"
+										contenteditable="false"
 										bind:innerHTML={event.presenter}
 									/>
 								</div>
@@ -157,22 +149,62 @@
 					</div>
 
 					{#if event.isOpened}
-						<div transition:slide class="px-[32px] my-[28px]">
-							<p class="mb-6 text-[16px]">{event.description}</p>
+						<div
+							transition:slide
+							class="px-10 py-8 space-y-10 border-t-[1px] border-[#F3F3F3]"
+						>
+							{#each event.sessions as session, sessionIndex}
+								<div class="flex flex-col items-center justify-center md:flex-row md:items-start">
+									<!-- Session name and time -->
+									<div class="flex-1 flex flex-col items-center md:items-start">
+										<p class="title font-semibold text-base">{session.name}</p>
+										<div class="text-[#808080] text-sm">
+											<span>{getLocalTimeVerbose(session.timeISO, session.durationInMs)}</span>
+											<span> • {getClientState()} time</span>
+										</div>
+									</div>
+
+									<!-- Presenter Information -->
+									<div class="flex-1 items-center flex-col space-y-10 mt-4 md:mt-0">
+										{#each session.presenters as presenter, presenterIndex}
+											<div
+												class="flex-1 flex flex-col md:flex-row items-center space-y-3 md:space-y-0"
+											>
+												<img
+													src={presenter.image}
+													class="md:h-14 md:w-14 h-[72px] w-[72px]"
+													height="72"
+													width="72"
+													alt={presenter.name}
+												/>
+												<div
+													class="flex flex-1 flex-col items-center ml-0 md:ml-3 md:flex-row md:space-y-0 space-y-3 md:justify-between"
+												>
+													<p class="title md:font-semibold text-sm">{presenter.name}</p>
+													<img
+														src={presenter.companyImage}
+														class="max-h-9 max-w-[110px]"
+														height="36"
+														alt="Company Image"
+													/>
+												</div>
+											</div>
+										{/each}
+									</div>
+								</div>
+							{/each}
 
 							<!-- <Button type="primary" icon="none" text="RSVP for event" /> -->
 						</div>
 					{/if}
 
-					<div
-						class="px-[32px] block md:hidden w-full mt-4 border-t-[1px] pt-[6px] border-gray-300"
-					>
+					<div class="px-[32px] block md:hidden w-full border-t-[1px] border-[#F3F3F3]">
 						<button
 							aria-label="Toggle description"
 							on:click={onToggleEventDetail(eventIndex)}
-							class="px-4 pt-4 flex w-full justify-center space-x-2 items-center"
+							class="px-4 py-4 flex w-full justify-center space-x-2 items-center"
 						>
-							<span class="text-[14px]">
+							<span class="text-sm">
 								{event.isOpened ? 'Show less' : 'More information'}
 							</span>
 

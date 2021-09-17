@@ -22,7 +22,7 @@
 
 		{#if $githubIssues !== null}
 			<div class="max-w-4xl mx-auto mt-12">
-				<div class="group relative flex flex-col space-y-6">
+				<div class="group relative flex flex-col space-y-4">
 					{#each $githubIssues as githubIssue}
 						<a
 							rel="noopener"

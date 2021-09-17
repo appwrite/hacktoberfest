@@ -1,52 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<link rel="icon" href="/favicon.png" />
-		%svelte.head%
 
-		<title>Appwrite Hacktoberfest</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" href="/favicon.png" />
+	<title>Appwrite Hacktoberfest</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-		<!-- HTML Meta Tags -->
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta
-			name="keyword"
-			content="hacktoberfest,appwrite,backend as a service,baas,open source, open-source"
-		/>
-		<meta name="theme-color" content="#f02f65" />
+	<!-- HTML Meta Tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="keyword" content="hacktoberfest,appwrite,backend as a service,baas,open source, open-source" />
+	<meta name="theme-color" content="#f02f65" />
 
-		<meta
-			name="description"
-			content="Celebrate Hacktoberfest with Appwrite! Your open source journey begins with a pull request and we've curated a list of beginner friendly issues for you."
-		/>
+	<meta name="description"
+		content="Celebrate Hacktoberfest with Appwrite! Your open source journey begins with a pull request and we've curated a list of beginner friendly issues for you." />
 
-		<!-- Facebook Meta Tags -->
-		<meta property="og:url" content="https://hacktoberfest.appwrite.io/" />
-		<meta property="og:type" content="website" />
-		<meta property="og:title" content="Appwrite Hacktoberfest" />
-		<meta
-			property="og:description"
-			content="Celebrate Hacktoberfest with Appwrite! Your open source journey begins with a pull request and we've curated a list of beginner friendly issues for you."
-		/>
-		<meta property="og:image" content="https://hacktoberfest.appwrite.io/banner.png" />
+	<meta http-equiv="Content-Security-Policy" content="
+  default-src
+    'self';
+  img-src
+    'self'
+    data:
+    http:
+    https:;
+  script-src
+    'self'
+    'unsafe-inline'
+    'unsafe-eval';
+  style-src
+    'self'
+    fonts.gstatic.com
+    fonts.googleapis.com
+    fonts.googleapis.com/css
+    fonts.googleapis.com/css2
+    'unsafe-inline';
+  font-src
+    'self'
+    fonts.gstatic.com
+    fonts.gstatic.com/s/;
+  frame-src
+    'self';
+  base-uri
+    'self';
+  connect-src
+    'self'
+    http://localhost:3000;
+  object-src
+    'self';
+  form-action
+    'self';
+  manifest-src 'self';
+  media-src 'self';
+  worker-src 'none';
+" />
 
-		<!-- Twitter Meta Tags -->
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta property="twitter:domain" content="hacktoberfest.appwrite.io" />
-		<meta property="twitter:url" content="https://hacktoberfest.appwrite.io/" />
-		<meta name="twitter:title" content="Appwrite Hacktoberfest" />
-		<meta
-			name="twitter:description"
-			content="Celebrate Hacktoberfest with Appwrite! Your open source journey begins with a pull request and we've curated a list of beginner friendly issues for you."
-		/>
-		<meta name="twitter:image" content="https://hacktoberfest.appwrite.io/banner.png" />
-		<script defer data-domain="hacktoberfest.appwrite.io" src="https://plausible.io/js/plausible.js"></script>
+	<!-- Facebook Meta Tags -->
+	<meta property="og:url" content="https://hacktoberfest.appwrite.io/" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Appwrite | Hacktoberfest 2021" />
+	<meta property="og:description"
+		content="Celebrate Hacktoberfest with Appwrite! Your open source journey begins with a pull request and we've curated a list of beginner friendly issues for you." />
+	<meta property="og:image" content="https://hacktoberfest.appwrite.io/banner.png" />
 
-		<!-- Meta Tags Generated via https://www.opengraph.xyz -->
-	</head>
-	<body>
-		<div id="svelte">%svelte.body%</div>
-	</body>
+	<!-- Twitter Meta Tags -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta property="twitter:domain" content="hacktoberfest.appwrite.io" />
+	<meta property="twitter:url" content="https://hacktoberfest.appwrite.io/" />
+	<meta name="twitter:title" content="Appwrite Hacktoberfest" />
+	<meta name="twitter:description"
+		content="Celebrate Hacktoberfest with Appwrite! Your open source journey begins with a pull request and we've curated a list of beginner friendly issues for you." />
+	<meta name="twitter:image" content="https://hacktoberfest.appwrite.io/banner.png" />
+
+	<!-- Meta Tags Generated via https://www.opengraph.xyz -->
+
+	%svelte.head%
+
+	<script defer data-domain="hacktoberfest.appwrite.io" src="https://plausible.io/js/plausible.js"></script>
+</head>
+
+<body>
+	<div id="svelte">%svelte.body%</div>
+</body>
+
 </html>

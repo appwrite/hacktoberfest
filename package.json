@@ -37,6 +37,8 @@
 	"type": "module",
 	"dependencies": {
 		"@sveltejs/adapter-static": "next",
-		"@tailwindcss/aspect-ratio": "^0.2.1"
+		"@tailwindcss/aspect-ratio": "^0.2.1",
+		"@tailwindcss/line-clamp": "^0.2.1",
+		"@tailwindcss/typography": "^0.4.1"
 	}
 }

@@ -39,7 +39,7 @@
 
 <!-- HERO START -->
 <section class="bg-white relative">
-	<div class="flex flex-col min-h-[calc(100vh-176px)]">
+	<div class="flex flex-col min-h-[calc(100vh-100px)]">
 		<div class="flex-1 flex items-center justify-center">
 			<div class="lg:container h-full lg:mx-auto grid gap-x-0 gap-y-12 lg:gap-12 grid-cols-12">
 				<div class="px-6 col-span-12 lg:col-span-6 flex items-center">
