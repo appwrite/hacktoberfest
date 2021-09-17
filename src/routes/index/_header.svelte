@@ -152,7 +152,7 @@
 </script>
 
 <div class="relative z-20">
-	<header class=" border-b-[1px] border-[#C4C4C4] z-30 left-0 top-0 w-full bg-white p-[24px]">
+	<header class=" z-30 left-0 top-0 w-full bg-white p-[24px]">
 		<div
 			class="container mx-auto lg:space-y-0 space-y-4 flex-col lg:space-x-6 lg:flex-row sm:px-6 lg:px-0 px-4 flex items-center justify-between"
 		>
@@ -350,10 +350,7 @@
 	</header>
 </div>
 
-<div
-	class="hidden md:block sticky top-0 bg-white z-30
-"
->
+<div class="hidden md:block sticky top-0 bg-white z-30 shadow-md">
 	<div class="relative flex items-center justify-center space-x-[136px] py-[26px]">
 		{#each sections as section}
 			<button
