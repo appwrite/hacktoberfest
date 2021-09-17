@@ -151,7 +151,7 @@
 					{#if event.isOpened}
 						<div transition:slide class="px-10 my-8 space-y-10">
 							{#each event.sessions as session, sessionIndex}
-								<div class="flex md:items-start items-center justify-center flex-col md:flex-row">
+								<div class="flex flex-col items-center justify-center md:flex-row md:items-start">
 									<!-- Session name and time -->
 									<div class="flex-1 flex flex-col items-center md:items-start">
 										<p class="title font-semibold text-base">{session.name}</p>
@@ -164,17 +164,24 @@
 									<!-- Presenter Information -->
 									<div class="flex-1 items-center flex-col space-y-10 mt-4 md:mt-0">
 										{#each session.presenters as presenter, presenterIndex}
-											<div class="flex-1 items-center flex">
+											<div class="flex-1 flex flex-col md:flex-row items-center space-y-3 md:space-y-0">
 												<img
 													src={presenter.image}
-													class="h-14 w-14"
-													height="56"
-													width="56"
+													class="md:h-14 md:w-14 h-[72px] w-[72px]"
+													height="72"
+													width="72"
 													alt={presenter.name}
 												/>
-												<div class="flex flex-1 flex-col md:flex-row items-center justify-between ml-3">
-													<p class="title font-semibold text-sm">{presenter.name}</p>
-													<img src={presenter.companyImage} class="h-8 max-w-[120px]" height="32" alt="Company Image" />
+												<div
+													class="flex flex-1 flex-col items-center ml-0 md:ml-3 md:flex-row md:space-y-0 space-y-3 md:justify-between"
+												>
+													<p class="title md:font-semibold text-sm">{presenter.name}</p>
+													<img
+														src={presenter.companyImage}
+														class="max-h-9 max-w-[110px]"
+														height="36"
+														alt="Company Image"
+													/>
 												</div>
 											</div>
 										{/each}
@@ -186,15 +193,13 @@
 						</div>
 					{/if}
 
-					<div
-						class="px-[32px] block md:hidden w-full mt-4 border-t-[1px] pt-[6px] border-gray-300"
-					>
+					<div class="px-[32px] block md:hidden w-full mt-4 border-t-[1px] border-gray-300">
 						<button
 							aria-label="Toggle description"
 							on:click={onToggleEventDetail(eventIndex)}
 							class="px-4 pt-4 flex w-full justify-center space-x-2 items-center"
 						>
-							<span class="text-[14px]">
+							<span class="text-sm">
 								{event.isOpened ? 'Show less' : 'More information'}
 							</span>
 

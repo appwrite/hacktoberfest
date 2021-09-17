@@ -101,7 +101,7 @@ export const events = writable([
 						companyImage: '/companies/mlh.png'
 					},
 					{
-						name: 'Juan Pablo Flores Cortés',
+						name: 'Juan Pablo',
 						image: '/presenters/juan.png',
 						companyImage: '/companies/github.png'
 					},
