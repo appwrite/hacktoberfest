@@ -152,7 +152,7 @@
 </script>
 
 <div class="relative z-20">
-	<header class=" z-30 left-0 top-0 w-full bg-white p-[24px]">
+	<header class="z-30 left-0 top-0 w-full bg-white p-[24px] border-b-[1px]">
 		<div
 			class="container mx-auto lg:space-y-0 space-y-4 flex-col lg:space-x-6 lg:flex-row sm:px-6 lg:px-0 px-4 flex items-center justify-between"
 		>

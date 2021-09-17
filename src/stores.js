@@ -14,7 +14,7 @@ export const currentSection = writable({
 
 export const events = writable([
 	{
-		isOpened: false,
+		isOpened: true,
 		timeISO: '2021-09-21T16:00:00.000Z',
 		durationInMs: DurationMinute * 90,
 		name: 'Hacktoberfest Kickoff #1',

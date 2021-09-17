@@ -88,8 +88,8 @@
 
 		<div class="mx-auto max-w-4xl flex flex-col space-y-3 mt-20">
 			{#each $events as event, eventIndex}
-				<div class="custom-shadow pt-10 pb-4 md:py-4 border-[1px] border-[#F3F3F3] rounded-xl">
-					<div class="px-8 grid gap-y-[24px] md:gap-3 grid-cols-12">
+				<div class="custom-shadow border-[1px] border-[#F3F3F3] rounded-xl">
+					<div class="px-8 mt-10 mb-8 md:my-4 grid gap-y-[24px] md:gap-3 grid-cols-12">
 						<div
 							class="col-span-12 md:col-span-6 flex items-center justify-center md:justify-start space-x-[18px]"
 						>
@@ -149,7 +149,10 @@
 					</div>
 
 					{#if event.isOpened}
-						<div transition:slide class="px-10 pt-8 my-8 space-y-10 border-t-[1px] border-[#F3F3F3] md:pt-0 md:border-0">
+						<div
+							transition:slide
+							class="px-10 py-8 space-y-10 border-t-[1px] border-[#F3F3F3]"
+						>
 							{#each event.sessions as session, sessionIndex}
 								<div class="flex flex-col items-center justify-center md:flex-row md:items-start">
 									<!-- Session name and time -->
@@ -164,7 +167,9 @@
 									<!-- Presenter Information -->
 									<div class="flex-1 items-center flex-col space-y-10 mt-4 md:mt-0">
 										{#each session.presenters as presenter, presenterIndex}
-											<div class="flex-1 flex flex-col md:flex-row items-center space-y-3 md:space-y-0">
+											<div
+												class="flex-1 flex flex-col md:flex-row items-center space-y-3 md:space-y-0"
+											>
 												<img
 													src={presenter.image}
 													class="md:h-14 md:w-14 h-[72px] w-[72px]"
@@ -197,7 +202,7 @@
 						<button
 							aria-label="Toggle description"
 							on:click={onToggleEventDetail(eventIndex)}
-							class="px-4 pt-4 flex w-full justify-center space-x-2 items-center"
+							class="px-4 py-4 flex w-full justify-center space-x-2 items-center"
 						>
 							<span class="text-sm">
 								{event.isOpened ? 'Show less' : 'More information'}
