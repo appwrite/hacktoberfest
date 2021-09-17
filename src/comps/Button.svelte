@@ -16,8 +16,8 @@
 	aria-label={text}
 	on:click={submitButton}
 	class={type === 'primary'
-		? 'relative focus:ring focus:ring-gray-600 transform hover:scale-[102%] scale-[100%] transition-transform duration-500 rounded-md px-[24px] py-[12px] border-black border-[1px] bg-black text-white flex items-center justify-center space-x-[12px]'
-		: 'relative focus:ring focus:ring-gray-600 transform hover:scale-[102%] scale-[100%] transition-transform duration-500 rounded-md px-[24px] py-[12px] border-black border-[1px] bg-transparent text-black flex items-center justify-center space-x-[12px]'}
+		? 'relative focus:ring focus:ring-gray-600 transform hover:scale-105 transition-transform duration-300 rounded-md px-[24px] py-[12px] border-black border-[1px] bg-black text-white flex items-center justify-center space-x-[12px]'
+		: 'relative focus:ring focus:ring-gray-600 transform hover:scale-105 transition-transform duration-300 rounded-md px-[24px] py-[12px] border-black border-[1px] bg-transparent text-black flex items-center justify-center space-x-[12px]'}
 >
 	{#if icon === 'discord'}
 		<svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">

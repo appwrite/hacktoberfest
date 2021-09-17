@@ -1442,14 +1442,14 @@ video {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 150ms;
 }
+.duration-200{
+	transition-duration: 200ms;
+}
 .duration-500{
 	transition-duration: 500ms;
 }
 .duration-300{
 	transition-duration: 300ms;
-}
-.duration-200{
-	transition-duration: 200ms;
 }
 .line-clamp-1{
 	overflow: hidden;
@@ -1464,6 +1464,12 @@ body {
 
 .title {
 	font-family: 'Poppins', sans-serif, -apple-system, system-ui, BlinkMacSystemFont;
+}
+
+.hover\:scale-105:hover{
+	--tw-scale-x: 1.05;
+	--tw-scale-y: 1.05;
+	transform: var(--tw-transform);
 }
 
 .hover\:scale-\[102\%\]:hover{
