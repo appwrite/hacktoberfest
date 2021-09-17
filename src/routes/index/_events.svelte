@@ -98,7 +98,7 @@
 								>{getLocalDay(event.timeISO)}</span
 							>
 							<div class="flex flex-col space-y-0">
-								<span class="title text-[16px] font-semibold text-[#DE2459]"
+								<span class="title text-base font-semibold text-[#DE2459]"
 									>{getLocalMonth(event.timeISO)}</span
 								>
 								<span class="text-[14px] text-[#808080]"
@@ -114,7 +114,7 @@
 								class="flex flex-col space-y-[24px] md:flex-row md:space-y-0 items-center md:space-x-[24px]"
 							>
 								<div class="flex flex-col space-y-2 md:space-y-0">
-									<p class="title font-semibold text-[16px]">{event.name}</p>
+									<p class="title font-semibold text-base">{event.name}</p>
 									<p
 										class="text-[14px] text-[#808080] line-clamp-1"
 										contenteditable="false"
@@ -154,10 +154,10 @@
 								<div class="flex md:items-start items-center justify-center flex-col md:flex-row">
 									<!-- Session name and time -->
 									<div class="flex-1 flex flex-col items-center md:items-start">
-										<p class="title font-semibold text-[16px]">{session.name}</p>
-										<div>
+										<p class="title font-semibold text-base">{session.name}</p>
+										<div class="text-[#808080] text-sm">
 											<span>{getLocalTimeVerbose(session.timeISO, session.durationInMs)}</span>
-											<span class=""> • {getClientState()} time</span>
+											<span> • {getClientState()} time</span>
 										</div>
 									</div>
 
@@ -173,7 +173,7 @@
 													alt={presenter.name}
 												/>
 												<div class="flex flex-1 flex-col md:flex-row items-center justify-between ml-3">
-													<p class="title font-semibold text-[16px]">{presenter.name}</p>
+													<p class="title font-semibold text-sm">{presenter.name}</p>
 													<img src={presenter.companyImage} class="h-8 max-w-[120px]" height="32" alt="Company Image" />
 												</div>
 											</div>
