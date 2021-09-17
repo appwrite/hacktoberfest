@@ -965,11 +965,6 @@ video {
 	--tw-rotate: 0deg;
 	transform: var(--tw-transform);
 }
-.scale-\[100\%\]{
-	--tw-scale-x: 100%;
-	--tw-scale-y: 100%;
-	transform: var(--tw-transform);
-}
 .scale-100{
 	--tw-scale-x: 1;
 	--tw-scale-y: 1;
@@ -1442,14 +1437,14 @@ video {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 150ms;
 }
+.duration-300{
+	transition-duration: 300ms;
+}
 .duration-200{
 	transition-duration: 200ms;
 }
 .duration-500{
 	transition-duration: 500ms;
-}
-.duration-300{
-	transition-duration: 300ms;
 }
 .line-clamp-1{
 	overflow: hidden;
@@ -1635,6 +1630,10 @@ body {
 
 	.md\:text-left{
 		text-align: left;
+	}
+
+	.md\:text-center{
+		text-align: center;
 	}
 
 	.md\:text-base{

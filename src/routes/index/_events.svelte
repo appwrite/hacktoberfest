@@ -157,7 +157,7 @@
 								<div class="flex flex-col items-center justify-center md:flex-row md:items-start">
 									<!-- Session name and time -->
 									<div class="flex-1 flex flex-col items-center md:items-start">
-										<p class="title font-semibold text-base">{session.name}</p>
+										<p class="title font-semibold text-base text-center md:text-left">{session.name}</p>
 										<div class="text-[#808080] text-sm">
 											<span>{getLocalTimeVerbose(session.timeISO, session.durationInMs)}</span>
 											<span> • {getClientState()} time</span>

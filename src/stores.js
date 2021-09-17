@@ -33,7 +33,7 @@ export const events = writable([
 				]
 			},
 			{
-				name: 'Jina AI',
+				name: 'Neural Search with Jina AI',
 				timeISO: '2021-09-21T16:30:00.000Z',
 				durationInMs: DurationMinute * 15,
 				presenters: [
@@ -45,7 +45,7 @@ export const events = writable([
 				]
 			},
 			{
-				name: 'n8n.io',
+				name: 'Extendable workflow automation with n8n',
 				timeISO: '2021-09-21T16:45:00.000Z',
 				durationInMs: DurationMinute * 15,
 				presenters: [
@@ -57,8 +57,20 @@ export const events = writable([
 				]
 			},
 			{
-				name: 'Mattermost',
+				name: 'Hoppscotch - Open Source API development ecosystem',
 				timeISO: '2021-09-21T17:00:00.000Z',
+				durationInMs: DurationMinute * 15,
+				presenters: [
+					{
+						name: 'Liyas Thomas',
+						image: '/presenters/liyas.png',
+						companyImage: '/companies/hoppscotch.svg'
+					}
+				]
+			},
+			{
+				name: 'Getting started with Mattermost',
+				timeISO: '2021-09-21T17:15:00.000Z',
 				durationInMs: DurationMinute * 15,
 				presenters: [
 					{
@@ -76,7 +88,7 @@ export const events = writable([
 		timeISO: '2021-09-25T16:00:00.000Z',
 		durationInMs: DurationMinute * 90,
 		name: 'Intro to Open Source',
-		presenter: 'Major League Hacking, Github, Microsoft',
+		presenter: 'Major League Hacking, GitHub, Microsoft',
 		sessions: [
 			{
 				name: 'Intro to Git and creating your first PR',
@@ -135,7 +147,7 @@ export const events = writable([
 				]
 			},
 			{
-				name: 'Julia Programming Language',
+				name: 'The Julia Programming Language',
 				timeISO: '2021-09-29T15:30:00.000Z',
 				durationInMs: DurationMinute * 15,
 				presenters: [
@@ -147,7 +159,7 @@ export const events = writable([
 				]
 			},
 			{
-				name: 'Lazy Git',
+				name: 'Lazy Git - Terminal UI for git commands',
 				timeISO: '2021-09-29T15:45:00.000Z',
 				durationInMs: DurationMinute * 15,
 				presenters: [
@@ -159,7 +171,7 @@ export const events = writable([
 				]
 			},
 			{
-				name: 'Forem',
+				name: 'Forem - The New Community Web',
 				timeISO: '2021-09-29T16:00:00.000Z',
 				durationInMs: DurationMinute * 15,
 				presenters: [
@@ -171,7 +183,7 @@ export const events = writable([
 				]
 			},
 			{
-				name: 'HashiCorp',
+				name: 'Infrastructure automation with HashiCorp',
 				timeISO: '2021-09-29T16:15:00.000Z',
 				durationInMs: DurationMinute * 15,
 				presenters: [
@@ -183,7 +195,7 @@ export const events = writable([
 				]
 			},
 			{
-				name: 'Symfony',
+				name: 'Getting started with Symfony',
 				timeISO: '2021-09-29T16:30:00.000Z',
 				durationInMs: DurationMinute * 15,
 				presenters: [
