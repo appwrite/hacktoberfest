@@ -216,7 +216,7 @@ export const events = writable([
 		presenter: 'Appwrite, TBA',
 		sessions: [
 			{
-				name: 'Intro to Docker compose and Appwrite',
+				name: 'Intro to Docker Compose and Appwrite',
 				timeISO: '2021-10-06T16:00:00.000Z',
 				durationInMs: DurationMinute * 30,
 				presenters: [

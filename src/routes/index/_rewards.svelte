@@ -3,7 +3,7 @@
 		<div class="text-center max-w-4xl mx-auto">
 			<p class="text-black uppercase text-[14px] title tracking-[2px]">swag</p>
 			<h1 class="title text-[32px] lg:text-[48px] font-semibold mt-[29px] mb-[40px]">
-				Win our limited edition swag!
+				Win our Limited Edition swag!
 			</h1>
 
 			<div class="flex justify-center mb-[80px]">
@@ -32,7 +32,7 @@
 						</h2>
 
 						<p class="text-[16px]">
-							Limited edition Appwrite Hacktoberfest T-shirt + Hacktoberfest Sticker pack + OG
+							Limited Edition Appwrite Hacktoberfest T-shirt + Hacktoberfest Sticker pack + OG
 							Appwrite Sticker Pack + Mug
 						</p>
 
@@ -60,7 +60,7 @@
 						</h2>
 
 						<p class="text-[16px]">
-							Limited edition Appwrite Hacktoberfest T-shirt + Hacktoberfest Sticker pack + OG
+							Limited Edition Appwrite Hacktoberfest T-shirt + Hacktoberfest Sticker pack + OG
 							Appwrite Sticker Pack + Mug
 						</p>
 
@@ -86,7 +86,7 @@
 						<h2 class="mt-[32px] mb-[12px] title text-[20px] font-semibold">3 contributions</h2>
 
 						<p class="text-[16px]">
-							OG Appwrite sticker pack + Limited edition Hacktoberfest sticker pack + Mug
+							OG Appwrite sticker pack + Limited Edition Hacktoberfest sticker pack + Mug
 						</p>
 
 						<div class="flex justify-center absolute left-0 -top-10 w-full pointer-events-none">
@@ -111,7 +111,7 @@
 						<h2 class="mt-[32px] mb-[12px] title text-[20px] font-semibold">2 contributions</h2>
 
 						<p class="text-[16px]">
-							OG Appwrite sticker pack + Limited edition Hacktoberfest sticker pack
+							OG Appwrite sticker pack + Limited Edition Hacktoberfest sticker pack
 						</p>
 
 						<div class="flex justify-center absolute left-0 -top-10 w-full pointer-events-none">
