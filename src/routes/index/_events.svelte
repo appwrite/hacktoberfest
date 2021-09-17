@@ -174,7 +174,7 @@
 												/>
 												<div class="flex flex-1 flex-col md:flex-row items-center justify-between ml-3">
 													<p class="title font-semibold text-[16px]">{presenter.name}</p>
-													<img src={presenter.companyImage} class="h-8" height="32" alt="Company Image" />
+													<img src={presenter.companyImage} class="h-8 max-w-[120px]" height="32" alt="Company Image" />
 												</div>
 											</div>
 										{/each}
