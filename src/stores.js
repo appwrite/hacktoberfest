@@ -90,6 +90,7 @@ export const events = writable([
 		durationInMs: DurationMinute * 90,
 		name: 'Intro to Open Source',
 		presenter: 'Major League Hacking, GitHub, Microsoft',
+		link: "https://www.linkedin.com/events/6844663463248310273/",
 		sessions: [
 			{
 				name: 'Intro to Git and creating your first PR',
@@ -133,6 +134,7 @@ export const events = writable([
 		timeISO: '2021-09-29T15:00:00.000Z',
 		durationInMs: DurationMinute * 105,
 		name: 'Hacktoberfest Kickoff #2',
+		link: "https://www.linkedin.com/events/6844884710854811649/",
 		presenter: 'Julia, Lazy Git, Forem, HashiCorp, Symfony',
 		sessions: [
 			{
