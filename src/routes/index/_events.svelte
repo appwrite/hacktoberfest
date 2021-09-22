@@ -197,10 +197,15 @@
 								<div class="flex items-center justify-center md:justify-start">
 									<a
 										rel="noopener"
-										aria-label="RSVP for event"
+										aria-label={event.isFinished ? 'Watch on YouTube' : 'RSVP for event'}
 										target="_blank"
 										class="block"
-										href={event.link}><Button type="primary" icon="none" text="RSVP for event" /></a
+										href={event.link}
+										><Button
+											type="primary"
+											icon={event.isFinished ? 'youtube' : 'none'}
+											text={event.isFinished ? 'Watch on YouTube' : 'RSVP for event'}
+										/></a
 									>
 								</div>
 							{/if}
