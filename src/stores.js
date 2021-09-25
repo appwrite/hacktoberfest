@@ -86,7 +86,7 @@ export const events = writable([
 	},
 
 	{
-		isOpened: true,
+		isOpened: false,
 		timeISO: '2021-09-25T16:00:00.000Z',
 		durationInMs: DurationMinute * 90,
 		name: 'Intro to Open Source',
