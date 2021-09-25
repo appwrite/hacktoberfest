@@ -131,7 +131,7 @@ export const events = writable([
 	},
 
 	{
-		isOpened: false,
+		isOpened: true,
 		timeISO: '2021-09-29T15:00:00.000Z',
 		durationInMs: DurationMinute * 105,
 		name: 'Hacktoberfest Kickoff #2',
