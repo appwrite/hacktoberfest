@@ -29,10 +29,10 @@
 					<img src="/hacktoberfest.svg" class="max-w-sm lg:max-w-none w-full" alt="" />
 				</div>
 				<div
-					class="lg:px-[5.5rem] col-span-12 lg:col-span-9 flex flex-col items-start justify-start"
+					class="lg:pl-20 col-span-12 lg:col-span-9 flex flex-col items-center justify-start lg:items-start"
 				>
 					<h1
-						class="text-center lg:text-left title mt-[2rem] lg:mt-[1.5rem] mb-[2rem] lg:mb-[1.5rem] fomt-bold text-white text-[1.8rem] lg:text-[2.1rem]"
+						class="text-center lg:text-left title my-10 lg:my-8 font-semibold text-white text-[1.8rem] lg:text-[2.1rem]"
 					>
 						Our journey with Hacktoberfest
 					</h1>
