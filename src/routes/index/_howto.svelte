@@ -1,4 +1,6 @@
 <script>
+	import { githubLink } from '../../stores';
+
 	import ButtonGithub from '../../comps/ButtonGithub.svelte';
 </script>
 
@@ -8,7 +10,7 @@
 			<div class="col-span-12 lg:col-span-4">
 				<div class="lg:max-w-sm flex flex-col text-left items-start">
 					<h2 class="title text-[24px] lg:text-[32px] font-semibold">How can you contribute?</h2>
-					<p class="py-8 text-[16px]">
+					<p class="py-8 text-[16px] text-[#454545] leading-relaxed">
 						There are different ways you can contribute to Appwrite. All accepted contributions
 						qualify for receiving Appwrite Swag!
 					</p>
@@ -42,9 +44,29 @@
 					<div class="max-w-sm">
 						<h3 class="mt-[40px] mb-[16px] text-[18px] font-bold">Contributions to open issues</h3>
 
-						<p class="text-[16px]">
+						<p class="mb-[1.875rem] text-[16px] text-[#454545] leading-relaxed">
 							We have a curated list of Hacktoberfest issues that are ready for you to pick up.
 						</p>
+
+						<a
+							href={githubLink}
+							class="flex items-center space-x-[0.44rem] text-[16px] font-bold text-[#454545] leading-relaxed"
+						>
+							<span>View issues</span>
+
+							<svg
+								width="14"
+								height="8"
+								viewBox="0 0 14 8"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M13.3536 3.64645C13.5488 3.84171 13.5488 4.15829 13.3536 4.35355L10.1716 7.53553C9.97631 7.7308 9.65973 7.7308 9.46447 7.53553C9.2692 7.34027 9.2692 7.02369 9.46447 6.82843L12.2929 4L9.46447 1.17157C9.2692 0.976311 9.2692 0.659728 9.46447 0.464466C9.65973 0.269204 9.97631 0.269204 10.1716 0.464466L13.3536 3.64645ZM13 4.5H0V3.5H13V4.5Z"
+									fill="#454545"
+								/>
+							</svg>
+						</a>
 					</div>
 				</div>
 
@@ -71,9 +93,29 @@
 					<div class="max-w-sm">
 						<h3 class="mt-[40px] mb-[16px] text-[18px] font-bold">Build a demo app</h3>
 
-						<p class="text-[16px]">
+						<p class="mb-[1.875rem] text-[16px] text-[#454545] leading-relaxed">
 							Build a demo app with your favourite technologies using an Appwrite Backend.
 						</p>
+
+						<a
+							href="https://github.com/appwrite/appwrite/issues/1773"
+							class="flex items-center space-x-[0.44rem] text-[16px] font-bold text-[#454545] leading-relaxed"
+						>
+							<span>View issue</span>
+
+							<svg
+								width="14"
+								height="8"
+								viewBox="0 0 14 8"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M13.3536 3.64645C13.5488 3.84171 13.5488 4.15829 13.3536 4.35355L10.1716 7.53553C9.97631 7.7308 9.65973 7.7308 9.46447 7.53553C9.2692 7.34027 9.2692 7.02369 9.46447 6.82843L12.2929 4L9.46447 1.17157C9.2692 0.976311 9.2692 0.659728 9.46447 0.464466C9.65973 0.269204 9.97631 0.269204 10.1716 0.464466L13.3536 3.64645ZM13 4.5H0V3.5H13V4.5Z"
+									fill="#454545"
+								/>
+							</svg>
+						</a>
 					</div>
 				</div>
 
@@ -101,10 +143,30 @@
 					<div class="max-w-sm">
 						<h3 class="mt-[40px] mb-[16px] text-[18px] font-bold">Write a blog post</h3>
 
-						<p class="text-[16px]">
+						<p class="mb-[1.875rem] text-[16px] text-[#454545] leading-relaxed">
 							Used Appwrite in a recent project? Built something cool with Appwrite? Tell the
 							community about it in an awesome blog post.
 						</p>
+
+						<a
+							href="https://github.com/appwrite/appwrite/issues/1774"
+							class="flex items-center space-x-[0.44rem] text-[16px] font-bold text-[#454545] leading-relaxed"
+						>
+							<span>View issue</span>
+
+							<svg
+								width="14"
+								height="8"
+								viewBox="0 0 14 8"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M13.3536 3.64645C13.5488 3.84171 13.5488 4.15829 13.3536 4.35355L10.1716 7.53553C9.97631 7.7308 9.65973 7.7308 9.46447 7.53553C9.2692 7.34027 9.2692 7.02369 9.46447 6.82843L12.2929 4L9.46447 1.17157C9.2692 0.976311 9.2692 0.659728 9.46447 0.464466C9.65973 0.269204 9.97631 0.269204 10.1716 0.464466L13.3536 3.64645ZM13 4.5H0V3.5H13V4.5Z"
+									fill="#454545"
+								/>
+							</svg>
+						</a>
 					</div>
 				</div>
 
@@ -136,10 +198,30 @@
 					<div class="max-w-sm">
 						<h3 class="mt-[40px] mb-[16px] title text-[18px] font-bold">Make a tutorial</h3>
 
-						<p class="text-[16px]">
+						<p class="mb-[1.875rem] text-[16px] text-[#454545] leading-relaxed">
 							From video tutorials to written tutorials, help new community members get started with
 							Appwrite!
 						</p>
+
+						<a
+							href="https://github.com/appwrite/appwrite/issues/1775"
+							class="flex items-center space-x-[0.44rem] text-[16px] font-bold text-[#454545] leading-relaxed"
+						>
+							<span>View issue</span>
+
+							<svg
+								width="14"
+								height="8"
+								viewBox="0 0 14 8"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M13.3536 3.64645C13.5488 3.84171 13.5488 4.15829 13.3536 4.35355L10.1716 7.53553C9.97631 7.7308 9.65973 7.7308 9.46447 7.53553C9.2692 7.34027 9.2692 7.02369 9.46447 6.82843L12.2929 4L9.46447 1.17157C9.2692 0.976311 9.2692 0.659728 9.46447 0.464466C9.65973 0.269204 9.97631 0.269204 10.1716 0.464466L13.3536 3.64645ZM13 4.5H0V3.5H13V4.5Z"
+									fill="#454545"
+								/>
+							</svg>
+						</a>
 					</div>
 				</div>
 			</div>

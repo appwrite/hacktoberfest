@@ -14,7 +14,7 @@
 				<img class="h-[140px]" src="/icons/bottles.svg" width="266" height="140" alt="Bottles" />
 			</div>
 
-			<p class="text-black text-[16px]">
+			<p class="text-black text-[16px] text-[#454545] leading-relaxed">
 				Hacktoberfest is a month-long celebration of open source software run by DigitalOcean.
 				Hacktoberfest is open to everyone, from first-time contributors to seasoned open source
 				developers. Appwrite is one of the projects that you can contribute to.
@@ -25,7 +25,7 @@
 			<div class="col-span-12 lg:col-span-4 pt-20 flex items-center justify-center">
 				<div class="lg:max-w-md flex flex-col items-center lg:items-start text-center lg:text-left">
 					<h2 class="title text-[24px] lg:text-[32px] font-semibold">About Appwrite</h2>
-					<p class="py-8 text-[16px]">
+					<p class="py-8 text-[16px] text-[#454545] leading-relaxed">
 						Appwrite is an open source, secure end-to-end backend server for Web, Mobile, and
 						Flutter developers that is packaged as a set of Docker containers for easy deployment.
 					</p>
