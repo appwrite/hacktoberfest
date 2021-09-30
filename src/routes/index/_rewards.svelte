@@ -31,7 +31,7 @@
 							4 contributions or more
 						</h2>
 
-						<p class="text-[16px]">
+						<p class="text-[16px] text-[#454545] leading-relaxed">
 							Limited Edition Appwrite Hacktoberfest T-shirt + Hacktoberfest Sticker pack + OG
 							Appwrite Sticker Pack + Mug
 						</p>
@@ -59,7 +59,7 @@
 							4 contributions or more
 						</h2>
 
-						<p class="text-[16px]">
+						<p class="text-[16px] text-[#454545] leading-relaxed">
 							Limited Edition Appwrite Hacktoberfest T-shirt + Hacktoberfest Sticker pack + OG
 							Appwrite Sticker Pack + Mug
 						</p>
@@ -85,7 +85,7 @@
 					>
 						<h2 class="mt-[32px] mb-[12px] title text-[20px] font-semibold">3 contributions</h2>
 
-						<p class="text-[16px]">
+						<p class="text-[16px] text-[#454545] leading-relaxed">
 							OG Appwrite sticker pack + Limited Edition Hacktoberfest sticker pack + Mug
 						</p>
 
@@ -110,7 +110,7 @@
 					>
 						<h2 class="mt-[32px] mb-[12px] title text-[20px] font-semibold">2 contributions</h2>
 
-						<p class="text-[16px]">
+						<p class="text-[16px] text-[#454545] leading-relaxed">
 							OG Appwrite sticker pack + Limited Edition Hacktoberfest sticker pack
 						</p>
 
@@ -135,7 +135,7 @@
 					>
 						<h2 class="mt-[32px] mb-[12px] title text-[20px] font-semibold">1 contribution</h2>
 
-						<p class="text-[16px]">OG Appwrite sticker pack</p>
+						<p class="text-[16px] text-[#454545] leading-relaxed">OG Appwrite sticker pack</p>
 
 						<div class="flex justify-center absolute left-0 -top-10 w-full pointer-events-none">
 							<div

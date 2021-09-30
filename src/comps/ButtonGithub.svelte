@@ -1,16 +1,11 @@
 <script>
 	import Button from './Button.svelte';
-	import { totalIssuesAmount } from '../stores';
+	import { totalIssuesAmount, githubLink } from '../stores';
 
 	export let showBadge = false;
 </script>
 
-<a
-	aria-label="View all Hacktoberfest issues"
-	target="_blank"
-	rel="noopener"
-	href="https://github.com/search?q=org%3Aappwrite+org%3Autopia-php+is%3Aissue+label%3Ahacktoberfest+created%3A%3E2020-01-01&type=issues"
->
+<a aria-label="View all Hacktoberfest issues" target="_blank" rel="noopener" href={githubLink}>
 	<Button type="primary" icon="github" text="View all Hacktoberfest issues">
 		{#if showBadge}
 			{#if $totalIssuesAmount !== null}

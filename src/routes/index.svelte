@@ -49,7 +49,7 @@
 						>
 							Celebrate Open Source with Hacktoberfest
 						</h1>
-						<p class="mt-[27px] mb-[40px] lg:max-w-lg leading-snug text-[18px] text-black">
+						<p class="mt-[27px] mb-[40px] lg:max-w-lg leading-snug text-[18px] text-[#454545]">
 							Your open source journey begins with a pull request. We've curated a list of beginner
 							friendly issues for you to check out.
 						</p>

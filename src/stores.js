@@ -2,6 +2,9 @@ import { writable } from 'svelte/store';
 
 export const DurationMinute = 1000 * 60;
 
+export const githubLink =
+	'https://github.com/search?q=org%3Aappwrite+org%3Autopia-php+is%3Aissue+label%3Ahacktoberfest+created%3A%3E2021-01-01+is%3Aopen&type=issues';
+
 export const totalIssuesAmount = writable(null);
 
 export const githubIssues = writable(null);
@@ -132,12 +135,13 @@ export const events = writable([
 	},
 
 	{
-		isOpened: true,
+		isOpened: false,
 		timeISO: '2021-09-29T15:00:00.000Z',
 		durationInMs: DurationMinute * 105,
 		name: 'Hacktoberfest Kickoff #2',
-		link: 'https://www.linkedin.com/events/hacktoberfestkickoff-26844884710854811649/',
+		link: 'https://www.youtube.com/watch?v=cyJAz-c1OWs',
 		presenter: 'Julia, Lazy Git, Forem, HashiCorp, Symfony',
+		isFinished: true,
 		sessions: [
 			{
 				name: 'What is Hacktoberfest?',
@@ -213,12 +217,25 @@ export const events = writable([
 			}
 		]
 	},
+
+	{
+		isOpened: true,
+		timeISO: '2021-10-01T03:00:00.000Z',
+		durationInMs: DurationMinute * 60,
+		name: 'Hacktoberfest Countdown Party! 🥳',
+		link: 'https://www.linkedin.com/events/hacktoberfestcountdownparty6849034378459287554/',
+		presenter: 'Let the Hacktoberfest begin.',
+		isFinished: false,
+		sessions: []
+	},
+
 	{
 		isOpened: false,
 		timeISO: '2021-10-06T16:00:00.000Z',
 		durationInMs: DurationMinute * 90,
 		name: 'DevOps Day',
 		presenter: 'Appwrite, TBA',
+		// link: 'TODO: Add link to LinkedIn',
 		sessions: [
 			{
 				name: 'Intro to Docker Compose and Appwrite',
