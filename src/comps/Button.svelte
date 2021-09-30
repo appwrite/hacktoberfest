@@ -2,7 +2,7 @@
 	import { createEventDispatcher } from 'svelte';
 
 	export let text: string = 'Empty Button';
-	export let type: 'primary' | 'secondary' = 'primary';
+	export let type: 'primary' | 'secondary' | 'red' = 'primary';
 	export let icon: 'discord' | 'github' | 'none' | 'youtube' = 'none';
 
 	const dispatch = createEventDispatcher();
@@ -17,7 +17,9 @@
 	on:click={submitButton}
 	class={type === 'primary'
 		? 'relative focus:ring focus:ring-gray-600 transform hover:scale-105 transition-transform duration-300 rounded-md px-[24px] py-[12px] border-black border-[1px] bg-black text-white flex items-center justify-center space-x-[12px]'
-		: 'relative focus:ring focus:ring-gray-600 transform hover:scale-105 transition-transform duration-300 rounded-md px-[24px] py-[12px] border-black border-[1px] bg-transparent text-black flex items-center justify-center space-x-[12px]'}
+		: type === 'secondary'
+		? 'relative focus:ring focus:ring-gray-600 transform hover:scale-105 transition-transform duration-300 rounded-md px-[24px] py-[12px] border-black border-[1px] bg-transparent text-black flex items-center justify-center space-x-[12px]'
+		: 'relative focus:ring focus:ring-gray-100 transform hover:scale-105 transition-transform duration-300 rounded-md px-[24px] py-[12px] border-white border-[1px] bg-white text-[#F02E65] flex items-center justify-center space-x-[12px]'}
 >
 	{#if icon === 'discord'}
 		<svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -217,8 +217,20 @@ export const events = writable([
 			}
 		]
 	},
+
 	{
 		isOpened: true,
+		timeISO: '2021-10-01T03:00:00.000Z',
+		durationInMs: DurationMinute * 60,
+		name: 'Hacktoberfest Countdown Party! 🥳',
+		link: 'https://www.linkedin.com/events/hacktoberfestcountdownparty6849034378459287554/',
+		presenter: 'Let the Hacktoberfest begin.',
+		isFinished: false,
+		sessions: []
+	},
+
+	{
+		isOpened: false,
 		timeISO: '2021-10-06T16:00:00.000Z',
 		durationInMs: DurationMinute * 90,
 		name: 'DevOps Day',
