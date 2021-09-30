@@ -3,7 +3,7 @@ import { writable } from 'svelte/store';
 export const DurationMinute = 1000 * 60;
 
 export const githubLink =
-	'https://github.com/search?q=org%3Aappwrite+org%3Autopia-php+is%3Aissue+label%3Ahacktoberfest+created%3A%3E2015-01-01+is%3Aopen&type=issues';
+	'https://github.com/search?q=org%3Aappwrite+org%3Autopia-php+is%3Aissue+label%3Ahacktoberfest+created%3A%3E2021-01-01+is%3Aopen&type=issues';
 
 export const totalIssuesAmount = writable(null);
 

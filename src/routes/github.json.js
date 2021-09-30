@@ -1,6 +1,6 @@
 export const get = async (request) => {
 	const issuesQuery = await fetch(
-		'https://api.github.com/search/issues?q=org%3Aappwrite+org%3Autopia-php+is%3Aissue+label%3Ahacktoberfest+created%3A%3E2015-01-01+is%3Aopen&type=issues&per_page=100'
+		'https://api.github.com/search/issues?q=org%3Aappwrite+org%3Autopia-php+is%3Aissue+label%3Ahacktoberfest+created%3A%3E2021-01-01+is%3Aopen&type=issues&per_page=100'
 	);
 
 	const issuesJson = await issuesQuery.json();
