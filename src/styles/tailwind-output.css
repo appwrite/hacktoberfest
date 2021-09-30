@@ -1907,6 +1907,11 @@ body {
 		padding-right: 5.5rem;
 	}
 
+	.lg\:px-\[3\.375rem\]{
+		padding-left: 3.375rem;
+		padding-right: 3.375rem;
+	}
+
 	.lg\:text-left{
 		text-align: left;
 	}

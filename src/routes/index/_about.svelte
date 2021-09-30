@@ -29,7 +29,7 @@
 					<img src="/hacktoberfest.svg" class="max-w-sm lg:max-w-none w-full" alt="" />
 				</div>
 				<div
-					class="lg:px-[5.5rem] col-span-12 lg:col-span-8 flex flex-col items-start justify-start"
+					class="lg:px-[3.375rem] col-span-12 lg:col-span-8 flex flex-col items-start justify-start"
 				>
 					<h1
 						class="text-center lg:text-left title mt-[1.5rem] mb-[1.5rem] fomt-bold text-white text-[2rem]"
