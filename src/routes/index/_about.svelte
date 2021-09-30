@@ -23,7 +23,7 @@
 			</div>
 
 			<div
-				class="grid grid-cols-12 rounded-[1.5rem] mt-[5rem] mb-[1rem] lg:mt-[7.375rem] lg:mb-[5rem] p-[3.375rem] linear-bg"
+				class="grid grid-cols-12 rounded-[1.5rem] mt-[5rem] mb-[1rem] lg:mt-[7.375rem] lg:mb-[5rem] p-[2.75rem] lg:p-[3.375rem] linear-bg"
 			>
 				<div class="w-full h-full flex items-center justify-center col-span-12 lg:col-span-3">
 					<img src="/hacktoberfest.svg" class="max-w-sm lg:max-w-none w-full" alt="" />
@@ -32,7 +32,7 @@
 					class="lg:px-[5.5rem] col-span-12 lg:col-span-9 flex flex-col items-start justify-start"
 				>
 					<h1
-						class="text-center lg:text-left title mt-[1.5rem] mb-[1.5rem] fomt-bold text-white text-[2.1rem]"
+						class="text-center lg:text-left title mt-[2rem] lg:mt-[1.5rem] mb-[2rem] lg:mb-[1.5rem] fomt-bold text-white text-[1.8rem] lg:text-[2.1rem]"
 					>
 						Our journey with Hacktoberfest
 					</h1>

@@ -870,6 +870,9 @@ video {
 .mt-\[5rem\]{
 	margin-top: 5rem;
 }
+.mt-\[2rem\]{
+	margin-top: 2rem;
+}
 .block{
 	display: block;
 }
@@ -1269,6 +1272,9 @@ video {
 .p-\[3\.375rem\]{
 	padding: 3.375rem;
 }
+.p-\[2\.75rem\]{
+	padding: 2.75rem;
+}
 .px-\[24px\]{
 	padding-left: 24px;
 	padding-right: 24px;
@@ -1425,6 +1431,18 @@ video {
 }
 .text-\[1\.1rem\]{
 	font-size: 1.1rem;
+}
+.text-\[0\.9rem\]{
+	font-size: 0.9rem;
+}
+.text-\[0\.8rem\]{
+	font-size: 0.8rem;
+}
+.text-\[0\.2rem\]{
+	font-size: 0.2rem;
+}
+.text-\[1\.8rem\]{
+	font-size: 1.8rem;
 }
 .font-semibold{
 	font-weight: 600;
@@ -1822,6 +1840,14 @@ body {
 		margin-bottom: 5rem;
 	}
 
+	.lg\:mt-\[1\.5rem\]{
+		margin-top: 1.5rem;
+	}
+
+	.lg\:mb-\[1\.5rem\]{
+		margin-bottom: 1.5rem;
+	}
+
 	.lg\:block{
 		display: block;
 	}
@@ -1915,6 +1941,10 @@ body {
 		margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 	}
 
+	.lg\:p-\[3\.375rem\]{
+		padding: 3.375rem;
+	}
+
 	.lg\:py-0{
 		padding-top: 0px;
 		padding-bottom: 0px;
@@ -1949,6 +1979,14 @@ body {
 
 	.lg\:text-\[32px\]{
 		font-size: 32px;
+	}
+
+	.lg\:text-\[1\.1rem\]{
+		font-size: 1.1rem;
+	}
+
+	.lg\:text-\[2\.1rem\]{
+		font-size: 2.1rem;
 	}
 
 	.lg\:\!leading-\[72px\]{
