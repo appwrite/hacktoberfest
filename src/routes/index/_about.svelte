@@ -25,18 +25,18 @@
 			<div
 				class="grid grid-cols-12 rounded-[1.5rem] mt-[5rem] mb-[1rem] lg:mt-[7.375rem] lg:mb-[5rem] p-[3.375rem] linear-bg"
 			>
-				<div class="w-full h-full flex items-center justify-center col-span-12 lg:col-span-4">
+				<div class="w-full h-full flex items-center justify-center col-span-12 lg:col-span-3">
 					<img src="/hacktoberfest.svg" class="max-w-sm lg:max-w-none w-full" alt="" />
 				</div>
 				<div
-					class="lg:px-[3.375rem] col-span-12 lg:col-span-8 flex flex-col items-start justify-start"
+					class="lg:px-[5.5rem] col-span-12 lg:col-span-9 flex flex-col items-start justify-start"
 				>
 					<h1
-						class="text-center lg:text-left title mt-[1.5rem] mb-[1.5rem] fomt-bold text-white text-[2rem]"
+						class="text-center lg:text-left title mt-[1.5rem] mb-[1.5rem] fomt-bold text-white text-[2.1rem]"
 					>
 						Our journey with Hacktoberfest
 					</h1>
-					<p class=" hidden lg:block text-left pb-[3rem] text-[1rem] text-white">
+					<p class=" hidden lg:block text-justify pb-[3rem] text-[1.1rem] text-white">
 						Hacktoberfest is an initiative that very deeply matters to us. We launched the first
 						iteration of Appwrite as a mere open-source project back in September 2019.
 						Hacktoberfest 2019 was truly a game-changer for us, as we saw over 200 contributions

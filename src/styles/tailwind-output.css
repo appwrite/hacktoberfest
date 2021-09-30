@@ -1369,6 +1369,9 @@ video {
 .text-center{
 	text-align: center;
 }
+.text-justify{
+	text-align: justify;
+}
 .text-\[16px\]{
 	font-size: 16px;
 }
@@ -1410,6 +1413,18 @@ video {
 }
 .text-\[1rem\]{
 	font-size: 1rem;
+}
+.text-\[2\.5rem\]{
+	font-size: 2.5rem;
+}
+.text-\[1\.5rem\]{
+	font-size: 1.5rem;
+}
+.text-\[2\.1rem\]{
+	font-size: 2.1rem;
+}
+.text-\[1\.1rem\]{
+	font-size: 1.1rem;
 }
 .font-semibold{
 	font-weight: 600;
@@ -1780,6 +1795,14 @@ body {
 
 	.lg\:col-span-8{
 		grid-column: span 8 / span 8;
+	}
+
+	.lg\:col-span-3{
+		grid-column: span 3 / span 3;
+	}
+
+	.lg\:col-span-9{
+		grid-column: span 9 / span 9;
 	}
 
 	.lg\:mx-auto{
