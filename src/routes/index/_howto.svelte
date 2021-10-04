@@ -50,7 +50,7 @@
 
 						<a
 							href={githubLink}
-							class="flex items-center space-x-[0.44rem] text-[16px] font-bold text-[#454545] leading-relaxed"
+							class="flex items-center space-x-[0.44rem] text-[16px] font-semibold text-[#454545] leading-relaxed"
 						>
 							<span>View issues</span>
 
@@ -99,7 +99,7 @@
 
 						<a
 							href="https://github.com/appwrite/appwrite/issues/1773"
-							class="flex items-center space-x-[0.44rem] text-[16px] font-bold text-[#454545] leading-relaxed"
+							class="flex items-center space-x-[0.44rem] text-[16px] font-semibold text-[#454545] leading-relaxed"
 						>
 							<span>View issue</span>
 
@@ -150,7 +150,7 @@
 
 						<a
 							href="https://github.com/appwrite/appwrite/issues/1774"
-							class="flex items-center space-x-[0.44rem] text-[16px] font-bold text-[#454545] leading-relaxed"
+							class="flex items-center space-x-[0.44rem] text-[16px] font-semibold text-[#454545] leading-relaxed"
 						>
 							<span>View issue</span>
 
@@ -205,7 +205,7 @@
 
 						<a
 							href="https://github.com/appwrite/appwrite/issues/1775"
-							class="flex items-center space-x-[0.44rem] text-[16px] font-bold text-[#454545] leading-relaxed"
+							class="flex items-center space-x-[0.44rem] text-[16px] font-semibold text-[#454545] leading-relaxed"
 						>
 							<span>View issue</span>
 

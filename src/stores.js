@@ -219,7 +219,7 @@ export const events = writable([
 	},
 
 	{
-		isOpened: true,
+		isOpened: false,
 		timeISO: '2021-10-01T03:00:00.000Z',
 		durationInMs: DurationMinute * 60,
 		name: 'Hacktoberfest Countdown Party! 🥳',
@@ -230,12 +230,12 @@ export const events = writable([
 	},
 
 	{
-		isOpened: false,
+		isOpened: true,
 		timeISO: '2021-10-06T16:00:00.000Z',
-		durationInMs: DurationMinute * 90,
+		durationInMs: DurationMinute * 120,
 		name: 'DevOps Day',
-		presenter: 'Appwrite, TBA',
-		// link: 'TODO: Add link to LinkedIn',
+		presenter: 'Appwrite, Grafana, GitLab, DigitalOcean',
+		link: 'https://www.linkedin.com/events/6849718666972549121/',
 		sessions: [
 			{
 				name: 'Intro to Docker Compose and Appwrite',
@@ -246,6 +246,42 @@ export const events = writable([
 						name: 'Brandon Leckemby',
 						image: '/presenters/brandon.png',
 						companyImage: '/companies/appwrite.png'
+					}
+				]
+			},
+			{
+				name: 'Observability with Prometheus and Beyond',
+				timeISO: '2021-10-06T16:30:00.000Z',
+				durationInMs: DurationMinute * 30,
+				presenters: [
+					{
+						name: 'Richard Hartman',
+						image: '/presenters/richard.png',
+						companyImage: '/companies/grafana.png'
+					}
+				]
+			},
+			{
+				name: 'Intro to GitLab: The DevOps Platform',
+				timeISO: '2021-10-06T17:00:00.000Z',
+				durationInMs: DurationMinute * 30,
+				presenters: [
+					{
+						name: 'PJ Metz',
+						image: '/presenters/pj_metz.png',
+						companyImage: '/companies/gitlab.png'
+					}	
+				]
+			},
+			{
+				name: 'Improving a Distributed System Post-Incident',
+				timeISO: '2021-10-06T17:30:00.000Z',
+				durationInMs: DurationMinute * 30,
+				presenters: [
+					{
+						name: 'Julius Zerwick',
+						image: '/presenters/julius.png',
+						companyImage: '/companies/digitalocean.png'
 					}
 				]
 			}
