@@ -225,7 +225,7 @@ export const events = writable([
 		name: 'Hacktoberfest Countdown Party! 🥳',
 		link: 'https://www.linkedin.com/events/hacktoberfestcountdownparty6849034378459287554/',
 		presenter: 'Let the Hacktoberfest begin.',
-		isFinished: true,
+		isFinished: false,
 		sessions: []
 	},
 
