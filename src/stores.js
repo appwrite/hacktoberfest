@@ -270,7 +270,7 @@ export const events = writable([
 						name: 'PJ Metz',
 						image: '/presenters/pj_metz.png',
 						companyImage: '/companies/gitlab.png'
-					}	
+					}
 				]
 			},
 			{
@@ -376,6 +376,12 @@ export const teamMembers = writable([
 		image: '/pictures/aditya.webp',
 		githubProfile: 'https://github.com/adityaoberai'
 	},
+
+	{
+		image: '/pictures/tenne.webp',
+		githubProfile: 'https://github.com/TenneG'
+	},
+
 	{
 		image: '/pictures/empty.webp',
 		githubProfile: 'https://appwrite.io/discord',
