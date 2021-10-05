@@ -77,7 +77,7 @@
 
 			<div class="col-span-12 lg:col-span-4 flex flex-col">
 				<div class="w-full bg-[#20007F] aspect-w-4 aspect-h-3 rounded-xl">
-					<img src="/swag/place2.webp" class="rounded-xl object-cover" alt="Second place" />
+					<img src="/swag/tier3.webp" class="rounded-xl object-cover" alt="Second place" />
 				</div>
 				<div class="relative -mt-10 px-4 sm:px-8 lg:flex-1">
 					<div
