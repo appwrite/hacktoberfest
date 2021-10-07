@@ -295,6 +295,7 @@ export const events = writable([
 		durationInMs: DurationMinute * 90,
 		name: 'Flutter Day',
 		presenter: 'Appwrite, TBA',
+		link: 'https://www.linkedin.com/events/hacktoberfest-flutterday6851167361140109312/',
 		sessions: [
 			{
 				name: 'Connecting your Flutter app to Appwrite',
@@ -316,6 +317,7 @@ export const events = writable([
 		durationInMs: DurationMinute * 90,
 		name: 'Web Day',
 		presenter: 'Appwrite, TBA',
+		link: 'https://www.linkedin.com/events/hacktoberfest-webday6851168021701025792/',
 		sessions: [
 			{
 				name: 'Connecting your Web app to Appwrite',
