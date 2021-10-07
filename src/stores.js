@@ -230,12 +230,13 @@ export const events = writable([
 	},
 
 	{
-		isOpened: true,
+		isOpened: false,
 		timeISO: '2021-10-06T16:00:00.000Z',
 		durationInMs: DurationMinute * 120,
 		name: 'DevOps Day',
 		presenter: 'Appwrite, Grafana, GitLab, DigitalOcean',
-		link: 'https://www.linkedin.com/events/6849718666972549121/',
+		link: 'https://www.youtube.com/watch?v=T8Pu20HIAiY',
+		isFinished: true,
 		sessions: [
 			{
 				name: 'Intro to Docker Compose and Appwrite',
@@ -289,11 +290,12 @@ export const events = writable([
 	},
 
 	{
-		isOpened: false,
+		isOpened: true,
 		timeISO: '2021-10-13T16:00:00.000Z',
 		durationInMs: DurationMinute * 90,
 		name: 'Flutter Day',
 		presenter: 'Appwrite, TBA',
+		link: 'https://www.linkedin.com/events/hacktoberfest-flutterday6851167361140109312/',
 		sessions: [
 			{
 				name: 'Connecting your Flutter app to Appwrite',
@@ -315,6 +317,7 @@ export const events = writable([
 		durationInMs: DurationMinute * 90,
 		name: 'Web Day',
 		presenter: 'Appwrite, TBA',
+		link: 'https://www.linkedin.com/events/hacktoberfest-webday6851168021701025792/',
 		sessions: [
 			{
 				name: 'Connecting your Web app to Appwrite',
@@ -385,7 +388,7 @@ export const teamMembers = writable([
 	{
 		image: '/pictures/empty.webp',
 		githubProfile: 'https://appwrite.io/discord',
-		overlay: '+3000'
+		overlay: '+3600'
 	}
 ]);
 
