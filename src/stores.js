@@ -294,7 +294,7 @@ export const events = writable([
 		timeISO: '2021-10-13T16:00:00.000Z',
 		durationInMs: DurationMinute * 90,
 		name: 'Flutter Day',
-		presenter: 'Appwrite, TBA',
+		presenter: 'Appwrite, Stream, Telia, Very Good Ventures',
 		link: 'https://www.linkedin.com/events/hacktoberfest-flutterday6851167361140109312/',
 		sessions: [
 			{
@@ -306,6 +306,45 @@ export const events = writable([
 						name: 'Damodar Lohani',
 						image: '/presenters/damodar.png',
 						companyImage: '/companies/appwrite.png'
+					}
+				]
+			},
+
+			{
+				name: 'Structuring a Flutter desktop application with macos_ui',
+				timeISO: '2021-10-13T16:30:00.000Z',
+				durationInMs: DurationMinute * 30,
+				presenters: [
+					{
+						name: 'Reuben Turner',
+						image: '/presenters/reuben.webp',
+						companyImage: '/companies/getstream.png'
+					}
+				]
+			},
+
+			{
+				name: 'Scalable Flutter app development',
+				timeISO: '2021-10-13T17:00:00.000Z',
+				durationInMs: DurationMinute * 30,
+				presenters: [
+					{
+						name: 'Majid Hajian',
+						image: '/presenters/majid.webp',
+						companyImage: '/companies/telia.png'
+					}
+				]
+			},
+
+			{
+				name: 'Generating a Scalable Flutter App in Seconds with Very Good CLI',
+				timeISO: '2021-10-13T17:30:00.000Z',
+				durationInMs: DurationMinute * 30,
+				presenters: [
+					{
+						name: 'Erick Zanardo',
+						image: '/presenters/erick.webp',
+						companyImage: '/companies/very_good_ventures.png'
 					}
 				]
 			}
