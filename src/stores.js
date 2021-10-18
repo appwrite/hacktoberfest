@@ -290,12 +290,13 @@ export const events = writable([
 	},
 
 	{
-		isOpened: true,
+		isOpened: false,
 		timeISO: '2021-10-13T16:00:00.000Z',
 		durationInMs: DurationMinute * 90,
 		name: 'Flutter Day',
 		presenter: 'Appwrite, Stream, Telia, Very Good Ventures',
-		link: 'https://www.linkedin.com/events/hacktoberfest-flutterday6851167361140109312/',
+		isFinished: true,
+		link: 'https://www.youtube.com/watch?v=zJ7TqYn6hKs',
 		sessions: [
 			{
 				name: 'Connecting your Flutter app to Appwrite',
@@ -351,15 +352,15 @@ export const events = writable([
 		]
 	},
 	{
-		isOpened: false,
+		isOpened: true,
 		timeISO: '2021-10-20T16:00:00.000Z',
 		durationInMs: DurationMinute * 90,
 		name: 'Web Day',
-		presenter: 'Appwrite, TBA',
+		presenter: 'Appwrite, SingleStore, Beyond',
 		link: 'https://www.linkedin.com/events/hacktoberfest-webday6851168021701025792/',
 		sessions: [
 			{
-				name: 'Connecting your Web app to Appwrite',
+				name: 'Connecting your Web App to Appwrite',
 				timeISO: '2021-10-20T16:00:00.000Z',
 				durationInMs: DurationMinute * 30,
 				presenters: [
@@ -367,6 +368,32 @@ export const events = writable([
 						name: 'Torsten Dittmann',
 						image: '/presenters/torsten.png',
 						companyImage: '/companies/appwrite.png'
+					}
+				]
+			},
+
+			{
+				name: 'Getting Started with SingleStore - The Best Kept Secret in Data',
+				timeISO: '2021-10-20T16:30:00.000Z',
+				durationInMs: DurationMinute * 30,
+				presenters: [
+					{
+						name: 'Joe Karlsson',
+						image: '/presenters/joe.png',
+						companyImage: '/companies/singlestore.png'
+					}
+				]
+			},
+
+			{
+				name: 'TailwindCSS for Backend developers (tentative)',
+				timeISO: '2021-10-20T17:00:00.000Z',
+				durationInMs: DurationMinute * 30,
+				presenters: [
+					{
+						name: 'Nacho Iacovino',
+						image: '/presenters/nacho.png',
+						companyImage: '/companies/beyond.png'
 					}
 				]
 			}

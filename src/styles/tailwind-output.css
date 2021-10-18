@@ -959,9 +959,6 @@ video {
 .max-w-\[110px\]{
 	max-width: 110px;
 }
-.max-w-md{
-	max-width: 28rem;
-}
 .flex-1{
 	flex: 1 1 0%;
 }
