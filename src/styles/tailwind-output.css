@@ -897,9 +897,6 @@ video {
 .h-\[80px\]{
 	height: 80px;
 }
-.max-h-9{
-	max-height: 2.25rem;
-}
 .max-h-\[0px\]{
 	max-height: 0px;
 }
@@ -958,9 +955,6 @@ video {
 }
 .max-w-\[110px\]{
 	max-width: 110px;
-}
-.max-w-md{
-	max-width: 28rem;
 }
 .flex-1{
 	flex: 1 1 0%;
