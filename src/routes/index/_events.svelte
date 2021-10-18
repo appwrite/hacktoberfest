@@ -182,8 +182,9 @@
 													<p class="title md:font-semibold text-sm">{presenter.name}</p>
 													<img
 														src={presenter.companyImage}
-														class="max-h-9 max-w-[110px]"
-														height="36"
+														style="max-height: {presenter.companyImageHeight}px"
+														class="max-w-[110px]"
+														height={presenter.companyImageHeight || '36'}
 														alt="Company"
 													/>
 												</div>

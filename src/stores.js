@@ -393,7 +393,8 @@ export const events = writable([
 					{
 						name: 'Nacho Iacovino',
 						image: '/presenters/nacho.png',
-						companyImage: '/companies/beyond.png'
+						companyImage: '/companies/beyond.png',
+						companyImageHeight: 26
 					}
 				]
 			}

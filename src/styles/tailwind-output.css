@@ -897,9 +897,6 @@ video {
 .h-\[80px\]{
 	height: 80px;
 }
-.max-h-9{
-	max-height: 2.25rem;
-}
 .max-h-\[0px\]{
 	max-height: 0px;
 }
