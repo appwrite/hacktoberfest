@@ -454,7 +454,7 @@ export const teamMembers = writable([
 	{
 		image: '/pictures/empty.webp',
 		githubProfile: 'https://appwrite.io/discord',
-		overlay: '+3600'
+		overlay: '+4100'
 	}
 ]);
 
