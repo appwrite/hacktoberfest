@@ -386,7 +386,7 @@ export const events = writable([
 			},
 
 			{
-				name: 'TailwindCSS for Backend developers (tentative)',
+				name: 'How to start with TypeScript as a JavaScript developer',
 				timeISO: '2021-10-20T17:00:00.000Z',
 				durationInMs: DurationMinute * 30,
 				presenters: [
