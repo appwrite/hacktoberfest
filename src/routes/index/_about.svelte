@@ -23,7 +23,7 @@
 			</div>
 
 			<div
-				class="grid grid-cols-12 rounded-[1.5rem] mt-[5rem] mb-[1rem] lg:mt-[7.375rem] lg:mb-[5rem] p-[2.75rem] lg:p-[3.375rem] linear-bg"
+				class="grid grid-cols-12 rounded-[1.5rem] mt-[5rem] mb-[1rem] lg:mt-[7.375rem] lg:mb-[5rem] p-[2.75rem] lg:p-[3.375rem] bg-[#F9F9F9]"
 			>
 				<div class="w-full h-full flex items-center justify-center col-span-12 lg:col-span-3">
 					<img src="/hacktoberfest.svg" class="max-w-sm lg:max-w-none w-full" alt="" />
@@ -32,11 +32,11 @@
 					class="lg:pl-20 col-span-12 lg:col-span-9 flex flex-col items-center justify-start lg:items-start"
 				>
 					<h1
-						class="text-center lg:text-left title my-10 lg:my-8 font-semibold text-white text-[1.8rem] lg:text-[2.1rem]"
+						class="text-center lg:text-left title my-10 lg:my-8 font-semibold text-black text-[1.8rem] lg:text-[2.1rem]"
 					>
 						Our journey with Hacktoberfest
 					</h1>
-					<p class=" hidden lg:block text-justify pb-[3rem] text-[1.1rem] text-white">
+					<p class=" hidden lg:block text-justify pb-[3rem] text-[1.1rem] text-black">
 						Hacktoberfest is an initiative that very deeply matters to us. We launched the first
 						iteration of Appwrite as a mere open-source project back in September 2019.
 						Hacktoberfest 2019 was truly a game-changer for us, as we saw over 200 contributions
@@ -45,7 +45,7 @@
 
 					<div class="w-full flex justify-center lg:justify-start">
 						<a href="https://appwrite.io/hacktoberfest" target="_blank">
-							<Button text="Read our blog post" type="red" />
+							<Button text="Read our blog post" type="primary" />
 						</a>
 					</div>
 				</div>
@@ -81,9 +81,5 @@
 <style>
 	.custom-shadow {
 		box-shadow: -20px -9px 20px 0px rgb(0 0 0 / 5%);
-	}
-
-	.linear-bg {
-		background: linear-gradient(180deg, #f02e65 0%, #d72456 100%);
 	}
 </style>
