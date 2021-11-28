@@ -1,4 +1,4 @@
-# Hacktoberfest 2021 Landing Page
+# Hacktoberfest Landing Page
 
 This repo is home to the Hacktoberfest landing page currently live at [https://hacktoberfest.appwrite.io/](https://hacktoberfest.appwrite.io/). It's built with [Svelte](https://svelte.dev/) and deployed on [Vercel](https://vercel.com/).
 
@@ -7,8 +7,8 @@ This repo is home to the Hacktoberfest landing page currently live at [https://h
 Like with every GitHub project, contributing starts with cloning this repository. You can either use the `code` button at the top of this page, or the `git clone` command as follows
 
 ```sh
-git clone git@github.com:appwrite/hacktoberfest-2021-landing.git
-cd hacktoberfest-2021-landing
+git clone git@github.com:appwrite/hacktoberfest.git
+cd hacktoberfest
 ```
 
 Then, install the dependencies using 
