@@ -1,24 +1,22 @@
-# create-svelte
+# Hacktoberfest 2021 Landing Page
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
+This repo is home to the Hacktoberfest landing page currently live at [https://hacktoberfest.appwrite.io/](https://hacktoberfest.appwrite.io/). It's built with [Svelte](https://svelte.dev/) and deployed on [Vercel](https://vercel.com/).
 
-## Creating a project
+## 👩‍💻 Contributing
 
-If you're seeing this, you've probably already done this step. Congrats!
+Like with every GitHub project, contributing starts with cloning this repository. You can either use the `code` button at the top of this page, or the `git clone` command as follows
 
-```bash
-# create a new project in the current directory
-npm init svelte@next
-
-# create a new project in my-app
-npm init svelte@next my-app
+```sh
+git clone git@github.com:appwrite/hacktoberfest-2021-landing.git
+cd hacktoberfest-2021-landing
 ```
 
-> Note: the `@next` is temporary
+Then, install the dependencies using 
+```sh
+npm install
+```
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Once you've installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
 ```bash
 npm run dev
@@ -27,12 +25,15 @@ npm run dev
 npm run dev -- --open
 ```
 
-## Building
+## 🔨 Building
 
-Before creating a production version of your app, install an [adapter](https://kit.svelte.dev/docs#adapters) for your target environment. Then:
+Before creating a production version of the app, install an [adapter](https://kit.svelte.dev/docs#adapters) for your target environment. Then:
 
 ```bash
 npm run build
 ```
 
 > You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
+
+## 🤕 Support 
+At any point, if you are stuck, feel free to hop on our [Discord server](https://appwrite.io/discord) to ask questions or seek mentorship! Happy Coding! 

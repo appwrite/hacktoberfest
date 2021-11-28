@@ -17,7 +17,7 @@ export const currentSection = writable({
 
 export const events = writable([
 	{
-		isOpened: false,
+		isOpened: true,
 		timeISO: '2021-09-21T16:00:00.000Z',
 		durationInMs: DurationMinute * 90,
 		name: 'Hacktoberfest Kickoff #1',
@@ -352,12 +352,13 @@ export const events = writable([
 		]
 	},
 	{
-		isOpened: true,
+		isOpened: false,
 		timeISO: '2021-10-20T16:00:00.000Z',
 		durationInMs: DurationMinute * 90,
 		name: 'Web Day',
 		presenter: 'Appwrite, SingleStore, Beyond',
-		link: 'https://www.linkedin.com/events/hacktoberfest-webday6851168021701025792/',
+		link: 'https://www.youtube.com/watch?v=L819UVzPkYo',
+		isFinished: true,
 		sessions: [
 			{
 				name: 'Connecting your Web App to Appwrite',
