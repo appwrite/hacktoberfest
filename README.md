@@ -1,4 +1,4 @@
-# Hacktoberfest Landing Page
+# 🎃 Hacktoberfest Landing Page
 
 This repo is home to the Hacktoberfest landing page currently live at [https://hacktoberfest.appwrite.io/](https://hacktoberfest.appwrite.io/). It's built with [Svelte](https://svelte.dev/) and deployed on [Vercel](https://vercel.com/).
 
