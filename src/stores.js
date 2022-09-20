@@ -2,8 +2,23 @@ import { writable } from 'svelte/store';
 
 export const DurationMinute = 1000 * 60;
 
-export const githubLink =
-	'https://github.com/search?q=org%3Aappwrite+org%3Autopia-php+is%3Aissue+label%3Ahacktoberfest+created%3A%3E2021-01-01+is%3Aopen&type=issues';
+export const githubQuery = [
+	'org:appwrite',
+	'org:utopia-php',
+	'org:open-runtimes',
+	'label:hacktoberfest',
+	'created:>2021-01-01',
+	'state:open',
+].map(encodeURIComponent).join('+');
+
+const gitHubQueryString = [
+	`q=${githubQuery}`,
+	'type=issues',
+	's=updated',
+	'o=asc'
+].join('&');
+
+export const githubLink = `https://github.com/search?${gitHubQueryString}`;
 
 export const totalIssuesAmount = writable(null);
 
@@ -17,390 +32,416 @@ export const currentSection = writable({
 
 export const events = writable([
 	{
-		isOpened: true,
-		timeISO: '2021-09-21T16:00:00.000Z',
-		durationInMs: DurationMinute * 90,
-		name: 'Hacktoberfest Kickoff #1',
-		presenter: 'Jina AI, n8n.io, Hoppscotch, Mattermost',
-		link: 'https://www.youtube.com/watch?v=egHfCH_ZR4Q',
-		isFinished: true,
+		isOpened: false,
+		timeISO: '2022-09-24T16:00:00.000Z',
+		durationInMs: DurationMinute * 120,
+		name: 'Hacktoberfest Kickoff Event #1!',
+		presenter: 'Microsoft Learn Student Ambassadors, RapidAPI',
+		link: 'https://www.youtube.com/watch?v=oPswl1Vvpxc',
+		hasStarted: false,
 		sessions: [
 			{
 				name: 'What is Hacktoberfest?',
 				timeISO: '2021-09-21T16:00:00.000Z',
-				durationInMs: DurationMinute * 30,
+				durationInMs: DurationMinute * 15,
 				presenters: [
 					{
 						name: 'Aditya Oberai',
-						image: '/presenters/aditya.png',
+						image: '/presenters/aditya.jpeg',
 						companyImage: '/companies/appwrite.png'
-					}
+					},
+					{
+						name: 'Tessa Mero',
+						image: '/presenters/tessa.jpeg',
+						companyImage: '/companies/appwrite.png'
+					},
 				]
 			},
 			{
-				name: 'Neural Search with Jina AI',
-				timeISO: '2021-09-21T16:30:00.000Z',
-				durationInMs: DurationMinute * 15,
+				name: 'Creating Your First Pull Request',
+				timeISO: '2021-09-21T16:15:00.000Z',
+				durationInMs: DurationMinute * 45,
 				presenters: [
 					{
-						name: 'Cristian Mitroi',
-						image: '/presenters/cristian.png',
-						companyImage: '/companies/jinaai.png'
+						name: 'Muhammad Hassan',
+						image: '/presenters/muhammad.jpeg',
+						companyImage: '/companies/mlsa.png'
 					}
 				]
 			},
 			{
-				name: 'Extendable workflow automation with n8n',
-				timeISO: '2021-09-21T16:45:00.000Z',
-				durationInMs: DurationMinute * 15,
-				presenters: [
-					{
-						name: 'Harshil Agrawal',
-						image: '/presenters/harshil.png',
-						companyImage: '/companies/n8n.png'
-					}
-				]
-			},
-			{
-				name: 'Hoppscotch - Open Source API development ecosystem',
+				name: 'Why Contributing to Open Source Will Help Your Career (Fireside Chat)',
 				timeISO: '2021-09-21T17:00:00.000Z',
-				durationInMs: DurationMinute * 15,
-				presenters: [
-					{
-						name: 'Liyas Thomas',
-						image: '/presenters/liyas.png',
-						companyImage: '/companies/hoppscotch.svg'
-					}
-				]
-			},
-			{
-				name: 'Getting started with Mattermost',
-				timeISO: '2021-09-21T17:15:00.000Z',
-				durationInMs: DurationMinute * 15,
-				presenters: [
-					{
-						name: 'PJ Hagerty',
-						image: '/presenters/pj.png',
-						companyImage: '/companies/mattermost.png'
-					}
-				]
-			}
-		]
-	},
-
-	{
-		isOpened: false,
-		timeISO: '2021-09-25T16:00:00.000Z',
-		durationInMs: DurationMinute * 90,
-		name: 'Intro to Open Source',
-		presenter: 'Major League Hacking, GitHub, Microsoft',
-		link: 'https://www.youtube.com/watch?v=enNcIje4dXQ',
-		isFinished: true,
-		sessions: [
-			{
-				name: 'Intro to Git and creating your first PR',
-				timeISO: '2021-09-25T16:00:00.000Z',
-				durationInMs: DurationMinute * 30,
-				presenters: [
-					{
-						name: 'Brandon Leckemby',
-						image: '/presenters/brandon.png',
-						companyImage: '/companies/appwrite.png'
-					}
-				]
-			},
-			{
-				name: 'Panel: Building Open source communities',
-				timeISO: '2021-09-25T16:30:00.000Z',
 				durationInMs: DurationMinute * 60,
 				presenters: [
 					{
-						name: 'Mike Swift',
-						image: '/presenters/mike.png',
-						companyImage: '/companies/mlh.png'
+						name: 'Ahmad Awais',
+						image: '/presenters/ahmad.webp',
+						companyImage: '/companies/rapidapi.svg'
 					},
-					{
-						name: 'Juan Pablo',
-						image: '/presenters/juan.png',
-						companyImage: '/companies/github.png'
-					},
-					{
-						name: 'Jen Looper',
-						image: '/presenters/jen.png',
-						companyImage: '/companies/microsoft.png'
-					}
 				]
-			}
+			},
 		]
 	},
-
 	{
 		isOpened: false,
-		timeISO: '2021-09-29T15:00:00.000Z',
-		durationInMs: DurationMinute * 105,
-		name: 'Hacktoberfest Kickoff #2',
-		link: 'https://www.youtube.com/watch?v=cyJAz-c1OWs',
-		presenter: 'Julia, Lazy Git, Forem, HashiCorp, Symfony',
-		isFinished: true,
+		timeISO: '2022-09-26T15:00:00.000Z',
+		durationInMs: DurationMinute * 120,
+		name: 'Hacktoberfest Event #2!',
+		presenter: 'GitHub, Jono Bacon Consulting',
+		link: 'https://www.youtube.com/watch?v=BtP2e-u4HjU',
+		hasStarted: false,
 		sessions: [
 			{
 				name: 'What is Hacktoberfest?',
-				timeISO: '2021-09-29T15:00:00.000Z',
+				timeISO: '2022-09-25T15:00:00.000Z',
 				durationInMs: DurationMinute * 30,
 				presenters: [
 					{
 						name: 'Christy Jacob',
-						image: '/presenters/christy.png',
+						image: '/presenters/christy.jpeg',
 						companyImage: '/companies/appwrite.png'
-					}
+					},
+					{
+						name: 'Tessa Mero',
+						image: '/presenters/tessa.jpeg',
+						companyImage: '/companies/appwrite.png'
+					},
 				]
 			},
 			{
-				name: 'The Julia Programming Language',
-				timeISO: '2021-09-29T15:30:00.000Z',
-				durationInMs: DurationMinute * 15,
+				name: 'Intro to Git and GitHub',
+				timeISO: '2022-09-25T15:30:00.000Z',
+				durationInMs: DurationMinute * 30,
 				presenters: [
 					{
-						name: 'Logan Kilpatrick',
-						image: '/presenters/logan.png',
-						companyImage: '/companies/julia.png'
-					}
+						name: 'Rizèl Scarlett',
+						image: '/presenters/rizel.jpeg',
+						companyImage: '/companies/github.png'
+					},
 				]
 			},
 			{
-				name: 'Lazy Git - Terminal UI for git commands',
-				timeISO: '2021-09-29T15:45:00.000Z',
-				durationInMs: DurationMinute * 15,
+				name: "Open Source Advocacy: Why it's important? (Fireside Chat)",
+				timeISO: '2022-09-25T16:00:00.000Z',
+				durationInMs: DurationMinute * 60,
+				presenters: [
+					{
+						name: 'Jono Bacon',
+						image: '/presenters/jono.jpeg',
+						companyImage: '/companies/jonobaconconsulting.png'
+					},
+				]
+			},
+		]
+	},
+	{
+		isOpened: false,
+		timeISO: '2022-09-28T16:00:00.000Z',
+		durationInMs: DurationMinute * 120,
+		name: 'Hacktoberfest Event #3!',
+		link: 'https://www.youtube.com/watch?v=WraJDMrWYf8',
+		presenter: 'Linkfree, Front-End Foxes',
+		hasStarted: false,
+		sessions: [
+			{
+				name: 'Why Get Started with Open Source, Project Showcase #1 (LinkFree)',
+				timeISO: '2022-09-28T16:00:00.000Z',
+				durationInMs: DurationMinute * 60,
+				presenters: [
+					{
+						name: 'Eddie Jaoude',
+						image: '/presenters/eddie.jpeg',
+						companyImage: '/companies/linkfree.png'
+					},
+				]
+			},
+			{
+				name: 'Project Showcase #2 - Front-End Foxes',
+				timeISO: '2022-09-28T17:00:00.000Z',
+				durationInMs: DurationMinute * 30,
+				presenters: [
+					{
+						name: 'Jen Looper',
+						image: '/presenters/jen.png',
+						companyImage: '/companies/frontendfoxes.svg'
+					},
+				]
+			},
+			{
+				name: 'How to Contribute to Appwrite',
+				timeISO: '2022-09-28T17:30:00.000Z',
+				durationInMs: DurationMinute * 30,
+				presenters: [
+					{
+						name: 'Vincent Ge',
+						image: '/presenters/vincent.jpeg',
+						companyImage: '/companies/appwrite.png'
+					},
+				]
+			},
+		]
+	},
+	{
+		isOpened: false,
+		timeISO: '2022-10-04T16:00:00.000Z',
+		durationInMs: DurationMinute * 30,
+		name: 'Hackerfest Project Showcase #3',
+		link: '',
+		presenter: 'Ockam',
+		hasStarted: false,
+		sessions: [
+			{
+				name: 'Ockam',
+				timeISO: '2022-10-04T16:00:00.000Z',
+				durationInMs: DurationMinute * 30,
+				presenters: [
+					{
+						name: 'Sabeen Syed',
+						image: '/presenters/sabeen.jpeg',
+						companyImage: '/companies/ockam.svg'
+					}
+				]
+			},
+		]
+	},
+	{
+		isOpened: false,
+		timeISO: '2022-10-06T16:00:00.000Z',
+		durationInMs: DurationMinute * 30,
+		name: 'Project Showcase #4',
+		link: '',
+		presenter: 'Bishwajeet Parhi',
+		hasStarted: false,
+		sessions: [
+			{
+				name: 'Awesome Appwrite Snippets',
+				timeISO: '2022-10-06T16:00:00.000Z',
+				durationInMs: DurationMinute * 30,
+				presenters: [
+					{
+						name: 'Bishwajeet Parhi',
+						image: '/presenters/bishwajeet.jpeg',
+						companyImage: '/companies/bishwajeetparhi.png'
+					},
+				]
+			},
+		]
+	},
+	{
+		isOpened: false,
+		timeISO: '2022-10-08T16:00:00.000Z',
+		durationInMs: DurationMinute * 60,
+		name: 'Community Chats',
+		link: '',
+		presenter: 'Appwrite',
+		hasStarted: false,
+		sessions: [
+			{
+				name: 'Community Chats on Discord Stage',
+				timeISO: '2022-10-08T16:00:00.000Z',
+				durationInMs: DurationMinute * 60,
+				presenters: [
+					{
+						name: 'Aditya Oberai',
+						image: '/presenters/aditya.jpeg',
+						companyImage: '/companies/appwrite.png'
+					},
+					{
+						name: 'Matej Bačo',
+						image: '/presenters/matej.jpeg',
+						companyImage: '/companies/appwrite.png'
+					},
+				]
+			},
+		]
+	},
+	{
+		isOpened: false,
+		timeISO: '2022-10-11T16:00:00.000Z',
+		durationInMs: DurationMinute * 30,
+		name: 'Project Showcase #5',
+		link: '',
+		presenter: 'Lazygit',
+		hasStarted: false,
+		sessions: [
+			{
+				name: 'LazyGit',
+				timeISO: '2022-10-11T16:00:00.000Z',
+				durationInMs: DurationMinute * 30,
 				presenters: [
 					{
 						name: 'Jesse Duffield',
 						image: '/presenters/jesse.png',
 						companyImage: '/companies/lazygit.png'
-					}
+					},
 				]
 			},
-			{
-				name: 'Forem - The New Community Web',
-				timeISO: '2021-09-29T16:00:00.000Z',
-				durationInMs: DurationMinute * 15,
-				presenters: [
-					{
-						name: 'Nick Taylor',
-						image: '/presenters/nick.png',
-						companyImage: '/companies/forem.png'
-					}
-				]
-			},
-			{
-				name: 'Infrastructure automation with HashiCorp',
-				timeISO: '2021-09-29T16:15:00.000Z',
-				durationInMs: DurationMinute * 15,
-				presenters: [
-					{
-						name: 'Melissa Gurney Greene',
-						image: '/presenters/melissa.png',
-						companyImage: '/companies/hashicorp.png'
-					}
-				]
-			},
-			{
-				name: 'Getting started with Symfony',
-				timeISO: '2021-09-29T16:30:00.000Z',
-				durationInMs: DurationMinute * 15,
-				presenters: [
-					{
-						name: 'Nicolas Grekas',
-						image: '/presenters/nicolas.png',
-						companyImage: '/companies/symfony.png'
-					}
-				]
-			}
 		]
 	},
-
 	{
 		isOpened: false,
-		timeISO: '2021-10-01T03:00:00.000Z',
+		timeISO: '2022-10-13T16:00:00.000Z',
+		durationInMs: DurationMinute * 30,
+		name: 'Project Showcase #6',
+		link: '',
+		presenter: 'Deepgram',
+		hasStarted: false,
+		sessions: [
+			{
+				name: 'Deepgram',
+				timeISO: '2022-10-13T16:00:00.000Z',
+				durationInMs: DurationMinute * 30,
+				presenters: [
+					{
+						name: 'Bekah Hawrot Weigel',
+						image: '/presenters/bekah.jpeg',
+						companyImage: '/companies/deepgram.svg'
+					},
+				]
+			},
+		]
+	},
+	{
+		isOpened: false,
+		timeISO: '2022-10-22T16:00:00.000Z',
 		durationInMs: DurationMinute * 60,
-		name: 'Hacktoberfest Countdown Party! 🥳',
-		link: 'https://www.linkedin.com/events/hacktoberfestcountdownparty6849034378459287554/',
-		presenter: 'Let the Hacktoberfest begin.',
-		isFinished: false,
-		sessions: []
-	},
-
-	{
-		isOpened: false,
-		timeISO: '2021-10-06T16:00:00.000Z',
-		durationInMs: DurationMinute * 120,
-		name: 'DevOps Day',
-		presenter: 'Appwrite, Grafana, GitLab, DigitalOcean',
-		link: 'https://www.youtube.com/watch?v=T8Pu20HIAiY',
-		isFinished: true,
+		name: 'Community Chats/PR Review Party',
+		link: '',
+		presenter: 'Appwrite',
+		hasStarted: false,
 		sessions: [
 			{
-				name: 'Intro to Docker Compose and Appwrite',
-				timeISO: '2021-10-06T16:00:00.000Z',
-				durationInMs: DurationMinute * 30,
+				name: 'Community Chats on Discord Stage',
+				timeISO: '2022-10-22T16:00:00.000Z',
+				durationInMs: DurationMinute * 60,
 				presenters: [
 					{
-						name: 'Brandon Leckemby',
-						image: '/presenters/brandon.png',
+						name: 'Aditya Oberai',
+						image: '/presenters/aditya.jpeg',
 						companyImage: '/companies/appwrite.png'
-					}
-				]
-			},
-			{
-				name: 'Observability with Prometheus and Beyond',
-				timeISO: '2021-10-06T16:30:00.000Z',
-				durationInMs: DurationMinute * 30,
-				presenters: [
+					},
 					{
-						name: 'Richard Hartman',
-						image: '/presenters/richard.png',
-						companyImage: '/companies/grafana.png'
-					}
-				]
-			},
-			{
-				name: 'Intro to GitLab: The DevOps Platform',
-				timeISO: '2021-10-06T17:00:00.000Z',
-				durationInMs: DurationMinute * 30,
-				presenters: [
-					{
-						name: 'PJ Metz',
-						image: '/presenters/pj_metz.png',
-						companyImage: '/companies/gitlab.png'
-					}
-				]
-			},
-			{
-				name: 'Improving a Distributed System Post-Incident',
-				timeISO: '2021-10-06T17:30:00.000Z',
-				durationInMs: DurationMinute * 30,
-				presenters: [
-					{
-						name: 'Julius Zerwick',
-						image: '/presenters/julius.png',
-						companyImage: '/companies/digitalocean.png'
-					}
-				]
-			}
-		]
-	},
-
-	{
-		isOpened: false,
-		timeISO: '2021-10-13T16:00:00.000Z',
-		durationInMs: DurationMinute * 90,
-		name: 'Flutter Day',
-		presenter: 'Appwrite, Stream, Telia, Very Good Ventures',
-		isFinished: true,
-		link: 'https://www.youtube.com/watch?v=zJ7TqYn6hKs',
-		sessions: [
-			{
-				name: 'Connecting your Flutter app to Appwrite',
-				timeISO: '2021-10-13T16:00:00.000Z',
-				durationInMs: DurationMinute * 30,
-				presenters: [
-					{
-						name: 'Damodar Lohani',
-						image: '/presenters/damodar.png',
+						name: 'Matej Bačo',
+						image: '/presenters/matej.jpeg',
 						companyImage: '/companies/appwrite.png'
-					}
+					},
+					{
+						name: 'Haimantika Mitra',
+						image: '/presenters/haimantika.jpeg',
+						companyImage: '/companies/appwrite.png'
+					},
 				]
 			},
-
-			{
-				name: 'Structuring a Flutter desktop application with macos_ui',
-				timeISO: '2021-10-13T16:30:00.000Z',
-				durationInMs: DurationMinute * 30,
-				presenters: [
-					{
-						name: 'Reuben Turner',
-						image: '/presenters/reuben.webp',
-						companyImage: '/companies/getstream.png'
-					}
-				]
-			},
-
-			{
-				name: 'Scalable Flutter app development',
-				timeISO: '2021-10-13T17:00:00.000Z',
-				durationInMs: DurationMinute * 30,
-				presenters: [
-					{
-						name: 'Majid Hajian',
-						image: '/presenters/majid.webp',
-						companyImage: '/companies/telia.png'
-					}
-				]
-			},
-
-			{
-				name: 'Generating a Scalable Flutter App in Seconds with Very Good CLI',
-				timeISO: '2021-10-13T17:30:00.000Z',
-				durationInMs: DurationMinute * 30,
-				presenters: [
-					{
-						name: 'Erick Zanardo',
-						image: '/presenters/erick.webp',
-						companyImage: '/companies/very_good_ventures.png'
-					}
-				]
-			}
 		]
 	},
 	{
 		isOpened: false,
-		timeISO: '2021-10-20T16:00:00.000Z',
-		durationInMs: DurationMinute * 90,
-		name: 'Web Day',
-		presenter: 'Appwrite, SingleStore, Beyond',
-		link: 'https://www.youtube.com/watch?v=L819UVzPkYo',
-		isFinished: true,
+		timeISO: '2022-10-25T16:00:00.000Z',
+		durationInMs: DurationMinute * 30,
+		name: 'Project Showcase #7',
+		link: '',
+		presenter: 'Oh My Posh',
+		hasStarted: false,
 		sessions: [
 			{
-				name: 'Connecting your Web App to Appwrite',
-				timeISO: '2021-10-20T16:00:00.000Z',
+				name: 'Oh My Posh',
+				timeISO: '2022-10-25T16:00:00.000Z',
 				durationInMs: DurationMinute * 30,
 				presenters: [
 					{
-						name: 'Torsten Dittmann',
-						image: '/presenters/torsten.png',
+						name: 'Jan Dobbeleer',
+						image: '/presenters/jan.jpeg',
+						companyImage: '/companies/ohmyposh.svg'
+					},
+				]
+			},
+		]
+	},
+	{
+		isOpened: false,
+		timeISO: '2022-10-27T16:00:00.000Z',
+		durationInMs: DurationMinute * 30,
+		name: 'Project Showcase #8',
+		link: '',
+		presenter: 'Novu',
+		hasStarted: false,
+		sessions: [
+			{
+				name: 'Novu',
+				timeISO: '2022-10-27T16:00:00.000Z',
+				durationInMs: DurationMinute * 30,
+				presenters: [
+					{
+						name: 'Emil Pearce',
+						image: '/presenters/emil.jpeg',
+						companyImage: '/companies/novu.svg'
+					},
+				]
+			},
+		]
+	},
+	{
+		isOpened: false,
+		timeISO: '2022-10-29T16:00:00.000Z',
+		durationInMs: DurationMinute * 60,
+		name: 'Community Chats/PR Review Party',
+		link: '',
+		presenter: 'Appwrite',
+		hasStarted: false,
+		sessions: [
+			{
+				name: 'Community Chats on Discord Stage',
+				timeISO: '2022-10-29T16:00:00.000Z',
+				durationInMs: DurationMinute * 60,
+				presenters: [
+					{
+						name: 'Aditya Oberai',
+						image: '/presenters/aditya.jpeg',
+						companyImage: '/companies/appwrite.png'
+					},
+					{
+						name: 'Matej Bačo',
+						image: '/presenters/matej.jpeg',
+						companyImage: '/companies/appwrite.png'
+					},
+					{
+						name: 'Vincent Ge',
+						image: '/presenters/vincent.jpeg',
 						companyImage: '/companies/appwrite.png'
 					}
 				]
 			},
-
+		]
+	},
+	{
+		isOpened: false,
+		timeISO: '2022-10-31T16:00:00.000Z',
+		durationInMs: DurationMinute * 60,
+		name: 'Closing Ceremony',
+		link: '',
+		presenter: 'Appwrite',
+		hasStarted: false,
+		sessions: [
 			{
-				name: 'Getting Started with SingleStore - The Best Kept Secret in Data',
-				timeISO: '2021-10-20T16:30:00.000Z',
-				durationInMs: DurationMinute * 30,
+				name: "What's Next",
+				timeISO: '2022-10-31T16:00:00.000Z',
+				durationInMs: DurationMinute * 60,
 				presenters: [
 					{
-						name: 'Joe Karlsson',
-						image: '/presenters/joe.png',
-						companyImage: '/companies/singlestore.png'
-					}
+						name: 'Aditya Oberai',
+						image: '/presenters/aditya.jpeg',
+						companyImage: '/companies/appwrite.png'
+					},
+					{
+						name: 'Alex Patterson ',
+						image: '/presenters/alex.jpeg',
+						companyImage: '/companies/appwrite.png'
+					},
 				]
 			},
-
-			{
-				name: 'How to start with TypeScript as a JavaScript developer',
-				timeISO: '2021-10-20T17:00:00.000Z',
-				durationInMs: DurationMinute * 30,
-				presenters: [
-					{
-						name: 'Nacho Iacovino',
-						image: '/presenters/nacho.png',
-						companyImage: '/companies/beyond.png',
-						companyImageHeight: 26
-					}
-				]
-			}
 		]
-	}
+	},
 ]);
 
 export const teamMembers = writable([
@@ -413,50 +454,45 @@ export const teamMembers = writable([
 		githubProfile: 'https://github.com/christyjacob4'
 	},
 	{
-		image: '/pictures/torsten.webp',
-		githubProfile: 'https://github.com/TorstenDittmann'
-	},
-	{
 		image: '/pictures/damodar.webp',
 		githubProfile: 'https://github.com/lohanidamodar'
+	},
+	{
+		image: '/pictures/torsten.webp',
+		githubProfile: 'https://github.com/TorstenDittmann'
 	},
 	{
 		image: '/pictures/codercatdev.webp',
 		githubProfile: 'https://github.com/codercatdev'
 	},
 	{
+		image: '/pictures/ionic.webp',
+		githubProfile: 'https://github.com/PineappleIOnic'
+	},
+	{
 		image: '/pictures/jake.webp',
 		githubProfile: 'https://github.com/abnegate'
 	},
 	{
-		image: '/pictures/ionic.webp',
-		githubProfile: 'https://github.com/PineappleIOnic'
-	},
-
-	{
 		image: '/pictures/sara.webp',
 		githubProfile: 'https://github.com/sarakaandorp'
 	},
-
 	{
 		image: '/pictures/meldiron.webp',
 		githubProfile: 'https://github.com/Meldiron'
 	},
-
 	{
 		image: '/pictures/aditya.webp',
 		githubProfile: 'https://github.com/adityaoberai'
 	},
-
 	{
 		image: '/pictures/tenne.webp',
 		githubProfile: 'https://github.com/TenneG'
 	},
-
 	{
-		image: '/pictures/empty.webp',
+		image: '/pictures/empty.svg',
 		githubProfile: 'https://appwrite.io/discord',
-		overlay: '+4100'
+		overlay: '+9800'
 	}
 ]);
 

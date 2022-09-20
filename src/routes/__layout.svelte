@@ -2,4 +2,4 @@
 	import '../styles/tailwind-output.css';
 </script>
 
-<slot />
+<div class="bg-neutral-200 text-neutral-30"><slot /></div>
