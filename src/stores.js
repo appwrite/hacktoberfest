@@ -421,8 +421,8 @@ export const teamMembers = writable([
 		githubProfile: 'https://github.com/lohanidamodar'
 	},
 	{
-		image: '/pictures/kodumbeats.webp',
-		githubProfile: 'https://github.com/kodumbeats'
+		image: '/pictures/codercatdev.webp',
+		githubProfile: 'https://github.com/codercatdev'
 	},
 	{
 		image: '/pictures/jake.webp',
