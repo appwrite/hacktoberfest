@@ -8,6 +8,56 @@ body {
 	font-family: 'Inter', sans-serif, -apple-system, system-ui, BlinkMacSystemFont;
 }
 
-.title {
-	font-family: 'Poppins', sans-serif, -apple-system, system-ui, BlinkMacSystemFont;
+@layer components {
+	.h2-eyebrow {
+		color: theme('colors.primary.100');
+		font-weight: theme('fontWeight.medium');
+		@apply text-sm;
+		text-transform: uppercase;
+	}
+}
+
+@layer base {
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: 'Poppins', sans-serif, -apple-system, system-ui, BlinkMacSystemFont;
+		color: theme('colors.neutral.5')
+	}
+
+	h1,
+	h2,
+	h3 {
+		font-weight: 600;
+	}
+
+	h4,
+	h5,
+	h6 {
+		font-weight: 700;
+	}
+
+	h1 {
+		font-size: 2.5rem;
+		line-height: 3.75rem;
+	}
+
+	h2 {
+		font-size: 2.375rem;
+		line-height: 3.563rem;
+	}
+
+	h3 {
+		font-size: 2rem;
+		line-height: 3rem;
+	}
+
+	h4 {
+		font-size: 1.125rem;
+		line-height: 1.688rem;
+	}
 }

@@ -1,6 +1,15 @@
+import { githubQuery } from '../stores';
+
 export const get = async (request) => {
+	const queryString = [
+		`q=${githubQuery}`,
+		'type=issues',
+		'per_page=10',
+		'sort=updated',
+		'order=asc',
+	].join('&')
 	const issuesQuery = await fetch(
-		'https://api.github.com/search/issues?q=org%3Aappwrite+org%3Autopia-php+is%3Aissue+label%3Ahacktoberfest+created%3A%3E2021-01-01+is%3Aopen&type=issues&per_page=100'
+		`https://api.github.com/search/issues?${queryString}`
 	);
 
 	const issuesJson = await issuesQuery.json();
@@ -22,7 +31,7 @@ export const get = async (request) => {
 						label: label.name,
 						backgroundColor: label.color,
 						style:
-							label.color === 'a0ccf7' || label.color === 'a2eeef' ? 'text-black' : 'text-white'
+							['22F50E', 'a0ccf7', 'a2eeef', '03CA45'].includes(label.color) ? 'text-black' : 'text-white'
 					};
 				})
 			};
