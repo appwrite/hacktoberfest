@@ -50,10 +50,11 @@
 	let nextEvent = -1;
 	$events.forEach((event, eventIndex) => {
 		const startingTime = new Date(event.timeISO).getTime();
+		const endingTime = startingTime + event.durationInMs;
 		if (startingTime < now) {
 			$events[eventIndex].hasStarted = true;
 		}
-		if (nextEvent < 0 && startingTime > now) {
+		if (nextEvent < 0 && endingTime > now) {
 			nextEvent = eventIndex;
 		}
 	});
