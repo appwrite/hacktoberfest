@@ -1192,14 +1192,6 @@ h4 {
 	padding-top: 64px;
 	padding-bottom: 64px;
 }
-.py-3\.5{
-	padding-top: 0.875rem;
-	padding-bottom: 0.875rem;
-}
-.py-3{
-	padding-top: 0.75rem;
-	padding-bottom: 0.75rem;
-}
 .py-8{
 	padding-top: 2rem;
 	padding-bottom: 2rem;
@@ -1250,6 +1242,15 @@ h4 {
 .pb-\[3rem\]{
 	padding-bottom: 3rem;
 }
+.pt-3\.5{
+	padding-top: 0.875rem;
+}
+.pb-8{
+	padding-bottom: 2rem;
+}
+.pt-3{
+	padding-top: 0.75rem;
+}
 .pb-0{
 	padding-bottom: 0px;
 }
@@ -1267,21 +1268,6 @@ h4 {
 }
 .pb-\[100px\]{
 	padding-bottom: 100px;
-}
-.pt-3\.5{
-	padding-top: 0.875rem;
-}
-.pt-3{
-	padding-top: 0.75rem;
-}
-.pb-5{
-	padding-bottom: 1.25rem;
-}
-.pb-10{
-	padding-bottom: 2.5rem;
-}
-.pb-8{
-	padding-bottom: 2rem;
 }
 .text-left{
 	text-align: left;
@@ -1380,9 +1366,6 @@ h4 {
 .opacity-100{
 	opacity: 1;
 }
-.bg-blend-darken{
-	background-blend-mode: darken;
-}
 .shadow-md{
 	--tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -1394,14 +1377,6 @@ h4 {
 }
 .blur{
 	--tw-blur: blur(8px);
-	filter: var(--tw-filter);
-}
-.brightness-0{
-	--tw-brightness: brightness(0);
-	filter: var(--tw-filter);
-}
-.brightness-50{
-	--tw-brightness: brightness(.5);
 	filter: var(--tw-filter);
 }
 .drop-shadow{
