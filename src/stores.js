@@ -138,7 +138,7 @@ export const events = writable([
 	{
 		isOpened: false,
 		timeISO: '2022-09-28T16:00:00.000Z',
-		durationInMs: DurationMinute * 120,
+		durationInMs: DurationMinute * 90,
 		name: 'Hacktoberfest Event #3!',
 		link: 'https://www.youtube.com/watch?v=WraJDMrWYf8',
 		presenter: 'Linkfree, Front-End Foxes',
@@ -156,21 +156,21 @@ export const events = writable([
 					},
 				]
 			},
-			{
-				name: 'Project Showcase #2 - Front-End Foxes',
-				timeISO: '2022-09-28T17:00:00.000Z',
-				durationInMs: DurationMinute * 30,
-				presenters: [
-					{
-						name: 'Jen Looper',
-						image: '/presenters/jen.png',
-						companyImage: '/companies/frontendfoxes.svg'
-					},
-				]
-			},
+			// {
+			// 	name: 'Project Showcase #2 - Front-End Foxes',
+			// 	timeISO: '2022-09-28T17:00:00.000Z',
+			// 	durationInMs: DurationMinute * 30,
+			// 	presenters: [
+			// 		{
+			// 			name: 'Jen Looper',
+			// 			image: '/presenters/jen.png',
+			// 			companyImage: '/companies/frontendfoxes.svg'
+			// 		},
+			// 	]
+			// },
 			{
 				name: 'How to Contribute to Appwrite',
-				timeISO: '2022-09-28T17:30:00.000Z',
+				timeISO: '2022-09-28T17:00:00.000Z',
 				durationInMs: DurationMinute * 30,
 				presenters: [
 					{
