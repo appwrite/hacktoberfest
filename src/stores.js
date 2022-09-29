@@ -8,15 +8,12 @@ export const githubQuery = [
 	'org:open-runtimes',
 	'label:hacktoberfest',
 	'created:>2021-01-01',
-	'state:open',
-].map(encodeURIComponent).join('+');
+	'state:open'
+]
+	.map(encodeURIComponent)
+	.join('+');
 
-const gitHubQueryString = [
-	`q=${githubQuery}`,
-	'type=issues',
-	's=updated',
-	'o=asc'
-].join('&');
+const gitHubQueryString = [`q=${githubQuery}`, 'type=issues', 's=updated', 'o=asc'].join('&');
 
 export const githubLink = `https://github.com/search?${gitHubQueryString}`;
 
@@ -54,7 +51,7 @@ export const events = writable([
 						name: 'Tessa Mero',
 						image: '/presenters/tessa.jpeg',
 						companyImage: '/companies/appwrite.png'
-					},
+					}
 				]
 			},
 			{
@@ -78,9 +75,9 @@ export const events = writable([
 						name: 'Ahmad Awais',
 						image: '/presenters/ahmad.webp',
 						companyImage: '/companies/rapidapi.svg'
-					},
+					}
 				]
-			},
+			}
 		]
 	},
 	{
@@ -106,7 +103,7 @@ export const events = writable([
 						name: 'Tessa Mero',
 						image: '/presenters/tessa.jpeg',
 						companyImage: '/companies/appwrite.png'
-					},
+					}
 				]
 			},
 			{
@@ -118,7 +115,7 @@ export const events = writable([
 						name: 'Rizèl Scarlett',
 						image: '/presenters/rizel.jpeg',
 						companyImage: '/companies/github.png'
-					},
+					}
 				]
 			},
 			{
@@ -130,9 +127,9 @@ export const events = writable([
 						name: 'Jono Bacon',
 						image: '/presenters/jono.jpeg',
 						companyImage: '/companies/jonobaconconsulting.png'
-					},
+					}
 				]
-			},
+			}
 		]
 	},
 	{
@@ -153,7 +150,7 @@ export const events = writable([
 						name: 'Eddie Jaoude',
 						image: '/presenters/eddie.jpeg',
 						companyImage: '/companies/linkfree.png'
-					},
+					}
 				]
 			},
 			// {
@@ -177,9 +174,9 @@ export const events = writable([
 						name: 'Vincent Ge',
 						image: '/presenters/vincent.jpeg',
 						companyImage: '/companies/appwrite.png'
-					},
+					}
 				]
-			},
+			}
 		]
 	},
 	{
@@ -202,7 +199,7 @@ export const events = writable([
 						companyImage: '/companies/ockam.svg'
 					}
 				]
-			},
+			}
 		]
 	},
 	{
@@ -211,7 +208,7 @@ export const events = writable([
 		durationInMs: DurationMinute * 30,
 		name: 'Project Showcase #4',
 		link: '',
-		presenter: 'Bishwajeet Parhi',
+		presenter: 'Awesome Appwrite Snippets',
 		hasStarted: false,
 		sessions: [
 			{
@@ -223,9 +220,9 @@ export const events = writable([
 						name: 'Bishwajeet Parhi',
 						image: '/presenters/bishwajeet.jpeg',
 						companyImage: '/companies/bishwajeetparhi.png'
-					},
+					}
 				]
-			},
+			}
 		]
 	},
 	{
@@ -251,9 +248,9 @@ export const events = writable([
 						name: 'Matej Bačo',
 						image: '/presenters/matej.jpeg',
 						companyImage: '/companies/appwrite.png'
-					},
+					}
 				]
-			},
+			}
 		]
 	},
 	{
@@ -274,9 +271,9 @@ export const events = writable([
 						name: 'Jesse Duffield',
 						image: '/presenters/jesse.png',
 						companyImage: '/companies/lazygit.png'
-					},
+					}
 				]
-			},
+			}
 		]
 	},
 	{
@@ -297,9 +294,9 @@ export const events = writable([
 						name: 'Bekah Hawrot Weigel',
 						image: '/presenters/bekah.jpeg',
 						companyImage: '/companies/deepgram.svg'
-					},
+					}
 				]
-			},
+			}
 		]
 	},
 	{
@@ -330,9 +327,9 @@ export const events = writable([
 						name: 'Haimantika Mitra',
 						image: '/presenters/haimantika.jpeg',
 						companyImage: '/companies/appwrite.png'
-					},
+					}
 				]
-			},
+			}
 		]
 	},
 	{
@@ -353,9 +350,9 @@ export const events = writable([
 						name: 'Jan Dobbeleer',
 						image: '/presenters/jan.jpeg',
 						companyImage: '/companies/ohmyposh.svg'
-					},
+					}
 				]
-			},
+			}
 		]
 	},
 	{
@@ -376,9 +373,9 @@ export const events = writable([
 						name: 'Emil Pearce',
 						image: '/presenters/emil.jpeg',
 						companyImage: '/companies/novu.svg'
-					},
+					}
 				]
-			},
+			}
 		]
 	},
 	{
@@ -411,7 +408,7 @@ export const events = writable([
 						companyImage: '/companies/appwrite.png'
 					}
 				]
-			},
+			}
 		]
 	},
 	{
@@ -437,11 +434,11 @@ export const events = writable([
 						name: 'Alex Patterson ',
 						image: '/presenters/alex.jpeg',
 						companyImage: '/companies/appwrite.png'
-					},
+					}
 				]
-			},
+			}
 		]
-	},
+	}
 ]);
 
 export const teamMembers = writable([
