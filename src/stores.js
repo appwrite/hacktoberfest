@@ -211,7 +211,7 @@ export const events = writable([
 		durationInMs: DurationMinute * 30,
 		name: 'Project Showcase #4',
 		link: '',
-		presenter: 'Bishwajeet Parhi',
+		presenter: 'Awesome Appwrite Snippets',
 		hasStarted: false,
 		sessions: [
 			{
