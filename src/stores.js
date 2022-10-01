@@ -187,7 +187,7 @@ export const events = writable([
 		timeISO: '2022-10-04T16:00:00.000Z',
 		durationInMs: DurationMinute * 30,
 		name: 'Hackerfest Project Showcase #3',
-		link: '',
+		link: 'https://www.youtube.com/watch?v=UgCVnt8alxQ',
 		presenter: 'Ockam',
 		hasStarted: false,
 		sessions: [
@@ -210,7 +210,7 @@ export const events = writable([
 		timeISO: '2022-10-06T16:00:00.000Z',
 		durationInMs: DurationMinute * 30,
 		name: 'Project Showcase #4',
-		link: '',
+		link: 'https://www.youtube.com/watch?v=ZI2zV7ol-s0',
 		presenter: 'Awesome Appwrite Snippets',
 		hasStarted: false,
 		sessions: [
