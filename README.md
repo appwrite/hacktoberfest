@@ -2,6 +2,8 @@
 
 This repo is home to the Hacktoberfest landing page currently live at [https://hacktoberfest.appwrite.io/](https://hacktoberfest.appwrite.io/). It's built with [Svelte](https://svelte.dev/) and deployed on [Vercel](https://vercel.com/).
 
+![hacktoberfest appwrite io_](https://user-images.githubusercontent.com/1297371/193393209-90ce77f9-bfb5-48f0-bee4-624182bb1e6d.png)
+
 ## 👩‍💻 Contributing
 
 Like with every GitHub project, contributing starts with cloning this repository. You can either use the `code` button at the top of this page, or the `git clone` command as follows
