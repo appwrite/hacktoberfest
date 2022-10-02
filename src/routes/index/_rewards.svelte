@@ -50,8 +50,8 @@
 						<h3 class="mt-10 mb-3 text-xl font-semibold">2 contributions</h3>
 
 						<p class="leading-relaxed">
-							Original Appwrite sticker pack<br />
-							Limited edition Hacktoberfest sticker pack
+							Original Appwrite sticker pack,<br />
+							Limited edition Hacktoberfest sticker pack.
 						</p>
 					</div>
 				</div>
@@ -65,7 +65,7 @@
 					<div class="lg:h-full w-full">
 						<h3 class="mt-[32px] mb-3 text-xl font-semibold">1 contribution</h3>
 
-						<p class="leading-relaxed">Original Appwrite sticker pack</p>
+						<p class="leading-relaxed">Original Appwrite sticker pack.</p>
 					</div>
 				</div>
 			</div>
