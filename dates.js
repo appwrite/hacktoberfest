@@ -1,0 +1,13 @@
+let days=new Date();
+console.log(days);
+console.log('inmiliseconds',days.getTime());
+console.log(days.getDate());
+console.log(days.getMonth());
+console.log(days.getFullYear());
+days.setFullYear(2040,10,07);
+console.log(days);
+let today=new Date();
+console.log((days-today)/(1000*60*60*24));
+console.log(Math.floor(2.1));
+console.log(today.toLocaleString());
+console.log(today.toLocaleDateString());
