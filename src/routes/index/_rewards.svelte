@@ -17,9 +17,9 @@
 					<h3 class="mb-3 text-xl lg:text-[2rem] font-semibold">4 contributions or more</h3>
 
 					<p class="leading-relaxed">
-						Limited edition Appwrite Hacktoberfest T-shirt<br />
-						Sticker pack<br />
-						Socks
+						Limited edition Appwrite Hacktoberfest T-shirt,<br />
+						Sticker pack,<br />
+						Socks.
 					</p>
 				</div>
 			</div>
@@ -33,9 +33,9 @@
 						<h3 class="mt-10 mb-3 text-xl font-semibold">3 contributions</h3>
 
 						<p class="leading-relaxed">
-							Original Appwrite sticker pack<br />
-							Limited edition Hacktoberfest sticker pack<br />
-							Socks
+							Original Appwrite sticker pack,<br />
+							Limited edition Hacktoberfest sticker pack,<br />
+							Socks.
 						</p>
 					</div>
 				</div>
