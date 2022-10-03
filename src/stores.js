@@ -434,8 +434,13 @@ export const events = writable([
 						companyImage: '/companies/appwrite.png'
 					},
 					{
-						name: 'Alex Patterson ',
-						image: '/presenters/alex.jpeg',
+						name: 'Vincent Ge',
+						image: '/presenters/vincent.jpeg',
+						companyImage: '/companies/appwrite.png'
+					},
+					{
+						name: 'Haimantika Mitra',
+						image: '/presenters/haimantika.jpeg',
 						companyImage: '/companies/appwrite.png'
 					},
 				]
