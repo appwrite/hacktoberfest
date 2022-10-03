@@ -37,5 +37,15 @@ npm run build
 
 > You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
 
+## 🎁Swags 
+Along with contributing, you can also win cool swags from AppWrite. Isn't it amazing ! 
+- 1 contribution -> Original Appwrite sticker pack.
+- 2 contributions -> Original Appwrite sticker pack & Limited edition Hacktoberfest sticker pack.
+- 3 contributions -> Original Appwrite sticker pack & Limited edition Hacktoberfest sticker pack & Socks.
+- 4 or more contributions -> Limited edition Appwrite Hacktoberfest T-shirt & Sticker pack & Socks.
+
+**What are you waiting for ?** 
+ put your Hacking caps, and start Hacking !! 🧑‍💻🧑‍💻
+
 ## 🤕 Support 
 At any point, if you are stuck, feel free to hop on our [Discord server](https://appwrite.io/discord) to ask questions or seek mentorship! Happy Coding! 
