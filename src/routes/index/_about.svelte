@@ -8,12 +8,12 @@
 	<div class="container mx-auto px-6">
 		<div class="text-center">
 			<div class="max-w-4xl mx-auto">
-				<p class="h2-eyebrow tracking-[2px]">about the event</p>
+				<p class="h2-eyebrow tracking-[2px]">ABOUT THE EVENT</p>
 				<h2 class="mt-[25px] mb-[32px]">About Hacktoberfest</h2>
 
 				<p class="leading-relaxed">
 					Hacktoberfest is a month-long celebration of open source software run by DigitalOcean.
-					Hacktoberfest is open to everyone, from first-time contributors to seasoned open source
+					Hacktoberfest is open to everyone, from first-time contributors to seasoned open-source
 					developers. Appwrite is one of the projects that you can contribute to.
 				</p>
 			</div>
