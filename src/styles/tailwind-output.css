@@ -37,6 +37,7 @@ html {
 html {
 	line-height: 1.15; /* 1 */
 	-webkit-text-size-adjust: 100%; /* 2 */
+	background:#000;
 }
 
 /*
@@ -47,11 +48,25 @@ Sections
 /**
 Remove the margin in all browsers.
 */
-
+*{
+	animation-name: rise;
+	animation-duration: 2s;
+}
 body {
 	margin: 0;
+	
 }
+@keyframes rise{
+	0%{
+		margin-top:10vw;
+		opacity: 0;
+	}
+	100%{
+		margin-top: 0;
+		opacity: 1;
+	}
 
+}
 /**
 Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
 */
