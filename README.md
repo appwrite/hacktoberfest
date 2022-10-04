@@ -6,7 +6,7 @@ This repo is home to the Hacktoberfest landing page, located at [https://hacktob
 
 ## 👩‍💻 Contributing
 
-Like with every GitHub project, contributing starts with cloning this repository. You can either use the `code` button at the top of this page, or the `git clone` command as follows
+Like with every GitHub project, contributing starts with cloning this repository. You can either use the `code` button at the top of this page or the `git clone` command as follows
 
 ```sh
 git clone git@github.com:appwrite/hacktoberfest.git
