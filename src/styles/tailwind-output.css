@@ -716,6 +716,12 @@ h4 {
 .bottom-0{
 	bottom: 0px;
 }
+.right-2{
+	right: 0.5rem;
+}
+.right-4{
+	right: 1rem;
+}
 .z-20{
 	z-index: 20;
 }
@@ -1056,6 +1062,9 @@ h4 {
 	margin-right: calc(-27px * var(--tw-space-x-reverse));
 	margin-left: calc(-27px * calc(1 - var(--tw-space-x-reverse)));
 }
+.overflow-auto{
+	overflow: auto;
+}
 .overflow-hidden{
 	overflow: hidden;
 }
@@ -1331,13 +1340,13 @@ h4 {
 	--tw-text-opacity: 1;
 	color: rgba(240, 46, 101, var(--tw-text-opacity));
 }
-.text-neutral-30{
-	--tw-text-opacity: 1;
-	color: rgba(196, 198, 215, var(--tw-text-opacity));
-}
 .text-black{
 	--tw-text-opacity: 1;
 	color: rgba(0, 0, 0, var(--tw-text-opacity));
+}
+.text-neutral-30{
+	--tw-text-opacity: 1;
+	color: rgba(196, 198, 215, var(--tw-text-opacity));
 }
 .text-neutral-5{
 	--tw-text-opacity: 1;

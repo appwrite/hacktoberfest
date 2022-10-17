@@ -11,7 +11,7 @@
 		{#if showBadge}
 			{#if $totalIssuesAmount !== null}
 				<div
-					class="rounded-full transform translate-x-1/2 -translate-y-1/2 absolute top-0 right-0 px-2 text-sm py-1 bg-neutral-170 text-white"
+					class="rounded-full transform translate-x-1/2 -translate-y-1/2 absolute top-0 right-4 px-2 text-sm py-1 bg-neutral-170 text-white"
 				>
 					+{$totalIssuesAmount}
 				</div>
