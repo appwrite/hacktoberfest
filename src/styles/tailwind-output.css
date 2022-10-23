@@ -1331,13 +1331,13 @@ h4 {
 	--tw-text-opacity: 1;
 	color: rgba(240, 46, 101, var(--tw-text-opacity));
 }
-.text-neutral-30{
-	--tw-text-opacity: 1;
-	color: rgba(196, 198, 215, var(--tw-text-opacity));
-}
 .text-black{
 	--tw-text-opacity: 1;
 	color: rgba(0, 0, 0, var(--tw-text-opacity));
+}
+.text-neutral-30{
+	--tw-text-opacity: 1;
+	color: rgba(196, 198, 215, var(--tw-text-opacity));
 }
 .text-neutral-5{
 	--tw-text-opacity: 1;

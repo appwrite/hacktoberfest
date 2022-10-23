@@ -1,6 +1,6 @@
-<section class="pt-40 pb[100px]" id="section-swag">
+<section class="pt-40 pb[100px]">
 	<div class="container mx-auto px-6">
-		<div class="text-center max-w-4xl mx-auto">
+		<div class="text-center max-w-4xl mx-auto" id="section-swag">
 			<p class="h2-eyebrow tracking-[2px]">swag</p>
 			<h2 class="mt-[29px] mb-[40px]">Win our swag!</h2>
 		</div>
