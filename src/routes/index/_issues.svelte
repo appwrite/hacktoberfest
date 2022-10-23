@@ -4,8 +4,8 @@
 	import { githubIssues } from '../../stores';
 </script>
 
-<section class="pt-[8.75rem] pb-40" id="section-issues">
-	<div class="relative container mx-auto bg-neutral-190 py-[80px] rounded-3xl px-6">
+<section class="pt-[8.75rem] pb-40">
+	<div class="relative container mx-auto bg-neutral-190 py-[80px] rounded-3xl px-6" id="section-issues">
 		<div class="text-center max-w-4xl mx-auto">
 			<p class="h2-eyebrow tracking-[2px]">Hacktoberfest issues</p>
 			<h2 class="title text-[32px] lg:text-[48px] font-semibold mt-[25px] mb-[38px]">
