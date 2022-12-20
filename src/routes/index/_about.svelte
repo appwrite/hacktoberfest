@@ -35,7 +35,7 @@
 				>
 					<h3 class="text-center lg:text-left my-10 lg:my-8">Our journey with Hacktoberfest</h3>
 					<p class="hidden lg:block text-justify pb-[3rem]">
-						Hacktoberfest is an initiative that very deeply matters to us. We launched the first
+						Hacktoberfest is an initiative that matters very deeply to us. We launched the first
 						iteration of Appwrite as a mere open-source project back in September 2019.
 						Hacktoberfest 2019 was truly a game-changer for us, as we saw over 200 contributions
 						from some lovely members of the open-source fraternity that October.
@@ -84,8 +84,8 @@
 					<div class="lg:max-w-sm flex flex-col text-left items-start">
 						<h3 id="how-can-you-contribute">How can you contribute?</h3>
 						<p class="py-8 leading-relaxed">
-							There are different ways you can contribute to Appwrite. All accepted contributions
-							qualify for receiving Appwrite Swag!
+							There are many different ways you can contribute to Appwrite. All accepted contributions
+							qualify for Appwrite Swag!
 						</p>
 
 						<ButtonGithub showBadge={false} />
@@ -143,7 +143,7 @@
 								href="https://github.com/appwrite/appwrite/issues?q=is%3Aopen+label%3Ahacktoberfest+label%3Ademo"
 								class="flex items-center space-x-[0.44rem] leading-relaxed text-neutral-5 font-semibold"
 							>
-								<span>View issue</span>
+								<span>View issues</span>
 
 								<svg
 									width="14"
@@ -177,7 +177,7 @@
 								href="https://github.com/appwrite/appwrite/issues?q=is%3Aopen+label%3Ahacktoberfest+label%3Ablog								"
 								class="flex items-center space-x-[0.44rem] leading-relaxed text-neutral-5 font-semibold"
 							>
-								<span>View issue</span>
+								<span>View issues</span>
 								<svg
 									width="14"
 									height="8"
@@ -210,7 +210,7 @@
 								href="https://github.com/appwrite/appwrite/issues?q=is%3Aopen+label%3Ahacktoberfest+label%3Atutorial"
 								class="flex items-center space-x-[0.44rem] leading-relaxed text-neutral-5 font-semibold"
 							>
-								<span>View issue</span>
+								<span>View issues</span>
 
 								<svg
 									width="14"
