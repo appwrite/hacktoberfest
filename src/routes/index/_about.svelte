@@ -84,8 +84,8 @@
 					<div class="lg:max-w-sm flex flex-col text-left items-start">
 						<h3 id="how-can-you-contribute">How can you contribute?</h3>
 						<p class="py-8 leading-relaxed">
-							There are many different ways you can contribute to Appwrite. All accepted contributions
-							qualify for Appwrite Swag!
+							There are many different ways you can contribute to Appwrite. All accepted
+							contributions qualify for Appwrite Swag!
 						</p>
 
 						<ButtonGithub showBadge={false} />
