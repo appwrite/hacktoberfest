@@ -3,6 +3,7 @@
 
 	import { events } from '../../stores';
 	import { slide } from 'svelte/transition';
+	import { onMount } from 'svelte';
 
 	function getLocalDay(timeISO: string): number {
 		const date = new Date(timeISO);
@@ -46,26 +47,29 @@
 		return timeZoneChunks[timeZoneChunks.length - 1];
 	}
 
-	const now = new Date().getTime();
-	let nextEvent = -1;
-	$events.forEach((event, eventIndex) => {
-		const startingTime = new Date(event.timeISO).getTime();
-		const endingTime = startingTime + event.durationInMs;
-		if (startingTime < now) {
-			$events[eventIndex].hasStarted = true;
-		}
-		if (nextEvent < 0 && endingTime > now) {
-			nextEvent = eventIndex;
-		}
-	});
-
-	$events[nextEvent].isOpened = true;
-
 	function onToggleEventDetail(eventIndex: number) {
 		return () => {
 			$events[eventIndex].isOpened = !$events[eventIndex].isOpened;
 		};
 	}
+
+	onMount(() => {
+		const now = new Date().getTime();
+		let nextEvent = -1;
+		$events.forEach((event, eventIndex) => {
+			const startingTime = new Date(event.timeISO).getTime();
+			const endingTime = startingTime + event.durationInMs;
+			if (startingTime < now) {
+				$events[eventIndex].hasStarted = true;
+			}
+			if (nextEvent < 0 && endingTime > now) {
+				nextEvent = eventIndex;
+			}
+		});
+		if ($events[nextEvent]?.isOpened) {
+			$events[nextEvent].isOpened = true;
+		}
+	});
 </script>
 
 <section class="pt-[80px] pb[100px] pb-0" id="section-events">
