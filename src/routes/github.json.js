@@ -6,11 +6,9 @@ export const get = async (request) => {
 		'type=issues',
 		'per_page=10',
 		'sort=updated',
-		'order=asc',
-	].join('&')
-	const issuesQuery = await fetch(
-		`https://api.github.com/search/issues?${queryString}`
-	);
+		'order=asc'
+	].join('&');
+	const issuesQuery = await fetch(`https://api.github.com/search/issues?${queryString}`);
 
 	const issuesJson = await issuesQuery.json();
 
@@ -30,8 +28,9 @@ export const get = async (request) => {
 					return {
 						label: label.name,
 						backgroundColor: label.color,
-						style:
-							['22F50E', 'a0ccf7', 'a2eeef', '03CA45'].includes(label.color) ? 'text-black' : 'text-white'
+						style: ['22F50E', 'a0ccf7', 'a2eeef', '03CA45'].includes(label.color)
+							? 'text-black'
+							: 'text-white'
 					};
 				})
 			};

@@ -13,7 +13,8 @@ git clone git@github.com:appwrite/hacktoberfest.git
 cd hacktoberfest
 ```
 
-Then, install the dependencies using 
+Then, install the dependencies using
+
 ```sh
 npm install
 ```
@@ -37,5 +38,6 @@ npm run build
 
 > You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
 
-## 🤕 Support 
-At any point, if you are stuck, feel free to hop on our [Discord server](https://appwrite.io/discord) to ask questions or seek mentorship! Happy Coding! 
+## 🤕 Support
+
+At any point, if you are stuck, feel free to hop on our [Discord server](https://appwrite.io/discord) to ask questions or seek mentorship! Happy Coding!
