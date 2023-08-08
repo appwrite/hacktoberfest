@@ -88,7 +88,7 @@
 							contributions qualify for Appwrite Swag!
 						</p>
 
-						<ButtonGithub showBadge={false} />
+						<!-- <ButtonGithub showBadge={false} /> -->
 					</div>
 				</div>
 				<div
@@ -160,7 +160,7 @@
 						</div>
 					</div>
 
-					<div class="col-span-6">
+					<!-- <div class="col-span-6">
 						<img src="/icons/pencil.svg" alt="Pencil Icon" />
 
 						<div class="max-w-sm">
@@ -225,7 +225,7 @@
 								</svg>
 							</a>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</div>

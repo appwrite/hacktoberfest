@@ -60,7 +60,7 @@
 							friendly issues for you to check out.
 						</p>
 
-						<ButtonGithub showIcon />
+						<!-- <ButtonGithub showIcon /> -->
 					</div>
 				</div>
 				<div
@@ -78,14 +78,14 @@
 <!-- HERO END -->
 
 <About />
-<Rewards />
+<!-- <Rewards /> -->
 
 <div class="container mx-auto mt-[100px] px-6">
 	<hr class="border-t-[1px] border-neutral-150" />
 </div>
 
 <Events />
-<Issues />
+<!-- <Issues /> -->
 <Team />
 
 <style>

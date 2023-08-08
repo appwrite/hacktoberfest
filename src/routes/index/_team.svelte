@@ -3,7 +3,7 @@
 	import { teamMembers } from '../../stores';
 </script>
 
-<section class="pb-[100px]">
+<section class="pt-[8.75rem] pb-[100px]">
 	<div class="container mx-auto px-6">
 		<div class="text-center max-w-4xl mx-auto">
 			<!-- <p class="text-black uppercase text-[14px] title">events</p> -->

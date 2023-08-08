@@ -98,10 +98,14 @@
 								<span class="title text-base font-semibold text-primary"
 									>{getLocalMonth(event.timeISO)}</span
 								>
-								<span class="text-[14px]"
-									>{getLocalTimeVerbose(event.timeISO, event.durationInMs)}
-									<span class=""> • {getClientState()} time</span></span
-								>
+								{#if !event.durationInMs}
+									<span class="text-[14px]">TBA</span>
+								{:else}
+									<span class="text-[14px]"
+										>{getLocalTimeVerbose(event.timeISO, event.durationInMs)}
+										<span class=""> • {getClientState()} time</span></span
+									>
+								{/if}
 							</div>
 						</div>
 						<div
@@ -119,29 +123,31 @@
 									/>
 								</div>
 							</div>
-							<button
-								aria-label="Toggle description"
-								on:click={onToggleEventDetail(eventIndex)}
-								class="hidden md:block rounded-full hover:text-white p-4"
-							>
-								<svg
-									class={(event.isOpened ? 'rotate-180' : 'rotate-0') +
-										' transition-transform duration-300 transform'}
-									width="18"
-									height="18"
-									viewBox="0 0 18 10"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg"
+							{#if event.sessions.length > 0}
+								<button
+									aria-label="Toggle description"
+									on:click={onToggleEventDetail(eventIndex)}
+									class="hidden md:block rounded-full hover:text-white p-4"
 								>
-									<path
-										d="M1 1L9.24242 8.5L17 1"
-										stroke="currentColor"
-										stroke-width="2"
-										stroke-linecap="round"
-										stroke-linejoin="round"
-									/>
-								</svg>
-							</button>
+									<svg
+										class={(event.isOpened ? 'rotate-180' : 'rotate-0') +
+											' transition-transform duration-300 transform'}
+										width="18"
+										height="18"
+										viewBox="0 0 18 10"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M1 1L9.24242 8.5L17 1"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+								</button>
+							{/if}
 						</div>
 					</div>
 
@@ -246,6 +252,10 @@
 </section>
 
 <style>
+	#section-events {
+		position: relative;
+		z-index: 1;
+	}
 	.custom-shadow {
 		box-shadow: 0px 10px 70px 0px rgba(0, 0, 0, 0.05);
 	}
