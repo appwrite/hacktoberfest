@@ -36,9 +36,9 @@
 					<h3 class="text-center lg:text-left my-10 lg:my-8">Our journey with Hacktoberfest</h3>
 					<p class="hidden lg:block text-justify pb-[3rem]">
 						Hacktoberfest is an initiative that matters very deeply to us. We launched the first
-						iteration of Appwrite as a mere open-source project back in September 2019.
-						Hacktoberfest 2019 was truly a game-changer for us, as we saw over 200 contributions
-						from some lovely members of the open-source fraternity that October.
+						iteration of Appwrite as a mere open-source project in September 2019. Hacktoberfest
+						2019 was truly a game-changer for us, as we saw over 200 contributions from some lovely
+						members of the open-source community that October.
 					</p>
 
 					<div class="w-full flex justify-center lg:justify-start">
