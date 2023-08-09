@@ -85,7 +85,7 @@
 						<h3 id="how-can-you-contribute">How can you contribute?</h3>
 						<p class="py-8 leading-relaxed">
 							There are many different ways you can contribute to Appwrite. All accepted
-							contributions qualify for Appwrite Swag!
+							contributions qualify for digital Appwrite Swag!
 						</p>
 
 						<!-- <ButtonGithub showBadge={false} /> -->
