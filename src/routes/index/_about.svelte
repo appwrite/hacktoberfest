@@ -36,9 +36,9 @@
 					<h3 class="text-center lg:text-left my-10 lg:my-8">Our journey with Hacktoberfest</h3>
 					<p class="hidden lg:block text-justify pb-[3rem]">
 						Hacktoberfest is an initiative that matters very deeply to us. We launched the first
-						iteration of Appwrite as a mere open-source project back in September 2019.
-						Hacktoberfest 2019 was truly a game-changer for us, as we saw over 200 contributions
-						from some lovely members of the open-source fraternity that October.
+						iteration of Appwrite as a mere open-source project in September 2019. Hacktoberfest
+						2019 was truly a game-changer for us, as we saw over 200 contributions from some lovely
+						members of the open-source community that October.
 					</p>
 
 					<div class="w-full flex justify-center lg:justify-start">
@@ -85,10 +85,10 @@
 						<h3 id="how-can-you-contribute">How can you contribute?</h3>
 						<p class="py-8 leading-relaxed">
 							There are many different ways you can contribute to Appwrite. All accepted
-							contributions qualify for Appwrite Swag!
+							contributions qualify for digital Appwrite Swag!
 						</p>
 
-						<ButtonGithub showBadge={false} />
+						<!-- <ButtonGithub showBadge={false} /> -->
 					</div>
 				</div>
 				<div
@@ -160,7 +160,7 @@
 						</div>
 					</div>
 
-					<div class="col-span-6">
+					<!-- <div class="col-span-6">
 						<img src="/icons/pencil.svg" alt="Pencil Icon" />
 
 						<div class="max-w-sm">
@@ -225,7 +225,7 @@
 								</svg>
 							</a>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</div>

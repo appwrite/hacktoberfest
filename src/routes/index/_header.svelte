@@ -11,18 +11,18 @@
 			name: 'about the event',
 			id: 'about'
 		},
-		{
-			name: 'swag',
-			id: 'swag'
-		},
+		// {
+		// 	name: 'swag',
+		// 	id: 'swag'
+		// },
 		{
 			name: 'events',
 			id: 'events'
-		},
-		{
-			name: 'Hacktoberfest issues',
-			id: 'issues'
 		}
+		// {
+		// 	name: 'Hacktoberfest issues',
+		// 	id: 'issues'
+		// }
 	];
 
 	let menuLineWidth = 0;
@@ -219,7 +219,7 @@
 					><Button text="Get help on Discord" type="secondary" /></a
 				>
 
-				<ButtonGithub showBadge={true} />
+				<!-- <ButtonGithub showBadge={true} /> -->
 			</section>
 		</div>
 	</header>
