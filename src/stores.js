@@ -30,11 +30,61 @@ export const currentSection = writable({
 export const events = writable([
 	{
 		isOpened: false,
+		timeISO: '2023-09-27T16:00:00.000Z',
+		durationInMs: DurationMinute * 60,
+		name: 'IllaCloud LiveStream',
+		presenter: 'Wesley Cope',
+		//link: 'https://lu.ma/hf-kickoff-blr',
+		hasStarted: false,
+		sessions: []
+	},
+	{
+		isOpened: false,
 		timeISO: '2023-10-01T16:00:00.000Z',
-		durationInMs: DurationMinute * 0,
+		durationInMs: DurationMinute * 480,
 		name: 'Hacktoberfest Kickoff!',
-		presenter: 'Appwrite, TBA',
-		// link: 'https://www.youtube.com/watch?v=oPswl1Vvpxc',
+		presenter: 'Appwrite and DigitalOcean',
+		link: 'https://lu.ma/hf-kickoff-blr',
+		hasStarted: false,
+		sessions: []
+	},
+	{
+		isOpened: false,
+		timeISO: '2023-10-05T16:00:00.000Z',
+		durationInMs: DurationMinute * 60,
+		name: 'Appwrite and Hacktoberfest: How To Contribute',
+		presenter: 'Aditya Oberai',
+		//link: 'https://lu.ma/hf-kickoff-blr',
+		hasStarted: false,
+		sessions: []
+	},
+	{
+		isOpened: false,
+		timeISO: '2023-10-10T16:00:00.000Z',
+		durationInMs: DurationMinute * 60,
+		name: 'Appwrite x GitHub Education livestream',
+		presenter: 'Aditya Oberai',
+		//link: 'https://lu.ma/hf-kickoff-blr',
+		hasStarted: false,
+		sessions: []
+	},
+	{
+		isOpened: false,
+		timeISO: '2023-10-12T16:00:00.000Z',
+		durationInMs: DurationMinute * 60,
+		name: 'Appwrite x Novu livestream',
+		presenter: 'Aditya Oberai',
+		//link: 'https://lu.ma/hf-kickoff-blr',
+		hasStarted: false,
+		sessions: []
+	},
+	{
+		isOpened: false,
+		timeISO: '2023-10-17T14:00:00.000Z',
+		durationInMs: DurationMinute * 60,
+		name: 'Building Appwrite Functions',
+		presenter: 'Aditya Oberai',
+		//link: 'https://lu.ma/hf-kickoff-blr',
 		hasStarted: false,
 		sessions: []
 	}
