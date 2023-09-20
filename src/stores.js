@@ -60,6 +60,16 @@ export const events = writable([
 	},
 	{
 		isOpened: false,
+		timeISO: '2023-10-06T16:00:00.000Z',
+		durationInMs: DurationMinute * 60,
+		name: 'Open Source Friday with Appwrite and GitHub',
+		presenter: 'Dennis Ivy',
+		link: 'https://www.youtube.com/watch?v=VJvawxeUhN4',
+		hasStarted: false,
+		sessions: []
+	},
+	{
+		isOpened: false,
 		timeISO: '2023-10-10T16:00:00.000Z',
 		durationInMs: DurationMinute * 60,
 		name: 'Appwrite x GitHub Education livestream',
