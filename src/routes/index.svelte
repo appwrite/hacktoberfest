@@ -7,4 +7,4 @@
     }
 </script>
 
-<p>Redirecting ...</p>
+<p>Redirecting...</p>
