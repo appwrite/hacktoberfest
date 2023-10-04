@@ -10,6 +10,9 @@ Like with every GitHub project, contributing starts with cloning this repository
 
 ```sh
 git clone git@github.com:appwrite/hacktoberfest.git
+```
+Then, go to the hacktoberfest directory using the `cd` command
+```sh
 cd hacktoberfest
 ```
 
@@ -23,8 +26,9 @@ Once you've installed dependencies with `npm install` (or `pnpm install` or `yar
 
 ```bash
 npm run dev
-
-# or start the server and open the app in a new browser tab
+```
+Or start the server and open the app in a new browser tab
+```bash
 npm run dev -- --open
 ```
 
